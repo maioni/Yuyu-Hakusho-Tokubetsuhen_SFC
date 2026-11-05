@@ -1,0 +1,97 @@
+#VAR(Table,TABLE)
+#ADDTBL("serifu_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($320000)
+Aperte START se quiser pular esta<line>
+introdução, e aperte A para<line>
+avançar o texto.<pause><clear2>
+Aperte B, X, Y, L ou R para<line>
+mudar a cor do texto.<pause><line>
+Aperte Select para voltar à cor<line>
+padrão.<pause><clear2>
+Esta é a tradução para o português<line>
+brasileiro de Yū Yū Hakusho<line>
+Tokubetsu-hen (Edição Especial),<line>
+lançado para o Super Famicom.<pause><clear2>
+Esta versão se baseia na tradução<line>
+vietnamita de stoneboat, que<line>
+disponibilizou o código-fonte do<line>
+projeto gratuitamente.<pause><clear2>
+Antes de jogar, há algumas coisas<line>
+importantes sobre esta tradução.<pause><clear2>
+Primeiro, esta tradução é feita por<line>
+fãs e é totalmente gratuita. Se<line>
+alguém cobrar por ela, não pague.<pause><clear2>
+Segundo, esta tradução não tem a<line>
+autorização da Nintendo nem da<line>
+Namco, então pode violar os direitos<line>
+autorais.<pause><clear2>
+Terceiro, ela não busca prejudicar<line>
+a Nintendo nem a Namco, e ninguém<line>
+lucra com ela, nem por doações.<pause><clear2>
+O objetivo é preservar a memória<line>
+dos jogos retrô e levar este<line>
+clássico a quem não pôde jogá-lo<line>
+em português.<pause><clear2>
+Quarto, os nomes dos personagens<line>
+seguem a romanização japonesa<line>
+(Yūsuke, Kurama etc.), e os nomes<line>
+dos golpes foram traduzidos.<pause><clear2>
+Quinto, por usar o código da versão<line>
+vietnamita, esta tradução tem alguns<line>
+recursos que o jogo original em<line>
+japonês não possui.<pause><clear2>
+Os recursos são os seguintes.<line>
+1. Mover o personagem para a<line>
+esquerda e para a direita durante<line>
+a luta.<pause><clear2>
+2. Aperte o botão certo na hora<line>
+certa para sempre esquivar dos<line>
+golpes do oponente.<pause><clear2>
+3. Aperte o botão certo na hora<line>
+certa para sempre acertar o<line>
+oponente.<pause><clear2>
+4. Aperte o botão certo na hora<line>
+certa para recuperar a vitalidade<line>
+(HP).<pause><clear2>
+5. Aperte o botão certo na hora<line>
+certa para recuperar a energia<line>
+espiritual (MP).<pause><clear2>
+6. Aperte o botão certo na hora<line>
+certa para recuperar a barra de<line>
+equilíbrio (BP).<pause><clear2>
+Esses recursos podem alterar muito<line>
+a dificuldade do jogo e, com isso,<line>
+a experiência de quem joga.<pause><clear2>
+Por isso, a forma de apertar os<line>
+botões não é divulgada aqui, mas<line>
+você pode descobri-la lendo o<line>
+código-fonte, se souber ler.<pause><clear2>
+Você também pode ver dicas de como<line>
+apertar no canal do YouTube abaixo:<line>
+https://www.youtube.com/@Stoneboat<pause><clear2>
+Se você não apertar esses botões na<line>
+hora certa, é como jogar uma<line>
+tradução comum, sem nenhuma<line>
+diferença na experiência.<pause><clear2>
+Sexto, esta tradução é distribuída<line>
+com o código-fonte, então você pode<line>
+editar os textos e criar uma versão<line>
+do seu jeito.<pause><clear2>
+Também é possível alterar ou<line>
+acrescentar recursos ao jogo para<line>
+criar a versão que você quiser.<pause><clear2>
+Para isso, é preciso entender o<line>
+hardware do Super Famicom e a<line>
+linguagem assembly WDC65816.<pause><clear2>
+Em outras palavras, para mexer no<line>
+código-fonte é preciso saber o que<line>
+está fazendo.<pause><clear2>
+Por fim, obrigado por ler até aqui.<line>
+Aperte A para voltar ao jogo.<pause><clear2>
+
+<end>

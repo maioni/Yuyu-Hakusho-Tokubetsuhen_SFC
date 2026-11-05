@@ -1,0 +1,39 @@
+Imagens PT-BR COMPLETO (substitui partes 1 e 2).
+Copie as pastas Opening, Ending, Tournament e Narrator por cima das do projeto e rode Yuyu_ptBR.bat.
+Narrator/config_set.bin + config_map.bin: tela de configuracao de botoes.
+Narrator/square*_set.bin: placas dos menus. preset2.bin: Ponta/Meio/Fim. Ending/owari_set.bin: FIM.
+Nao traduzido: preset.bin (nomes de times/fonte), square12/13/15.
+
+--- Atualização 2 ---
+Novos/corrigidos em Narrator/: preset.bin (nomes da seleção de personagens), square06-09 (modos de jogo, sem sobras de texto),
+square11 (Domo / Floresta), square12 (Palco da Forca / Outra Dimensão).
+Pendente: "ĐẤU" (square15), "Hủy" (square13) e alguns nomes da 2ª linha da seleção deixados em branco.
+
+--- Atualização 3 ---
+preset.bin: segunda linha (Hán-Việt) apagada; primeira linha: Youko, Genkai jovem, Toguro Sr./Jr.
+square00 (Config.) e square01 (Livre) refeitos; square12: Guilhotina/Colina e Outra/Dimensão.
+Estrelas do título: em title.asm troque  LDA #$0038 -> LDA #$000E  (star1)  e  LDA #$00C8 -> LDA #$00FA (star2)
+
+--- Atualização 4 ---
+Opening/controller_set/map/col.bin: créditos do controle traduzidos (URL mantida).
+Narrator/square13_set.bin: "Hủy" -> "Canc".
+Narrator/preset.bin: 2ª linha restaurada (sem sombra) para Detetive Espiritual, Espada Espiritual, Raposa, Jagan, Mestra, Yo-yo, Gelo, Corvo, Personagem Secreto. Os demais continuam em branco (faixas de tiles não confirmadas).
+Pendente: ĐẤU (square15), marca ao lado de "Um contra Um", glifo "Bu-i".
+
+--- Atualização 5 (pacote COMPLETO) ---
+Contém as pastas Ending, Narrator, Opening e Tournament inteiras: arquivos originais + todas as imagens traduzidas. Copie por cima das pastas do projeto.
+preset.bin: 2ª linha (que é o nome Hán-Việt do personagem) refeita nos trechos confirmados: Yusuke, Kuwabara, Kurama, Hiei, Genkai, Rinku, Touya, Jin, Shishiwakamaru, Bui, Toguro Sr., Corvo, Personagem Secreto.
+square06-09: marcas laterais ("d" e ".") removidas.
+Ainda pendente: ĐẤU (square15), 2ª linha de Toguro Jr., Kamiya, Hagiri, Itsuki, Sensui.
+
+--- Atualização 6 ---
+square15: ĐẤU -> LUTA (6 sprites 16x16, grade 3x2).
+square13: Hủy -> Cance-/lar (duas linhas, por falta de espaço).
+square00: Config. -> Opções.
+
+--- Atualização 7 ---
+Opening/preset4_*: "Tưởng niệm byuu" -> "Em memória de byuu".
+square15: LUTA com contorno branco.
+preset.bin: 2ª linha com sombra (corpo idx 8, sombra idx 12), cores invertidas em relação à versão anterior.
+controller: linha 'Colaborador PT-BR: sniperdmaa / maioni' adicionada.
+square01: Livre refeito no mesmo estilo de Opções (branco com contorno escuro).

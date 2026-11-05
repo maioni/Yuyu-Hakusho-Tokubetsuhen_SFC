@@ -1,0 +1,11 @@
+#VAR(Table,TABLE)
+#ADDTBL("narrator_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($00)
+<txt_spd><$02>
+Vamos à primeira luta<line>
+das quartas de final!<end>

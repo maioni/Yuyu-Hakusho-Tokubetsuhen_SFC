@@ -1,0 +1,17 @@
+PACOTE COMPLETO - Yuu Yuu Hakusho Tokubetsu-hen PT-BR
+1. Copie TUDO para a pasta do projeto (stoneboat65816/yuyu-hakusho-tokubetsuhen_sfc), sobrescrevendo.
+2. Coloque a ROM japonesa 2 MB sem header como YuJ.smc na mesma pasta.
+3. Rode Yuyu_ptBR.bat (Atlas + xkas) -> Yuyu_ptBR.smc.
+Pastas Ending/Narrator/Opening/Tournament: imagens e textos do narrador traduzidos.
+battle_text/battle_name/serifu_*: textos (Atlas). Font/: fontes com acentos.
+Detalhes das imagens: LEIA-ME_IMAGENS.txt. Notas: NOTAS_PTBR.md.
+Sugestao opcional (estrelas do titulo, title.asm): LDA #$0038 -> #$000E e LDA #$00C8 -> #$00FA.
+
+TITULO: Opening/title_* refeitos (logo "YU YU HAKUSHO" vermelho/amarelo com contorno, estilo do jogo oficial).
+Aplique title_patch.asm no title.asm (posicao das estrelas + remocao das barras listradas) e rode o .bat de novo.
+
+2.14: telas iniciais traduzidas: "Produzido por", "Apresentado por", "PROJETO" (title.asm + Opening/namco_*.bin, pres_*.bin; dados em $82:E8C3).
+
+2.14: Toguro Mais Velho / Mais Novo (nomes e falas); "escapou por pouco do golpe/da onda de choque".
+Narrator/preset2.bin (Ponta/Meio/Fim) e square10_set.bin (Modo/Trilha/Voz): pixels soltos nas pontas removidos.
+Pendentes: placa Livre (sprites), nomes da selecao (tamanho/centro, Toguro (velho)/(novo)), 級 do nivel S/A/B.

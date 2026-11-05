@@ -1,0 +1,17 @@
+#VAR(Table,TABLE)
+#ADDTBL("narrator_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($00)
+<dummy><txt_spd><$02>
+Bem-vindos ao<line>
+Torneio das Trevas!<wait><clear>
+Sejam humanos, youkai, demônios<line>
+ou o que forem, não importa!<wait><clear>
+Use o direcional do controle<line>
+para escolher o modo de jogo e<line>
+aperte A para confirmar!
+<end>

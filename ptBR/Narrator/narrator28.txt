@@ -1,0 +1,12 @@
+#VAR(Table,TABLE)
+#ADDTBL("narrator_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($00)
+<txt_spd><$02>
+E o campeão deste torneio<line>
+não é outro senão<line>
+o lutador <name>!<end>

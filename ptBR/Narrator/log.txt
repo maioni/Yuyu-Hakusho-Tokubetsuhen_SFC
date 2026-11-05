@@ -1,0 +1,6 @@
+     2 ADDTBL    Added table 'narrator.tbl' as 'Table'
+     3 ACTIVETBL Active table is now 'Table'
+     4 HDR       Header size is now $0
+     6 CREATEPTR CustomPointer 'Ptr' Addressing 'HIROM' Offsetting 0 Size 24d HeaderSize $0
+     9 JMP       ROM Position is now $0
+Toguro 100%<end>
