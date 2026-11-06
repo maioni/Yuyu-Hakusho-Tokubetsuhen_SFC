@@ -5,6 +5,8 @@ Pasta autônoma: nada fora de `ptBR/` foi alterado, então o projeto vietnamita 
 
 > Este repositório **não** contém a ROM do jogo. Você precisa da sua própria cópia.
 
+![Prévia da tradução PT-BR](preview/preview_ptbr.png)
+
 ## Opção 1 — Aplicar o patch IPS (mais simples)
 1. Tenha a ROM japonesa original **sem header** (2 MB = 2.097.152 bytes). Se tiver header de 512 bytes, remova-o antes.
 2. Baixe `Yuyu_PTBR_v5.1.ips` (página de *Releases* do projeto).
