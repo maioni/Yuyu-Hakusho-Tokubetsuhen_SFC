@@ -14,7 +14,10 @@ Os programas não estão neste repositório; baixe sempre das páginas oficiais:
   - [Floating IPS (Flips)](https://github.com/Alcaro/Flips/releases), programa para Windows e Linux.
   - [Lunar IPS](https://www.romhacking.net/utilities/240/), programa para Windows.
   - [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/), direto no navegador, sem instalar nada.
-- **Só para a Opção 2 (compilar):** `Atlas` e `xkas` (as mesmas ferramentas do [projeto vietnamita](https://github.com/stoneboat65816/Yuyu-Hakusho-Tokubetsuhen_SFC); elas não estão neste repositório).
+- **Só para a Opção 2 (compilar):**
+  - [Atlas](https://www.romhacking.net/utilities/224/), o inseridor de texto (`Atlas.exe`).
+  - [xkas, versão 14](https://github.com/devinacker/xkas-plus/releases) (`xkas.exe`).
+  - Coloque os dois na mesma pasta do `YuJ.smc` (a ROM japonesa original).
 
 ## Opção 1 — Aplicar o patch IPS (mais simples)
 1. Tenha a ROM japonesa original **sem header** (2 MB = 2.097.152 bytes). Se tiver header de 512 bytes, remova-o antes.
@@ -24,7 +27,7 @@ Os programas não estão neste repositório; baixe sempre das páginas oficiais:
 
 ## Opção 2 — Montar a partir do código
 1. Coloque nesta pasta (`ptBR/`) a ROM japonesa sem header, com o nome `YuJ.smc`.
-2. Coloque também na pasta as ferramentas `atlas` e `xkas.exe` (as mesmas do projeto original).
+2. Coloque também na pasta `Atlas.exe` e `xkas.exe` (links na seção "Programas necessários").
 3. Execute `Yuyu_ptBR.bat`. O resultado é `Yuyu_ptBR.smc`.
 
 O `.bat` copia `YuJ.smc` para `Yuyu_ptBR.smc`, insere os textos com o Atlas (`battle_text_PTBR.txt`, `battle_name_PTBR.txt`, `serifu_PTBR.txt`) e aplica código e gráficos com o xkas (`main.asm`).
