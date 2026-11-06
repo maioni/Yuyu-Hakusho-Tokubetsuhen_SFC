@@ -11,193 +11,193 @@
 
 #WRITE(Ptr, $1D544)
 //『クリ－－ンヒットォォ～～～～～～～～～!!!』<end>
-<name> 「sofreu um golpe crítico!!」<end>
+『<name>sofreu um golpe crítico!!』<end>
 
 //POINTER #1 @ $1D546 - STRING #1 @ $1D79C
 
 #WRITE(Ptr, $1D546)
 //『かわしたぁ~!!』<end>
-<name> 「esquivou do ataque!!」<end>
+『<name>esquivou do ataque!!』<end>
 
 //POINTER #2 @ $1D548 - STRING #2 @ $1D7B2
 
 #WRITE(Ptr, $1D548)
 //『すかさずジャンプ～～～～～～っ!!』<end>
-Um salto relâmpago!!<end>
+Narrador 『Um salto relâmpago!!』<end>
 
 //POINTER #3 @ $1D54A - STRING #3 @ $1D7D2
 
 #WRITE(Ptr, $1D54A)
 //『うけとめたッ!!』<end>
-<name> 「bloqueou o ataque!!」<end>
+Narrador 『<name>bloqueou o ataque!!』<end>
 
 //POINTER #4 @ $1D54C - STRING #4 @ $1D7E8
 
 #WRITE(Ptr, $1D54C)
 //『おおっと! よりめいた!!』<end>
-Opa! <name>cambaleou!!<end>
+Narrador 『Opa! <name>cambaleou!!』<end>
 
 //POINTER #5 @ $1D54E - STRING #5 @ $1D808
 
 #WRITE(Ptr, $1D54E)
 //『ふっとんだァ～～～～～～!!』<end>
-<name> 「foi lançado longe~~!!」<end>
+『<name>foi lançado longe~~!!』<end>
 
 //POINTER #6 @ $1D550 - STRING #6 @ $1D822
 
 #WRITE(Ptr, $1D550)
 //『<$24><$20>衝<$12><$20>撃<$3B><$20>波がかすめた!!』<end>
-<name> 「<$91><$20>foi r<$40><$20>oçado<$03><$20> pela onda!」<end>
+『<name><$91><$20>foi ro<$40><$20>çado pe<$03><$20>la onda!』<end>
 
 //POINTER #7 @ $1D552 - STRING #7 @ $1D842
 
 #WRITE(Ptr, $1D552)
 //『<$24><$20>衝<$12><$20>撃<$3B><$20>波にのみこまれたぁ－－－!!』<end>
-<name> 「<$91><$20>foi e<$40><$20>ngolid<$03><$20>o pela onda!」<end>
+『<name><$91><$20>foi en<$40><$20>golido p<$03><$20>ela onda!』<end>
 
 //POINTER #8 @ $1D554 - STRING #8 @ $1D86E
 
 #WRITE(Ptr, $1D554)
 //『<$0C><$20>気<$BE><$20>合いの<$02><$20>入ったパンチだ!!』<end>
-<name> 「deu um <$76><$20>soco <$77><$20>poderoso!!」<end>
+『<name>deu um <$76><$20>soco p<$77><$20>oderoso!!』<end>
 
 //POINTER #9 @ $1D556 - STRING #9 @ $1D894
 
 #WRITE(Ptr, $1D556)
 //『パンチにいった!!』<end>
-<name> 「partiu pro soco!!」<end>
+Narrador 『<name>partiu pro soco!!』<end>
 
 //POINTER #10 @ $1D558 - STRING #10 @ $1D8AC
 
 #WRITE(Ptr, $1D558)
 //『<$2F><$20>体<$98>魔<$10>が<$09><$20>回<$99><$20>復した!!』<end>
-<name> 「<$86><$20>recup<$8D><$20>erou<$7B><$20> a <$A1><$20>vita<$A2><$20>lidade!!」<end>
+『<name><$86><$20>recupe<$8D><$20>rou a <$7B><$20>vita<$A1><$20>lidade<$A2><$20>!!』<end>
 
 //POINTER #11 @ $1D55A - STRING #11 @ $1D8CC
 
 #WRITE(Ptr, $1D55A)
 //『しかし、あいては<$29><$20>上<$0F><$20>空だァ～～～～～～～～～っ!!』<end>
-Mas o oponente está <$0E><$20>no <$51><$20>ar~~!!<end>
+『Mas o oponente está <$0E><$20>no ar<$51><$20>~~!!』<end>
 
 //POINTER #12 @ $1D55C - STRING #12 @ $1D8FA
 
 #WRITE(Ptr, $1D55C)
 //『<$37><$20>闘<$20><$20>志を<$C6><$20>燃やした!!』<end>
-<name> 「acendeu o <$11><$20>espí<$78><$20>rito de <$79><$20>luta!!」<end>
+『<name>acendeu o <$11><$20>espí<$78><$20>rito de <$79><$20>luta!!』<end>
 
 //POINTER #13 @ $1D55E - STRING #13 @ $1D918
 
 #WRITE(Ptr, $1D55E)
 //『<$53><$20>霊<$98>魔<$10>を<$C3><$20>高めた!!』<end>
-<name> 「<$00><$20>ganho<$8D><$20>u po<$7B><$20>der<$A3><$20> espiritual!」<end>
+『<name><$00><$20>ganhou<$8D><$20> poder<$7B><$20> espi<$A3><$20>ritual!』<end>
 
 //POINTER #14 @ $1D560 - STRING #14 @ $1D934
 
 #WRITE(Ptr, $1D560)
 //『<$4C><$20>命<$9A><$20>中<$9B><$20>率が ア~ップ!』<end>
-A taxa de acerto subiu!<end>
+Narrador 『A taxa de acerto subiu!』<end>
 
 //POINTER #15 @ $1D562 - STRING #15 @ $1D954
 
 #WRITE(Ptr, $1D562)
 //『<$C5><$20>全<$26><$20>身に <$37><$20>闘<$0C><$20>気がみなぎる!!!』<end>
-<$98><$20>A en<$99><$20>ergia<$11><$20> de<$94><$20> luta enche o corpo todo!!!<end>
+『<$98><$20>A ene<$99><$20>rgia de<$11><$20> luta<$94><$20> enche o corpo!!!』<end>
 
 //POINTER #16 @ $1D564 - STRING #16 @ $1D97E
 
 #WRITE(Ptr, $1D564)
 //『<$15><$20>攻<$12><$20>撃をかわしやすくなった!』<end>
-<$0C><$20>Fi<$40><$20>cou mais fácil esquivar!<end>
+Narrador 『<$0C><$20>Fic<$40><$20>ou mais fácil esquivar!』<end>
 
 //POINTER #17 @ $1D566 - STRING #17 @ $1D9A2
 
 #WRITE(Ptr, $1D566)
 //『<$94><$20>防<$95><$20>御<$98>力<$10>が ア~ップ!』<end>
-<name> 「<$8B><$20>aum<$8C><$20>ento<$8D><$20>u a d<$7B><$20>efesa!!」<end>
+『<name><$8B><$20>aume<$8C><$20>ntou a<$8D><$20> defes<$7B><$20>a!!』<end>
 
 //POINTER #18 @ $1D568 - STRING #18 @ $1D9C2
 
 #WRITE(Ptr, $1D568)
 //『ジャンプ<$98>力<$10>が ア~ップ!』<end>
-<name> 「aumentou o poder de salto!」<end>
+『<name>aumentou o poder de salto!』<end>
 
 //POINTER #19 @ $1D56A - STRING #19 @ $1D9E2
 
 #WRITE(Ptr, $1D56A)
 //『パンチ<$98>力<$10>が ア~ップ!!』<end>
-<name> 「aumentou o <$7A><$20>poder <$7B><$20>do soco!」<end>
+『<name>aumentou o <$7A><$20>poder <$7B><$20>do soco!』<end>
 
 //POINTER #20 @ $1D56C - STRING #20 @ $1DA02
 
 #WRITE(Ptr, $1D56C)
 //『<$37><$20>闘<$0C><$20>気がうすれていく!!』<end>
-<name> 「<$11><$20>per<$94><$20>de a energia de luta!」<end>
+『<name><$11><$20>perd<$94><$20>e a energia de luta!』<end>
 
 //POINTER #21 @ $1D56E - STRING #21 @ $1DA22
 
 #WRITE(Ptr, $1D56E)
 //『<$4C><$20>命<$9A><$20>中<$9B><$20>率が ダウ～ン!!』<end>
-<name> 「perdeu precisão!」<end>
+Narrador 『<name>perdeu precisão!』<end>
 
 //POINTER #22 @ $1D570 - STRING #22 @ $1DA44
 
 #WRITE(Ptr, $1D570)
 //『<$C5><$20>全<$26><$20>身から<$B7>力<$10>がぬけていく!!』<end>
-<name> 「<$98><$20>sente<$99><$20> as fo<$9A><$20>rças<$9B><$20> sumirem!」<end>
+『<name><$98><$20>sente <$99><$20>as forç<$9A><$20>as sum<$9B><$20>irem!』<end>
 
 //POINTER #23 @ $1D572 - STRING #23 @ $1DA6A
 
 #WRITE(Ptr, $1D572)
 //『<$B0><$20>技を<$41><$20>封じられている～～～～～～っ!!』<end>
-<name> 「<$9D><$20>técnic<$14><$20>as seladas~!!」<end>
+『<name><$9D><$20>técnica<$14><$20>s seladas~!!』<end>
 
 //POINTER #24 @ $1D574 - STRING #24 @ $1DA90
 
 #WRITE(Ptr, $1D574)
 //『<$B0><$20>技が<$41><$20>封じられた!!』<end>
-<name> 「<$9D><$20>teve a<$14><$20>s técnicas seladas!」<end>
+『<name><$9D><$20>teve as<$14><$20> técnicas seladas!』<end>
 
 //POINTER #25 @ $1D576 - STRING #25 @ $1DAAC
 
 #WRITE(Ptr, $1D576)
 //『<$53><$20>霊<$12><$20>撃が<$41><$20>封じられた!!』<end>
-<name> 「<$00><$20>ataqu<$40><$20>e espiritual selado!」<end>
+『<name><$00><$20>ataque<$40><$20> espiritual selado!』<end>
 
 //POINTER #26 @ $1D578 - STRING #26 @ $1DACC
 
 #WRITE(Ptr, $1D578)
 //『<$53><$20>霊<$12><$20>撃を<$41><$20>封じられている～～～～～～っ!!』<end>
-<name> 「<$00><$20>sem a<$40><$20>taque espiritual~!」<end>
+『<name><$00><$20>sem at<$40><$20>aque espiritual~!』<end>
 
 //POINTER #27 @ $1D57A - STRING #27 @ $1DAF6
 
 #WRITE(Ptr, $1D57A)
 //『<$4D><$20>妖<$98>魔<$10>を<$C3><$20>高めた!!』<end>
-<name> 「<$93><$20>gan<$8D><$20>hou <$7B><$20>pod<$A3><$20>er demoníaco!」<end>
+『<name><$93><$20>ganh<$8D><$20>ou pod<$7B><$20>er de<$A3><$20>moníaco!』<end>
 
 //POINTER #28 @ $1D57C - STRING #28 @ $1DB12
 
 #WRITE(Ptr, $1D57C)
 //『<$2F><$20>体<$98>魔<$10>が<$CC><$20>大きく<$09><$20>回<$99><$20>復したぁ－－!!』<end>
-<name> 「<$86><$20>recup<$8D><$20>erou<$7B><$20> mu<$A1><$20>ita <$A2><$20>vida!!」<end>
+『<name><$86><$20>recup<$8D><$20>erou<$7B><$20> mu<$A1><$20>ita v<$A2><$20>ida!!』<end>
 
 //POINTER #29 @ $1D57E - STRING #29 @ $1DB40
 
 #WRITE(Ptr, $1D57E)
 //『つきぬけたぁ－－』<end>
-Atravessou o golpe do oponente!<end>
+『Atravessou o golpe do oponente!』<end>
 
 //POINTER #30 @ $1D580 - STRING #30 @ $1DB56
 
 #WRITE(Ptr, $1D580)
 //『しかし、<$03><$20>威<$98>魔<$10>は<$06><$20>弱まったぁ~!!』<end>
-Mas o poder do golpe enfraqueceu~!!<end>
+『Mas o <$BD><$20>poder <$8D><$20>do gol<$7B><$20>pe enfraqueceu~!!』<end>
 
 //POINTER #31 @ $1D582 - STRING #31 @ $1DB80
 
 #WRITE(Ptr, $1D582)
 //『<$AB><$20>打ち<$17><$20>消し<$AC><$20>合ったぁぁ－－!!』<end>
-Os dois golpes se anularam!!<end>
+Narrador 『Os dois golpes se anularam!!』<end>
 
 //POINTER #32 @ $1D584 - STRING #32 @ $1DBA6
 
@@ -209,61 +209,61 @@ Os dois golpes se anularam!!<end>
 
 #WRITE(Ptr, $1D586)
 //『<$AB><$20>打ち<$17><$20>消したぁぁ~!!』<end>
-<name2> 「teve o golpe anulado!!」<end>
+『<name2>teve o golpe anulado!!』<end>
 
 //POINTER #34 @ $1D588 - STRING #34 @ $1DBD6
 
 #WRITE(Ptr, $1D588)
 //『<$53><$20>霊<$0C><$20>気が みなぎった~ッ!!!』<end>
-<name> 「<$00><$20>emana<$94><$20> energia espiritual!」<end>
+『<name><$00><$20>emana <$94><$20>energia espiritual!』<end>
 
 //POINTER #35 @ $1D58A - STRING #35 @ $1DBFC
 
 #WRITE(Ptr, $1D58A)
 //『<$2F><$20>体<$2C><$20>勢を<$A1><$20>完<$C5><$20>全にたてなおした－－ッ!!!』<end>
-<name> 「recuperou toda a postura!!」<end>
+『<name>recuperou <$C0><$20>toda <$98><$20>a post<$C1><$20>ura<$B8><$20>!!』<end>
 
 //POINTER #36 @ $1D58C - STRING #36 @ $1DC2E
 
 #WRITE(Ptr, $1D58C)
 //『あいての<$53><$20>霊<$0C><$20>気を<$0D><$20>吸<$23><$20>収した~っ!!』<end>
-<name> 「<$00><$20>absor<$94><$20>ve<$95><$20>u a e<$96><$20>nergia dele!」<end>
+『<name><$00><$20>absorv<$94><$20>eu a <$95><$20>energi<$96><$20>a dele!』<end>
 
 //POINTER #37 @ $1D58E - STRING #37 @ $1DC5A
 
 #WRITE(Ptr, $1D58E)
 //『かすったぁ～～～～～～!!』<end>
-<name> 「foi atingido de raspão!!」<end>
+『<name>foi atingido de raspão!!』<end>
 
 //POINTER #38 @ $1D590 - STRING #38 @ $1DC72
 
 #WRITE(Ptr, $1D590)
 //『<$53><$20>霊<$0C><$20>気が <$A8><$20>満ちていく!!』<end>
-<name> 「<$00><$20>tem e<$94><$20>ner<$7D><$20>gia espiritual!」<end>
+『<name><$00><$20>tem en<$94><$20>ergi<$7D><$20>a espiritual!』<end>
 
 //POINTER #39 @ $1D592 - STRING #39 @ $1DC94
 
 #WRITE(Ptr, $1D592)
 //『<$4D><$20>妖<$0C><$20>気が みなぎった－－ッ!!!』<end>
-<name> 「<$93><$20>ema<$94><$20>na energia demoníaca!」<end>
+『<name><$93><$20>eman<$94><$20>a energia demoníaca!』<end>
 
 //POINTER #40 @ $1D594 - STRING #40 @ $1DCBC
 
 #WRITE(Ptr, $1D594)
 //『<$4D><$20>妖<$0C><$20>気が <$A8><$20>満ちていく!!』<end>
-<name> 「<$93><$20>tem<$94><$20> en<$7D><$20>ergia demoníaca!」<end>
+『<name><$93><$20>tem e<$94><$20>nerg<$7D><$20>ia demoníaca!』<end>
 
 //POINTER #41 @ $1D596 - STRING #41 @ $1DCDE
 
 #WRITE(Ptr, $1D596)
 //『<$2F><$20>体<$2C><$20>勢をたてなおした!!』<end>
-<name> 「recuperou a postura!」<end>
+『<name>recuperou a postura!』<end>
 
 //POINTER #42 @ $1D598 - STRING #42 @ $1DCFE
 
 #WRITE(Ptr, $1D598)
 //『<$15><$20>攻<$12><$20>撃をはねかえした!!』<end>
-<name> 「<$0C><$20>reb<$40><$20>ateu o ataque!!」<end>
+Narrador 『<name><$0C><$20>reba<$40><$20>teu o ataque!!』<end>
 
 //POINTER #43 @ $1D59A - STRING #43 @ $1DD1E
 
@@ -275,7 +275,7 @@ Yūsuke 「Aguenta essa!」<end>
 
 #WRITE(Ptr, $1D59C)
 //幽助 ｢<$53><$20>霊<$15><$20>光<$32><$20>弾!!」<end>
-Yūsuke 「<$00><$20>Bala <$0C><$20>de <$0D><$20>Luz Espiritual!!」<end>
+Yūsuke 「<$00><$20>Bala de<$0C><$20> Lu<$0D><$20>z Espiritual!!」<end>
 
 //POINTER #45 @ $1D59E - STRING #45 @ $1DD54
 
@@ -287,7 +287,7 @@ Yūsuke 「Uraaa!」<end>
 
 #WRITE(Ptr, $1D5A0)
 //幽助 ｢<$01><$20>霊<$00><$20>丸－－－!!!」<end>
-Yūsuke 「<$00><$20>Rei <$01><$20>Gan---!!」<end>
+Yūsuke 「<$00><$20>Rei Ga<$01><$20>n---!!」<end>
 
 //POINTER #47 @ $1D5A2 - STRING #47 @ $1DD8C
 
@@ -353,7 +353,7 @@ Kuwabara 「Curva~~~~!!」<end>
 
 #WRITE(Ptr, $1D5B6)
 //桑原 ｢<$A0><$20>二<$37><$20>刀<$51><$20>流!!!」<end>
-Kuwabara 「<$10><$20>Es<$11><$20>til<$07><$20>o Duas Espadas!!!」<end>
+Kuwabara 「<$10><$20>Est<$11><$20>ilo D<$07><$20>uas Espadas!!!」<end>
 
 //POINTER #58 @ $1D5B8 - STRING #58 @ $1DEF8
 
@@ -377,37 +377,37 @@ Kuwabara 「<$08><$20>Espada, vem!!」<end>
 
 #WRITE(Ptr, $1D5BE)
 //『<$AC><$20><$09><$11><$0F><$20>空<$A1><$20>間を<$0C><$20>斬り<$B2><$20>裂いた!!』<end>
-O espaço dimensional foi cortado!!<end>
+『O espaço dimensional foi cortado!!』<end>
 
 //POINTER #62 @ $1D5C0 - STRING #62 @ $1DF76
 
 #WRITE(Ptr, $1D5C0)
 //桑原 ｢<$1A><$20>次<$13><$20>元<$37><$20>刀!!」<end>
-Kuwabara 「<$12><$20>Es<$13><$20>pada<$1D><$20> Dimensional!」<end>
+Kuwabara 「<$12><$20>Esp<$13><$20>ada <$1D><$20>Dimensional!」<end>
 
 //POINTER #63 @ $1D5C2 - STRING #63 @ $1DF92
 
 #WRITE(Ptr, $1D5C2)
 //『<$25><$20>食<$4D><$20>妖<$25><$20>植<$44><$20>物を<$24><$20>召<$A1><$20>喚した!』<end>
-Kurama <$7E><$20>「inv<$7F><$20>ocou <$80><$20>uma p<$81><$20>lanta <$82><$20>devo<$83><$20>rado<$84><$20>ra!」<end>
+『<$7E><$20>Kura<$7F><$20>ma inv<$80><$20>ocou<$81><$20> uma <$82><$20>plant<$83><$20>a de<$84><$20>voradora』<end>
 
 //POINTER #64 @ $1D5C4 - STRING #64 @ $1DFB8
 
 #WRITE(Ptr, $1D5C4)
 //蔵馬 ｢<$8F><$20>薇<$90><$20>薔<$91><$20>棘<$92><$20>鞭<$93><$20>刃!!」<end>
-Kurama 「<$19><$20>Chico<$1A><$20>te de Rosas!!」<end>
+Kurama 「<$19><$20>Chicote<$1A><$20> de Rosas!!」<end>
 
 //POINTER #65 @ $1D5C6 - STRING #65 @ $1DFDC
 
 #WRITE(Ptr, $1D5C6)
 //蔵馬 ｢<$41><$20>風<$08><$20>華<$04><$20>円<$43><$20>舞<$2A><$20>陣 !!」<end>
-Kurama 「<$14><$20>Dan<$15><$20>ça<$16><$20> da<$17><$20>s F<$18><$20>lores ao Vento!!」<end>
+Kurama 「<$14><$20>Dan<$15><$20>ça d<$16><$20>as <$17><$20>Flor<$18><$20>es ao Vento!!」<end>
 
 //POINTER #66 @ $1D5C8 - STRING #66 @ $1E002
 
 #WRITE(Ptr, $1D5C8)
 //『<$4A><$20>魔<$09><$20>界のオジギソウを<$24><$20>召<$A1><$20>喚した!!』<end>
-<name> 「<$2A><$20>inv<$A1><$20>ocou<$83><$20> a mi<$84><$20>mosa do Makai!!」<end>
+『<name><$2A><$20>invo<$A1><$20>cou a <$83><$20>mimos<$84><$20>a do Makai!!』<end>
 
 //POINTER #67 @ $1D5CA - STRING #67 @ $1E02E
 
@@ -419,7 +419,7 @@ Kurama 「Toda rosa bela tem espinhos...」<end>
 
 #WRITE(Ptr, $1D5CC)
 //『<$A3><$20>体から シマネキ<$2E><$20>草が!』<end>
-A erva Shimaneki grudou em <name>!<end>
+『Erva Shimaneki grudou em <name>』<end>
 
 //POINTER #69 @ $1D5CE - STRING #69 @ $1E082
 
@@ -449,7 +449,7 @@ Kurama 「Haaa!!」<end>
 
 #WRITE(Ptr, $1D5D6)
 //『<$A3><$20>体の<$CD><$20>中で シマネキ<$2E><$20>草がめばえる!』<end>
-A erva Shimaneki brota dentro do corpo<end>
+『A erva Shimaneki brota no corpo』<end>
 
 //POINTER #74 @ $1D5D8 - STRING #74 @ $1E112
 
@@ -479,7 +479,7 @@ Hiei 「Receba isto!」<end>
 
 #WRITE(Ptr, $1D5E0)
 //飛影 ｢<$27><$20>邪<$05><$20>王<$04><$20>炎<$1D><$20>殺<$11><$20>剣!!」<end>
-Hiei 「<$02><$20>Esp<$04><$20>ada da<$05><$20>s Ch<$08><$20>amas Mortais!!」<end>
+Hiei 「<$02><$20>Espad<$04><$20>a das<$05><$20> Cha<$08><$20>mas Mortais!!」<end>
 
 //POINTER #79 @ $1D5E2 - STRING #79 @ $1E1A0
 
@@ -491,13 +491,13 @@ Hiei 「<$78><$20>Morra...」<end>
 
 #WRITE(Ptr, $1D5E4)
 //飛影 ｢<$27><$20>邪<$05><$20>王<$04><$20>炎<$1D><$20>殺<$16><$20>黒<$51><$20>龍<$3B><$20>波!!」<end>
-Hiei 「<$02><$20>Dra<$04><$20>gão Ne<$05><$20>gro <$06><$20>das Ch<$07><$20>ama<$03><$20>s Mortais」<end>
+Hiei 「<$02><$20>Dragã<$04><$20>o Neg<$05><$20>ro das<$06><$20> Chama<$07><$20>s Mo<$03><$20>rtais」<end>
 
 //POINTER #81 @ $1D5E6 - STRING #81 @ $1E1E2
 
 #WRITE(Ptr, $1D5E6)
 //飛影 ｢<$27><$20>邪<$05><$20>王<$04><$20>炎<$1D><$20>殺<$55><$20>煉<$19><$20>獄<$24><$20>焦!!」<end>
-Hiei 「<$02><$20>Purg<$04><$20>atóri<$05><$20>o da<$09><$20>s Cham<$0A><$20>as <$0B><$20>Mortais!!」<end>
+Hiei 「<$02><$20>Purga<$04><$20>tório<$05><$20> das C<$09><$20>hamas<$0A><$20> Mor<$0B><$20>tais!!」<end>
 
 //POINTER #82 @ $1D5E8 - STRING #82 @ $1E20E
 
@@ -557,7 +557,7 @@ Hiei 「Hmpf...」<end>
 
 #WRITE(Ptr, $1D5FA)
 //飛影 ｢<$27><$20>邪<$05><$20>王<$04><$20>炎<$1D><$20>殺．．．．<end>
-Hiei 「<$02><$20>Cha<$04><$20>mas Mo<$05><$20>rtais...」<end>
+Hiei 「<$02><$20>Chama<$04><$20>s Mor<$05><$20>tais...」<end>
 
 //POINTER #92 @ $1D5FC - STRING #92 @ $1E32A
 
@@ -575,7 +575,7 @@ Hiei 「<$02><$20>Chamas Mortais」<end>
 
 #WRITE(Ptr, $1D600)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$53><$20>霊<$D7><$10><$15><$20>光<$D7><$10><$32><$20>弾<end>
-             <$00><$20>Bala <$0C><$20>de <$0D><$20>Luz Espiritual<end>
+             <$00><$20>Bala de<$0C><$20> Lu<$0D><$20>z Espiritual<end>
 
 //POINTER #95 @ $1D602 - STRING #95 @ $1E382
 
@@ -587,13 +587,13 @@ Genkai 「Haaa---!」<end>
 
 #WRITE(Ptr, $1D604)
 //幻海 ｢<$53><$20>霊<$15><$20>光<$0E><$20>鏡<$3D><$20>反<$24><$20>衝!!」<end>
-Genkai 「<$00><$20>Espe<$0C><$20>lho <$2C><$20>de L<$2D><$20>uz E<$0B><$20>spiritual!!」<end>
+Genkai 「<$00><$20>Espelh<$0C><$20>o de <$2C><$20>Luz <$2D><$20>Espi<$0B><$20>ritual!!」<end>
 
 //POINTER #97 @ $1D606 - STRING #97 @ $1E3C2
 
 #WRITE(Ptr, $1D606)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$53><$20>霊<$D7><$10><$0B><$20>丸<end>
-                      <$00><$20>Rei <$01><$20>Gan<end>
+                      <$00><$20>Rei Ga<$01><$20>n<end>
 
 //POINTER #98 @ $1D608 - STRING #98 @ $1E3DA
 
@@ -605,7 +605,7 @@ Genkai 「<$0C><$20>Luz!」<end>
 
 #WRITE(Ptr, $1D60A)
 //幻海 ｢<$53><$20>霊<$0B><$20>丸!!」<end>
-Genkai 「<$00><$20>Rei <$01><$20>Gan!!」<end>
+Genkai 「<$00><$20>Rei Ga<$01><$20>n!!」<end>
 
 //POINTER #100 @ $1D60C - STRING #100 @ $1E402
 
@@ -617,13 +617,13 @@ Genkai 「<$94><$20>Isso me desagrada...!!」<end>
 
 #WRITE(Ptr, $1D60E)
 //幻海 ｢<$15><$20>光! <$29><$20>浄!!<end>
-Genkai 「<$0C><$20>Luz<$0E><$20>! Pureza!!」<end>
+Genkai 「<$0C><$20>Luz!<$0E><$20> Pureza!!」<end>
 
 //POINTER #102 @ $1D610 - STRING #102 @ $1E440
 
 #WRITE(Ptr, $1D610)
 //幻海 ｢<$15><$20>光! <$29><$20>浄!! <$1C><$20>裁!!!」<end>
-Genkai 「<$0C><$20>Luz<$0E><$20>! <$0F><$20>Pureza!! Juízo!!!」<end>
+Genkai 「<$0C><$20>Luz!<$0E><$20> Pur<$0F><$20>eza!! Juízo!!!」<end>
 
 //POINTER #103 @ $1D612 - STRING #103 @ $1E468
 
@@ -749,19 +749,19 @@ Tōya 「Tome isto!!」<end>
 
 #WRITE(Ptr, $1D63A)
 //凍矢 ｢<$28><$20>呪<$40><$20>氷<$37><$20>凍<$10><$20>結<$2A><$20>陣!!」<end>
-Tōya 「<$21><$20>Ge<$1C><$20>lo Ma<$1D><$20>ldi<$1F><$20>to: Fo<$18><$20>rmação Gélida!!」<end>
+Tōya 「<$21><$20>Ge<$1C><$20>lo Ma<$1D><$20>ldi<$1F><$20>to: For<$18><$20>mação Gélida!!」<end>
 
 //POINTER #124 @ $1D63C - STRING #124 @ $1E6B4
 
 #WRITE(Ptr, $1D63C)
 //凍矢 ｢<$28><$20>呪<$40><$20>氷<$2E><$20>走<$4D><$20>妖<$3B><$20>波!!」<end>
-Tōya 「<$21><$20>Ge<$1C><$20>lo Ma<$3B><$20>ldi<$3E><$20>to:<$03><$20> Onda Veloz!!」<end>
+Tōya 「<$21><$20>Ge<$1C><$20>lo Ma<$3B><$20>ldit<$3E><$20>o: <$03><$20>Onda Veloz!!」<end>
 
 //POINTER #125 @ $1D63E - STRING #125 @ $1E6D8
 
 #WRITE(Ptr, $1D63E)
 //凍矢 ｢<$28><$20>呪<$40><$20>氷<$15><$20>光<$24><$20>晶<$48><$20>壁!!」<end>
-Tōya 「<$21><$20>Ge<$1C><$20>lo Ma<$0C><$20>ldi<$0B><$20>to: <$22><$20>Muro de Cristal!!」<end>
+Tōya 「<$21><$20>Ge<$1C><$20>lo Mal<$0C><$20>dit<$0B><$20>o: Mu<$22><$20>ro de Cristal!!」<end>
 
 //POINTER #126 @ $1D640 - STRING #126 @ $1E6FC
 
@@ -791,13 +791,13 @@ Tōya 「Hunf!」<end>
 
 #WRITE(Ptr, $1D648)
 //『<$2B><$20>氷の<$4D><$20>妖<$0C><$20>気が あたりにひりがる!!』<end>
-<$9C><$20>A en<$93><$20>erg<$94><$20>ia demoníaca gélida se espalhou!!<end>
+『<$9C><$20>A ene<$93><$20>rgia<$94><$20> demoníaca gélida se espalha!』<end>
 
 //POINTER #131 @ $1D64A - STRING #131 @ $1E7A6
 
 #WRITE(Ptr, $1D64A)
 //『<$0A><$20>風をあやつり <$AB><$20>浮き<$AC><$20>上がった!』<end>
-Jin controla o vento e flutua!<end>
+『Jin controla o vento e flutua!』<end>
 
 //POINTER #132 @ $1D64C - STRING #132 @ $1E7CE
 
@@ -822,7 +822,7 @@ Jin 「Lá vou eu~!」<end>
 #WRITE(Ptr, $1D654)
 #WRITE(Ptr, $1D652)
 //陣 ｢<$22><$20>修<$4E><$20>羅<$2D><$20>旋<$47><$20>風<$11><$20>拳!!」<end>
-Jin 「<$23><$20>Pun<$24><$20>ho <$25><$20>do Fu<$26><$20>ra<$08><$20>cão Asura!」<end>
+Jin 「<$23><$20>Pun<$24><$20>ho do<$25><$20> Fur<$26><$20>ac<$08><$20>ão Asura!」<end>
 
 //POINTER #136 @ $1D654 - STRING #136 @ $1E83C
 
@@ -833,19 +833,19 @@ Jin 「<$23><$20>Pun<$24><$20>ho <$25><$20>do Fu<$26><$20>ra<$08><$20>cão Asura
 
 #WRITE(Ptr, $1D656)
 //陣 ｢ダブル<$2D><$20>旋<$47><$20>風<$11><$20>拳!!!」<end>
-Jin 「<$49><$20>Punho<$4A><$20> do<$25><$20> Fur<$26><$20>ac<$08><$20>ão Duplo!」<end>
+Jin 「<$49><$20>Punho<$4A><$20> do <$25><$20>Fura<$26><$20>cão<$08><$20> Duplo!」<end>
 
 //POINTER #138 @ $1D658 - STRING #138 @ $1E880
 
 #WRITE(Ptr, $1D658)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$22><$20>修<$4E><$20>羅<$36><$20>突<$47><$20>風<$12><$20>撃<end>
-Jin 「<$23><$20>Gol<$24><$20>pe d<$73><$20>a Raj<$74><$20>ada As<$75><$20>ura」<end>
+Jin 「<$23><$20>Gol<$24><$20>pe da<$73><$20> Rajad<$74><$20>a Asu<$75><$20>ra」<end>
 
 //POINTER #139 @ $1D65A - STRING #139 @ $1E8A0
 
 #WRITE(Ptr, $1D65A)
 //陣 ｢<$22><$20>修<$4E><$20>羅<$54><$20>烈<$47><$20>風<$1F><$20>斬!!」<end>
-Jin 「<$23><$20>Cor<$24><$20>te <$48><$20>do Ven<$26><$20>da<$3F><$20>val Asura!」<end>
+Jin 「<$23><$20>Cor<$24><$20>te do<$48><$20> Vend<$26><$20>ava<$3F><$20>l Asura!」<end>
 
 //POINTER #140 @ $1D65C - STRING #140 @ $1E8C2
 
@@ -887,7 +887,7 @@ Shishiwakamaru 「Receba isto!!」<end>
 
 #WRITE(Ptr, $1D668)
 //死々若丸 ｢<$07><$20>怨<$14><$20>呼<$24><$20>障<$3F><$20>縛<$48><$20>壁!!」<end>
-Shishiwakamaru 「<$27><$20>Mu<$28><$20>ral<$0B><$20>ha do<$29><$20> Ranco<$22><$20>r!」<end>
+Shishiwakamaru 「<$27><$20>Mu<$28><$20>ral<$0B><$20>ha do <$29><$20>Rancor<$22><$20>!」<end>
 
 //POINTER #147 @ $1D66A - STRING #147 @ $1E992
 
@@ -911,13 +911,13 @@ Shishiwakamaru 「<$2A><$20>Es<$4B><$20>pada d<$2B><$20>o La<$3F><$20>ment<$08><
 
 #WRITE(Ptr, $1D670)
 //死々若丸 ｢<$3F><$20>爆<$35><$20>吐<$39><$20>髑<$25><$20>触<$2E><$20>葬!!!」<end>
-Shishiwakamaru 「<$4D><$20>Fu<$4E><$20>neral <$4F><$20>da Cav<$50><$20>eira!」<end>
+Shishiwakamaru 「<$4D><$20>Fu<$4E><$20>neral da<$4F><$20> Cave<$50><$20>ira!」<end>
 
 //POINTER #151 @ $1D672 - STRING #151 @ $1EA28
 
 #WRITE(Ptr, $1D672)
 //死々若丸 ｢<$3F><$20>爆<$35><$20>吐<$07><$20>怨<$3F><$20>縛<$28><$20>呪!!」<end>
-Shishiwakamaru 「<$4D><$20>Ma<$27><$20>ldiç<$29><$20>ão do<$3C><$20> Rancor!」<end>
+Shishiwakamaru 「<$4D><$20>Mald<$27><$20>ição<$29><$20> do Ranc<$3C><$20>or!」<end>
 
 //POINTER #152 @ $1D674 - STRING #152 @ $1EA50
 
@@ -953,7 +953,7 @@ Shishiwakamaru 「Hunf!」<end>
 
 #WRITE(Ptr, $1D67E)
 //『<$20><$20>死の<$4D><$20>妖<$0C><$20>気で あたりをつつんだ!!』<end>
-A energia da morte envolveu o ambiente!!<end>
+『A energia da morte envolveu o local!!』<end>
 
 //POINTER #158 @ $1D680 - STRING #158 @ $1EB14
 
@@ -983,13 +983,13 @@ Karasu 「<$6C><$20>Bomba<$6D><$20> de Luz!」<end>
 
 #WRITE(Ptr, $1D688)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$88><$20>地<$89><$20>下<$8A><$20>爆<$8B><$20>弾<end>
-Karasu 「<$A6><$20>Bo<$A7><$20>mba <$A8><$20>Sub<$A9><$20>terrânea!」<end>
+Karasu 「<$A6><$20>Bom<$A7><$20>ba Su<$A8><$20>bte<$A9><$20>rrânea!」<end>
 
 //POINTER #163 @ $1D68A - STRING #163 @ $1EB9C
 
 #WRITE(Ptr, $1D68A)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$7A><$20>追<$7B><$20>跡<$7C><$20>爆<$7D><$20>弾<end>
-Karasu 「<$AA><$20>Bomba<$AB><$20> Perseguidora!」<end>
+Karasu 「<$AA><$20>Bomba P<$AB><$20>erseguidora!」<end>
 
 //POINTER #164 @ $1D68C - STRING #164 @ $1EBB8
 
@@ -1049,7 +1049,7 @@ Karasu 「Já fez o tratamento no cabelo?」<end>
 
 #WRITE(Ptr, $1D69E)
 //『<$57><$20>支<$58><$20>配<$59><$20>者<$5A><$20>機<$5B><$20>雷が とりついた!!』<end>
-A Mina do Dominador grudou no corpo!!<end>
+『A Mina do Dominador grudou no corpo!!』<end>
 
 //POINTER #174 @ $1D6A0 - STRING #174 @ $1ECF0
 
@@ -1097,19 +1097,19 @@ Bui 「Hmm!!」<end>
 
 #WRITE(Ptr, $1D6AE)
 //武威 ｢<$4A><$20>魔<$37><$20>闘<$2D><$20>戦<$46><$20>斧!!!」<end>
-Bui 「<$60><$20>Machad<$64><$20>o de <$65><$20>Guerra Demoníaco!!」<end>
+Bui 「<$60><$20>Machado<$64><$20> de Gu<$65><$20>erra Demoníaco!!」<end>
 
 //POINTER #182 @ $1D6B0 - STRING #182 @ $1EDD2
 
 #WRITE(Ptr, $1D6B0)
 //武威 ｢<$4A><$20>魔<$37><$20>闘<$52><$20>裂<$2D><$20>閃<$24><$20>掌!!!」<end>
-Bui 「<$60><$20>Palma <$66><$20>Cortan<$67><$20>te De<$68><$20>moníaca!!」<end>
+Bui 「<$60><$20>Palma Co<$66><$20>rtant<$67><$20>e Dem<$68><$20>oníaca!!」<end>
 
 //POINTER #183 @ $1D6B2 - STRING #183 @ $1EDF8
 
 #WRITE(Ptr, $1D6B2)
 //武威 ｢<$4A><$20>魔<$37><$20>闘<$24><$20>翔<$1F><$20>斬<$46><$20>斧!!!」<end>
-Bui 「<$60><$20>Machad<$61><$20>o Voa<$62><$20>dor De<$63><$20>moníaco!!」<end>
+Bui 「<$60><$20>Machado<$61><$20> Voador<$62><$20> Demo<$63><$20>níaco!!」<end>
 
 //POINTER #184 @ $1D6B4 - STRING #184 @ $1EE1E
 
@@ -1193,7 +1193,7 @@ Toguro Mais Velho 「<$78><$20>Kukuku... Morra!」<end>
 
 #WRITE(Ptr, $1D6CE)
 //戸愚呂 ｢おれの<$26><$20>心<$A4><$20>臓がどこか わかるまい」<end>
-Toguro 「<$8E><$20>Não va<$8F><$20>i achar meu coração né?」<end>
+Toguro 「Não vai achar meu <$8E><$20>coraçã<$8F><$20>o né?」<end>
 
 //POINTER #198 @ $1D6D0 - STRING #198 @ $1EFBE
 
@@ -1229,25 +1229,25 @@ Volto ao normal quantas vezes quiser...<end>
 
 #WRITE(Ptr, $1D6DA)
 //戸愚呂 ｢くくく．．おれの<$26><$20>心<$A4><$20>臓は ここだぞ．．」<end>
-Toguro 「<$8E><$20>Kukuku<$8F><$20>... Meu coração é aqui...」<end>
+Toguro 「Kukuku... Meu <$8E><$20>coraç<$8F><$20>ão está aqui...」<end>
 
 //POINTER #204 @ $1D6DC - STRING #204 @ $1F090
 
 #WRITE(Ptr, $1D6DC)
 //『<$4D><$20>妖<$0C><$20>気を<$0D><$20>吸<$23><$20>収した!!』<end>
-<$93><$20>To<$94><$20>gur<$95><$20>o ab<$96><$20>sorveu energia demoníaca!<end>
+『<$93><$20>Tog<$94><$20>uro <$95><$20>absorv<$96><$20>eu energia demoníaca!』<end>
 
 //POINTER #205 @ $1D6DE - STRING #205 @ $1F0B0
 
 #WRITE(Ptr, $1D6DE)
 //『<$4D><$20>妖<$0C><$20>気を<$49><$20>放<$21><$20>射した!!』<end>
-<$93><$20>To<$94><$20>gur<$97><$20>o l<$8A><$20>iberou energia demoníaca!<end>
+『<$93><$20>Tog<$94><$20>uro <$97><$20>liber<$8A><$20>ou energia demoníaca!』<end>
 
 //POINTER #206 @ $1D6E0 - STRING #206 @ $1F0D0
 
 #WRITE(Ptr, $1D6E0)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$3F><$20>爆<$3A><$20>肉<$15><$20>鋼<$2F><$20>体<end>
-            <$20><$20>Corpo<$85><$20> de Aç<$0C><$20>o <$86><$20>Explosivo<end>
+            <$20><$20>Corpo<$85><$20> de Aç<$0C><$20>o E<$86><$20>xplosivo<end>
 
 //POINTER #207 @ $1D6E2 - STRING #207 @ $1F0EC
 
@@ -1319,7 +1319,7 @@ Toguro 「80%!」<end>
 
 #WRITE(Ptr, $1D6F8)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$22><$20>手<$D7><$10><$37><$20>刀<end>
-                    <$B4><$20>Golp<$11><$20>e de Mão<end>
+                    <$B4><$20>Golpe <$11><$20>de Mão<end>
 
 //POINTER #219 @ $1D6FA - STRING #219 @ $1F240
 
@@ -1439,7 +1439,7 @@ Kamiya 「Uoo...!!」<end>
 
 #WRITE(Ptr, $1D720)
 //刃霧 ｢<$20><$20>死<$C9><$20>紋<$28><$20>十<$97><$20>字<$3D><$20>班!!!」<end>
-Hagiri 「<$39><$20>Cruz<$41><$20> da <$42><$20>Mar<$12><$20>ca <$44><$20>da Morte!!」<end>
+Hagiri 「<$39><$20>Cruz<$41><$20> da <$42><$20>Marc<$12><$20>a d<$44><$20>a Morte!!」<end>
 
 //POINTER #239 @ $1D722 - STRING #239 @ $1F4DC
 
@@ -1535,19 +1535,19 @@ Itsuki 「<$2E><$20>Vão... <$2F><$20>Mãos Sombrias...」<end>
 
 #WRITE(Ptr, $1D740)
 //『<$9C><$20>裏<$9E><$20>男が<$0D><$20>吸<$23><$20>収した!』<end>
-Ura-otoko absorveu a energia!<end>
+『Ura-otoko absorveu a energia!』<end>
 
 //POINTER #255 @ $1D742 - STRING #255 @ $1F6A8
 
 #WRITE(Ptr, $1D742)
 //『<$9C><$20>裏<$9E><$20>男にのみこまれた!』<end>
-Foi engolido por Ura-otoko!<end>
+『Foi engolido por Ura-otoko!』<end>
 
 //POINTER #256 @ $1D744 - STRING #256 @ $1F6C6
 
 #WRITE(Ptr, $1D744)
 //ミノル ｢きみは、オレには<$08><$20>勝てない」<end>
-Minoru 「Você não pode me vencer.」<end>
+Minoru 「Você não pode me <$BE><$20>vencer.」<end>
 
 
 //POINTER #257 @ $1D746 - STRING #257 @ $1F6EE
@@ -1584,7 +1584,7 @@ Kazuya 「Tome isto!!」<end>
 
 #WRITE(Ptr, $1D750)
 //仙水 ｢<$52><$20>裂<$C2><$20>破<$41><$20>風<$2A><$20>陣<$11><$20>拳!」<end>
-Sensui 「<$32><$20>Punho <$33><$20>d<$14><$20>o T<$18><$20>urbi<$08><$20>lhão Cortante!」<end>
+Sensui 「<$32><$20>Punho <$33><$20>do <$14><$20>Turb<$18><$20>ilhã<$08><$20>o Cortante!」<end>
 
 //POINTER #263 @ $1D752 - STRING #263 @ $1F7C2
 
@@ -1596,19 +1596,19 @@ Sensui 「<$30><$20>Chute<$31><$20> Co<$34><$20>rtant<$35><$20>e Amar<$36><$20>e
 
 #WRITE(Ptr, $1D754)
 //仙水 ｢<$52><$20>裂<$23><$20>蹴<$15><$20>紅<$0D><$20>球<$3B><$20>波!」<end>
-Sensui 「<$30><$20>Chute<$31><$20> Co<$37><$20>rta<$38><$20>nte:<$03><$20> Onda Rubra!」<end>
+Sensui 「<$30><$20>Chute<$31><$20> Cor<$37><$20>tant<$38><$20>e: On<$03><$20>da Rubra!」<end>
 
 //POINTER #265 @ $1D756 - STRING #265 @ $1F806
 
 #WRITE(Ptr, $1D756)
 //仙水 ｢<$52><$20>裂<$23><$20>蹴<$20><$20>紫<$04><$20>炎<$32><$20>弾!」<end>
-Sensui 「<$30><$20>Chute<$31><$20> Co<$39><$20>rtan<$3A><$20>te:<$0D><$20> Chama Violeta」<end>
+Sensui 「<$30><$20>Chute<$31><$20> Cor<$39><$20>tant<$3A><$20>e: <$0D><$20>Chama Roxa!」<end>
 
 //POINTER #266 @ $1D758 - STRING #266 @ $1F828
 
 #WRITE(Ptr, $1D758)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$0C><$20>気 <$15><$20>硬 <$B4><$20>銃<end>
-                <$94><$20>Ar<$0C><$20>ma <$21><$20>de Ki Sólido<end>
+                <$94><$20>Ar<$0C><$20>ma de<$21><$20> Ki Sólido<end>
 
 //POINTER #267 @ $1D75A - STRING #267 @ $1F844
 
@@ -1626,7 +1626,7 @@ Sensui 「Tome isto!」<end>
 
 #WRITE(Ptr, $1D75E)
 //カズヤ ｢<$CB><$20>調<$20><$20>子にのんじゃねェ!!」<end>
-Kazuya 「Não se faça de esperto!!」<end>
+Kazuya 「Não se faça de <$BF><$20>espe<$78><$20>rto!!」<end>
 
 //POINTER #270 @ $1D760 - STRING #270 @ $1F8A0
 
@@ -1644,7 +1644,7 @@ Yōko 「Haaa---!」<end>
 
 #WRITE(Ptr, $1D764)
 //妖狐 ｢<$28><$20>樹<$B9><$20>霊<$4D><$20>妖<$1F><$20>斬<$11><$20>剣!」<end>
-Yōko 「<$3C><$20>Es<$3D><$20>pada<$3E><$20> do<$3F><$20> Esp<$08><$20>írito da Árvore!」<end>
+Yōko 「<$3C><$20>Espa<$3D><$20>da do<$3E><$20> Es<$3F><$20>píri<$08><$20>to da Árvore!」<end>
 
 //POINTER #273 @ $1D766 - STRING #273 @ $1F8F8
 
@@ -1662,7 +1662,7 @@ Yōko 「<$B9><$20>H<$84><$20>ora do castigo.」<end>
 
 #WRITE(Ptr, $1D76A)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$28><$20>樹<$4D><$20>妖<$20><$20>棘<$1F><$20>斬<$12><$20>撃<end>
-         <$3C><$20>Gol<$3E><$20>pe <$39><$20>de Es<$3F><$20>pinh<$40><$20>os Arbóreos<end>
+         <$3C><$20>Golpe<$3E><$20> de <$39><$20>Espi<$3F><$20>nhos<$40><$20> Arbóreos<end>
 
 //POINTER #276 @ $1D76C - STRING #276 @ $1F956
 
@@ -1686,10 +1686,10 @@ Mimosa 「Gyaaass!!」<end>
 
 #WRITE(Ptr, $1D772)
 //妖狐 ｢<$8F><$20>薇<$90><$20>薔<$91><$20>棘<$92><$20>鞭<$93><$20>刃!!」<end>
-Yōko 「<$19><$20>Chico<$1A><$20>te de Rosas!」<end>
+Yōko 「<$19><$20>Chicot<$1A><$20>e de Rosas!」<end>
 
 //POINTER #280 @ $1D774 - STRING #280 @ $1F9E6
 
 #WRITE(Ptr, $1D774)
 //『<$0D><$20>吸<$10><$20><$08><$11><$25><$20>植<$44><$20>物を<$24><$20>召<$A1><$20>喚した!!』<end>
-<$95><$20>Yōko<$80><$20> inv<$81><$20>ocou u<$82><$20>ma p<$83><$20>lanta<$84><$20> sugadora!!<end>
+『<$95><$20>Yōko<$80><$20> invoc<$81><$20>ou uma <$82><$20>planta<$83><$20> sugad<$84><$20>ora!!』<end>

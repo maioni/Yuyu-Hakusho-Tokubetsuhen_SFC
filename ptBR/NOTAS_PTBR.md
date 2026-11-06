@@ -247,3 +247,32 @@ Rótulos de menu gravados como tiles 4bpp, a redesenhar: `Narrator/square00..15_
 - Não feito (4.1): logotipo no estilo do original, chamas dos YU menores, "Relatório do Mundo Espiritual" menor, relevo em "EDIÇÃO ESPECIAL". Fundo mantido.
 - "Relatório do Mundo Espiritual" subido 1 linha de tiles (8 px) para sair do alcance das chamas dos YU.
 - Lista de golpes da apresentação (Opening/demo00_set.bin): "Urameshi Yūsuke" -> "Yūsuke Urameshi" (palavras trocadas e recentradas; cabeçalho [1]..[5] intacto). Demais demos (demo01-19) não alteradas.
+
+## v4.1 (batalha: conferência com o original)
+- #4 "Opa! <name> cambaleou!!": faltava espaço depois do nome (saía "Kuramacambaleou").
+- #265 (Sensui, 紫炎弾): faltava o "!" final; "Chama Violeta!" passava de 224 px (230), então virou "Chama Roxa!" (~208 px).
+- Romaji novo (furigana do original): "poder do golpe enfraqueceu" (i ryo ku), "toda a postura" (Kan zen / Tai sei), Minoru "vencer" (Ka), Kazuya "esperto" (chō shi). Peças $BD-$C1 (i, Ka, chō, Kan, Tai); Font/ruby_extra.bin agora com 76 peças.
+- Narração com `<name> 「...」`: no original é o narrador (sem nome, 『』); mantida como estava.
+- v4.1b: narrador da luta. As falas 『…』 do original (sem nome, dita pelo narrador) agora usam os glifos novos 『 』 (códigos $F2/$F3 em Font/font01.bin, largura 4 como 「 」; tbl: F200=『 F300=』) em vez de `Nome 「…」`. Ex.: 『Sensui foi atingido de raspão~~!!』. Onde cabe (pior caso: nome de 51 px, limite 224 px) vai o rótulo "Narrador 『…』" (13 linhas: #2,3,4,9,11,14,16,17,21,23,31,42,255); nas demais só 『…』.
+- v4.1c: glifos 『 』 refeitos (5 px, colchetes aninhados) com largura 6 (code.asm shift_font); rótulo "Narrador" em 12 linhas; #15 "enche o corpo!!!", #63 sem "!" final, #68 "Erva Shimaneki grudou em <name>!" por causa da largura.
+- Encurtadas por causa dos colchetes (passavam de 224 px): #73 "brota no corpo", #130 "se espalha!!", #157 "envolveu o local!!".
+- v4.1d: o código <name>/<name2> já deixa uma folga no fim do nome (a rotina soma de novo a largura da última letra), por isso `『<name> foi…』` saía com espaço duplo. Agora `『<name>foi…』` (inclui #4 "Opa! <name>cambaleou!!", que na v4.1 eu tinha "corrigido" por engano). Largura do nome no cálculo = nome + última letra (Kuwabara = 57 px). Rótulo "Narrador" agora em 10 linhas.
+- v4.1e: glifos 『 』 redesenhados a partir do original (colchetes duplos de 1 px, 6x12, largura 7 em shift_font). Romaji das falas 『…』 recolocado (as posições antigas foram calculadas com o layout `<name> 「`; com 『 o "Sho"/"kuyō" do Kurama se sobrepunham): peças reposicionadas sem sobreposição, com 1 tile de folga quando cabe. #68 sem "!" final e #130 "se espalha!" por largura.
+- v4.1f: cabeçalho "TIME Toguro" (name_table4: toguro ani / otouto / otouto 100%): os tiles 2D70-2D75 / 2D80-2D85 guardam o sufixo "(velho)/(novo)" em fonte minúscula, que na faixa do cabeçalho vira "lixo". Agora o cabeçalho usa só as 5 colunas de "Toguro" (resto $0000); a tela de seleção continua usando as 8 colunas com o sufixo.
+- Placas Ponta/Meio/Fim (sprites, paleta OBJ 14): na tela "Começa a próxima luta!" a paleta 14 tem azul=idx5, vermelho=idx6-8 e turquesa=idx9 (CGRAM do usuário). Os tiles atuais usam 6/7/8 na moldura (vermelho nessa tela); falta o CGRAM/OAM da tela de escolha ("Aperte A, X ou Y") para achar índices que funcionem nas duas.
+
+## v4.1g – placas Ponta/Meio/Fim
+Dump da paleta OBJ 14 nas duas telas de ordem: índices 6-8 mudam (azuis numa, vermelhos na outra). Só 1, 2, 5 e 9 são iguais. preset2.bin refeito só com esses índices (miolo teal=9, borda azul=5, contorno escuro=1).
+Tambem idx 3 -> 2 (3 e rosa/cinza conforme a tela; paleta confirmada por dump da tela 'Comeca a proxima luta').
+v4.1h: placas = tiles 32-43 (topo) + 48-59 (base); recolor so com idx 1,2,5,9; contorno superior do texto Meio/Fim recriado; tiles 0-31/64-87 restaurados.
+v4.1i: texto 'Fim' redesenhado (F menor).
+v4.1j: Cancelar sem caixa preta: square13_set.bin usa o corpo original do JP (tiles 76-79/92-95 do JP) e o texto Cancelar branco com sombra escura, sem fundo. Backup anterior: square13 da v4.1i.
+v4.3: Cancelar com contorno escuro completo (sombra so embaixo ficou ilegivel).
+v4.4: Toguro 'Meu coração está aqui...' (era 'é aqui').
+v4.5: ruby 'Shinzō' das 2 falas do Toguro movido para cima de 'coração' (estava sobre outra palavra).
+
+## v5.0
+Consolida 4.1g–4.5: placas Ponta/Meio/Fim (indices 1,2,5,9; Fim redesenhado), Cancelar sem caixa (contorno completo), Toguro 'coracao esta aqui' + romaji sobre 'coracao'. Pendente (5.1): separar palavras do romaji.
+
+## v5.1
+Romaji reposicionado (44 linhas, sem <name>): modelo calibrado com 3 prints (peca = tile inicial do caractere anterior + 3); palavras novas do romaji separadas por >=6 px (gap 6/5/4/3 conforme coube). Linhas com <name> e 998/1010/1016 nao alteradas.
