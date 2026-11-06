@@ -7,6 +7,15 @@ Pasta autônoma: nada fora de `ptBR/` foi alterado, então o projeto vietnamita 
 
 ![Prévia da tradução PT-BR](preview/preview_ptbr.png)
 
+## Programas necessários (downloads oficiais)
+Os programas não estão neste repositório; baixe sempre das páginas oficiais:
+- **Emulador:** [MesenCE](https://github.com/nesdev-org/MesenCE/releases) (usado nos testes). Baixe o pacote do seu sistema, extraia e abra a ROM traduzida. Não precisa de nenhuma configuração ou versão modificada do emulador.
+- **Aplicar o patch IPS (escolha um):**
+  - [Floating IPS (Flips)](https://github.com/Alcaro/Flips/releases), programa para Windows e Linux.
+  - [Lunar IPS](https://www.romhacking.net/utilities/240/), programa para Windows.
+  - [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/), direto no navegador, sem instalar nada.
+- **Só para a Opção 2 (compilar):** o repositório já traz `xkas.exe` e `Atlas.exe` na raiz.
+
 ## Opção 1 — Aplicar o patch IPS (mais simples)
 1. Tenha a ROM japonesa original **sem header** (2 MB = 2.097.152 bytes). Se tiver header de 512 bytes, remova-o antes.
 2. Baixe `Yuyu_PTBR_v5.1.ips` (está em `ptBR/patch/` neste repositório).
