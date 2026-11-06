@@ -14,7 +14,7 @@ Os programas não estão neste repositório; baixe sempre das páginas oficiais:
   - [Floating IPS (Flips)](https://github.com/Alcaro/Flips/releases), programa para Windows e Linux.
   - [Lunar IPS](https://www.romhacking.net/utilities/240/), programa para Windows.
   - [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/), direto no navegador, sem instalar nada.
-- **Só para a Opção 2 (compilar):** o repositório já traz `xkas.exe` e `Atlas.exe` na raiz.
+- **Só para a Opção 2 (compilar):** `Atlas` e `xkas` (as mesmas ferramentas do [projeto vietnamita](https://github.com/stoneboat65816/Yuyu-Hakusho-Tokubetsuhen_SFC); elas não estão neste repositório).
 
 ## Opção 1 — Aplicar o patch IPS (mais simples)
 1. Tenha a ROM japonesa original **sem header** (2 MB = 2.097.152 bytes). Se tiver header de 512 bytes, remova-o antes.
