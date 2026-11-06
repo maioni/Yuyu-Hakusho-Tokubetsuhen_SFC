@@ -9,7 +9,7 @@ Pasta autônoma: nada fora de `ptBR/` foi alterado, então o projeto vietnamita 
 
 ## Opção 1 — Aplicar o patch IPS (mais simples)
 1. Tenha a ROM japonesa original **sem header** (2 MB = 2.097.152 bytes). Se tiver header de 512 bytes, remova-o antes.
-2. Baixe `Yuyu_PTBR_v5.1.ips` (página de *Releases* do projeto).
+2. Baixe `Yuyu_PTBR_v5.1.ips` (está em `ptBR/patch/` neste repositório).
 3. Aplique o patch na ROM com um programa de patch IPS (por exemplo Lunar IPS ou Floating IPS), em uma **cópia** da ROM.
 4. O resultado tem cerca de 3,5 MB. Abra no emulador (Mesen, Snes9x, SuperZSNES...) ou no flashcart.
 
