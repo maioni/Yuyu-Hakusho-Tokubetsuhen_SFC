@@ -1,5 +1,7 @@
 # Tradução PT-BR — Yū Yū Hakusho Tokubetsu-hen (SFC)
 
+🇺🇸 [Read in English](README.md)
+
 Versão atual: **5.1**. Tradução para português do Brasil, baseada no projeto vietnamita de stoneboat65816.
 Pasta autônoma: nada fora de `ptBR/` foi alterado, então o projeto vietnamita continua intacto na raiz.
 
