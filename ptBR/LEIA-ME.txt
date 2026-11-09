@@ -15,3 +15,10 @@ Aplique title_patch.asm no title.asm (posicao das estrelas + remocao das barras 
 2.14: Toguro Mais Velho / Mais Novo (nomes e falas); "escapou por pouco do golpe/da onda de choque".
 Narrator/preset2.bin (Ponta/Meio/Fim) e square10_set.bin (Modo/Trilha/Voz): pixels soltos nas pontas removidos.
 Pendentes: placa Livre (sprites), nomes da selecao (tamanho/centro, Toguro (velho)/(novo)), 級 do nivel S/A/B.
+
+== v6.6b ==
+Esta pasta SOBRESCREVE os arquivos de mesmo nome do projeto (code.asm, tournament.asm, title.asm, Narrator\, Opening\, etc.).
+Os demais arquivos (main.asm, incbin.asm, text.asm, seiyu.asm...) continuam os do seu projeto.
+Yuyu_ptBR_6.6.ips = a mesma versao pronta, aplicavel na ROM japonesa SEM header (2 MB): use-o para conferir sua compilacao.
+
+v6.6c: corrigida a paleta dos 11 numeros (code.asm "number:" voltou a $20xx; Opening/serifu_map.bin ganhou paleta 3 = $2Cxx), igual a ROM de teste.

@@ -6,7 +6,7 @@
 #CREATEPTR(Ptr, "HIROM", $00, 16)
 
 #JMP($00)
-<txt_spd><$02>
+<txt_spd><$01>
 E o campeão deste torneio<line>
 não é outro senão<line>
 o lutador <name>!<end>

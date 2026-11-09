@@ -135,18 +135,19 @@ org $89C59B
 
 	
 org $89D730
-//onsei text pos
+//onsei text pos (v6: posicoes do original japones, placas centralizadas)
 	db $02
-	dw $F8E0, $0000
-	dw $F8F0, $0002
+	dw $F8F0, $0000
+	dw $F800, $0002
 	db $03
-	dw $F8D0, $000C
-	dw $F8E0, $000E
-	dw $F8F0, $0020
+	dw $F8E8, $000C
+	dw $F8F8, $000E
+	dw $F808, $0020
 	db $03
-	dw $F8D8, $0022
-	dw $F8E8, $0024
-	dw $F8F8, $0026
+	dw $F8E8, $0022
+	dw $F8F8, $0024
+	dw $F808, $0026
+//v6.5: removido o ajuste +16 px de Trilha/Voz em $89D5C5/$89D5CE: esses quadros sao compartilhados com as etiquetas COM e 2P (duelo/torneio)
 	
 org $B2C591
 config_col:
@@ -338,3 +339,4 @@ org $80E724
 	dw $FC90
 org $80E728
 	dw $FC90
+

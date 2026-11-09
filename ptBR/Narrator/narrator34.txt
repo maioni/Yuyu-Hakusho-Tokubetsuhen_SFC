@@ -6,6 +6,6 @@
 #CREATEPTR(Ptr, "HIROM", $00, 16)
 
 #JMP($00)
-<txt_spd><$02>
-Inacreditável! Já é a última<line>
-luta das semifinais!<end>
+<txt_spd><$01>
+Já chegamos à última luta<line>
+das semifinais!<end>

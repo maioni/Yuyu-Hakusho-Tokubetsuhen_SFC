@@ -989,7 +989,7 @@ Karasu 「<$A6><$20>Bom<$A7><$20>ba Su<$A8><$20>bte<$A9><$20>rrânea!」<end>
 
 #WRITE(Ptr, $1D68A)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$7A><$20>追<$7B><$20>跡<$7C><$20>爆<$7D><$20>弾<end>
-Karasu 「<$AA><$20>Bomba P<$AB><$20>erseguidora!」<end>
+Karasu <$AA><$20>「Bomba <$AB><$20>Perseguidora!」<end>
 
 //POINTER #164 @ $1D68C - STRING #164 @ $1EBB8
 
@@ -1013,7 +1013,7 @@ Karasu 「Koooo!!」<end>
 
 #WRITE(Ptr, $1D692)
 //<$7A><$20>追<$7B><$20>跡<$7C><$20>爆<$7D><$20>弾 ｢ギギギギッ!!」<end>
-<$AA><$20>Bomba<$AB><$20> Perseguidora 「Gigigigi!!」<end>
+<$AA><$20>Bomba <$AB><$20>Perseguidora 「Gigigigi!!」<end>
 
 //POINTER #168 @ $1D694 - STRING #168 @ $1EC40
 

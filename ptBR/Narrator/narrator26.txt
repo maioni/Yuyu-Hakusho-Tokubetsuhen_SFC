@@ -6,6 +6,6 @@
 #CREATEPTR(Ptr, "HIROM", $00, 16)
 
 #JMP($00)
-<txt_spd><$02>
+<txt_spd><$01>
 Começa a última luta<line>
 das quartas de final!!<end>

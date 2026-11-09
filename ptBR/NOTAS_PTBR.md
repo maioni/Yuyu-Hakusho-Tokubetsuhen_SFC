@@ -276,3 +276,79 @@ Consolida 4.1g–4.5: placas Ponta/Meio/Fim (indices 1,2,5,9; Fim redesenhado), 
 
 ## v5.1
 Romaji reposicionado (44 linhas, sem <name>): modelo calibrado com 3 prints (peca = tile inicial do caractere anterior + 3); palavras novas do romaji separadas por >=6 px (gap 6/5/4/3 conforme coube). Linhas com <name> e 998/1010/1016 nao alteradas.
+
+## v5.3 (inclui as mudanças da lista de golpes)
+- Lista de golpes da apresentação (Opening/demo*_set.bin), refeita com as próprias letras da fonte da lista: cabeçalhos "Kazuma Kuwabara", "Minoru Kamiya", "Kaname Hagiri", "Shinobu Sensui" (nome antes do sobrenome, como Yūsuke Urameshi); Hiei: "Espada das Chamas", "Dragão das Chamas", "Purgatório das Chamas"; Rinku: "Roda Demoníaca"; Hagiri: "Tiro de Moeda/Dado/Pedra"; Toguro (novo e 100%): "Disparo de Dedo".
+- Não coube na lista (limite de ~146 px na fonte): Espada Campeã de Rebatidas, Semente Mortal da Erva Shimaneki, Flauta Demoníaca/Gelo Maldito: Muro de Cristal, Muralha de Vento Explosivo, Machado ... Demoníaco, Mãos Sombrias..., Chute Cortante: Onda Rubra, nomes da Yōko. Ficaram como estavam.
+- Batalha (Kuwabara): "Espada, vem!!" mantida (a pedido).
+
+## v5.4
+- Ending (Ending/gekishu*_set.bin): nomes do elenco de vozes e da equipe japonesa na ordem ocidental (Nome Sobrenome): Nozomu Sasaki, Shigeru Chiba, Megumi Ogata... e os créditos (Shūichi Sakurabuki, Yoshihiro Togashi, Toyo Isokawa...). "como Kuwabara Kazuma/Kamiya Minoru/Hagiri Kaname/Sensui Shinobu" agora "como Kazuma Kuwabara/Minoru Kamiya/Kaname Hagiri/Shinobu Sensui"; "(Minamino Shūichi)" -> "(Shūichi Minamino)". "Crystal Imai" mantido.
+- Lista de golpes do Hagiri: 4º golpe "Shuriken" -> "Dardo" (o original japonês é ダーツ, igual à batalha).
+- Karasu: romaji "Trace Eye" (Bomba Perseguidora) corrigido. A peça "Trace" tinha 36 px e era cortada em 32 (o "e" sumia) e a peça "Eye" caía em cima dela; "Trace" foi redesenhada em 32 px e as duas peças reposicionadas nas falas "Bomba Perseguidora!" (Karasu) e "Bomba Perseguidora 「Gigigigi!!」". Peça "Shide" (33 px) também ajustada para 32.
+
+## v5.5
+- Lista de golpes da Yōko: "Espada da Árvore Viva" -> "Espada do Espírito"; "Golpe do Demônio Arbóreo" -> "Golpe de Espinhos"; "Folhas Demoníacas" -> "Planta do Makai" (versões curtas dos nomes da batalha, que não cabem inteiros na lista). "Sensitiva Demoníaca" mantida.
+
+## v5.6
+- Abertura, telas "Elenco de vozes" (Opening/1..10.bin, 1bpp 256x96): nomes dos dubladores na ordem ocidental (Nozomu Sasaki, Shigeru Chiba, Megumi Ogata, Shigeru Nakahara, Nobuyuki Hiyama, Hisako Kyōda, Megumi Hayashibara, Reiko Kondō, Katsumi Suzuki, Toshiyuki Morikawa, Kappei Yamaguchi, Ryō Horikawa, Norio Wakamoto, Tesshō Genda, Tarō Arakawa, Eiji Sekiguchi, Kōji Tsujitani, Rokurō Naya) e personagens "como Yūsuke Urameshi / Kazuma Kuwabara / Minoru Kamiya / Kaname Hagiri / Shinobu Sensui". Palavras apenas trocadas de lugar (sem redesenhar), centralização preservada.
+- Abertura, créditos da tradução (Opening/11.bin): "Uma tradução de maioni / sniperdmaa" + "baseado em" ao lado do logo STONE BOAT (URLs mantidas).
+- Abertura, "PROJETO" (Opening/12.bin): "(Relatório do Mundo Espiritual)" (antes "...Mundo dos Espíritos").
+
+## v5.7
+- Karasu: no "Bomba Perseguidora!" o romaji "Trace Eye" saía sem espaço (peças coladas); peça "Trace" movida um tile para a esquerda (`Karasu <$AA><$20>「Bomba <$AB><$20>Perseguidora!」`), agora com 1 tile de intervalo como na outra fala.
+- Créditos finais (Ending/gekishu23_set.bin): "Programação + versão em vietnamita", "Projeto original: StoneBoat" e nova linha "Projeto em pt-BR: maioni / sniperdmaa".
+- Conferidos os nomes das telas de elenco/equipe do ending e do elenco da abertura: todos em ordem ocidental (Nome Sobrenome).
+
+## v6.0 (parcial) – placas de menu fiéis ao original
+- Narrator/square00–04,06–09_set.bin redesenhados com fonte fina estilo JP: Dificuldade/Som/Botões, Combate Solo/Equipe/Torneio/Campeonato, Livre/Opções.
+- Modos: sem caixa escura; a imagem sob o texto foi reconstruída (PT+JP) e o texto fica direto por cima (transparente).
+- Pendente: arenas (sq11), Continuar/Desistir (sq14), caixas Ponta/Meio/Fim, tela de som, listas da config de botões.
+- v6.0: arenas (Floresta/Domo em square11, Colina/Dimensão em square12, paletas 0–3 de square11_col) com fonte fina e fundo transparente.
+- v6.0: Continuar/Desistir (square14) com fonte fina.
+- v6.0: placas Ponta/Meio/Fim (preset2.bin) refeitas como o original: bisel ciano, gradiente azul (paleta da ROM JP $19480C), fonte fina.
+- v6.0: Continuar/Desistir (square14) conforme o ajuste manual do usuario (listras lilás, texto 1px abaixo).
+- v6.0: arenas conforme ajuste manual do usuario (square11/12).
+- v6.0: Dificuldade/Som/Botões conforme ajuste manual do usuario (fundo transparente, imagem continua atrás do texto).
+- v6.0: modos (Solo/Equipe/Torneio/Campeonato) conforme ajuste manual do usuario.
+- v6.0: modos com limpeza dos pixels de cor ao redor do texto (despeckle), moldura inferior original.
+- v6.0: modos com os retoques manuais finais do usuario (print 768x672).
+- v6.0: tela de botões: barras azuis ornamentais ao lado dos títulos (Soco/Defesa) copiadas do VN, cores do texto da Defesa (Tipo 1) como no JP (A vermelho, Y verde). config_set.bin +36 tiles (326), DMA do draw_keyconfig $2440 -> $28C0 (code.asm). Mapa do BG em VRAM $1C00 => limite 448 tiles.
+- v6.0: Tipo 1/Tipo 2 (square05) com caixa menor e fonte fina como no JP; corrigida paleta (vermelho estranho no Soco) das celulas do mapa config.
+- v6.0: tela de som: placas Modo/Estéreo/Mono/Trilha/Voz (square10) com fonte fina e moldura como no JP. Numeração (No.00) não alterada.
+- v6.0: tela de som: placas voltam às posições do original JP (tournament.asm: grupos OAM Modo/Estéreo/Mono em $89D730 = valores JP; Trilha/Voz em $89D5C5/$89D5CE +16 px). ATENÇÃO: 'No.00' e nome (BG) ainda nas posições antigas (x=80/144); no JP estão em x=106/195.
+- v6.1: bordas brancas completas nas placas da tela de som (Modo/Estéreo/Mono/Trilha/Voz).
+- v6.1: tela de som: 'No.' e digitos redesenhados com a fonte do topo (Narrator/preset.bin), 'No.' na col 13, digitos na col 16, nome na col 25 (recua se tiver 8+ tiles); placas com borda completa. Testado em emulador (snes9x) com a ROM 5.7 + patches binarios equivalentes.
+- v6.1: nomes do teste de voz refeitos na fonte do topo em Narrator/preset.bin (Yōko, Genkai Jovem, Toguro Velho, Toguro Novo, que apareciam na fonte antiga).
+- v6.2: nome do personagem alinhado a esquerda, sempre na col 20 (o rotina de recuo foi removida).
+- v6.3 (IMPORTANTE): o config_set.bin da v6.0-6.2 tinha 10432 bytes e estourava o banco $C8 (sobravam so 28 bytes), corrompendo as paletas que vem depois (square06..09/11_col) e o rank_set. Efeito: caixas de Modos vazias/azuis, placa da classe B quebrada no Nivel, cores erradas. Agora o config_set tem so os tiles usados (273 tiles = 8736 bytes) e o mapa foi renumerado; o DMA em draw_keyconfig usa #$2220. Sobram 572 bytes no banco.
+- v6.3: Tipo 1/Tipo 2 sem sobras de cor (square05: tiles 5 e 22 limpos); "Esquiva"/"Aparar" com a primeira letra na cor certa (config_set); brilho amarelo das 3 caixas do menu de configuracoes igual ao original (square02/03/04); nomes na tela de som na mesma fonte fina de "No.00" (paleta 0, name_table1 e preset.bin).
+- v6.4: placa 'Desistir' (square14) voltou a ter a moldura com o indice 10 (a que brilha em amarelo quando selecionada), igual a 'Continuar'.
+
+## v6.5
+- Nomes (Narrator/preset.bin): voltaram a tinta branca com borda cinza (indices 1/2 da paleta 3). Os tiles dos nomes (0xD8-0x1AD) sao COMPARTILHADOS entre a tela de som e as telas de selecao de lutador/equipe/ordem; a v6.2-6.4 os tinha em tinta "idx 2" (branca so na paleta 0), o que deixava os nomes cinza nas telas de selecao. Agora a tela de som tambem usa a paleta 3 para os nomes e para "No. 00" (code.asm: name_table1, `number` e #$2CC0). "Kurama" tem 6 pares de tiles na selecao: o 6o par agora e limpo (sobrava um ponto).
+- tournament.asm: removido o ajuste "+16 px" de Trilha/Voz em $89D5C5/$89D5CE. Esses quadros de sprite sao os mesmos das etiquetas 1P/COM/2P (duelo, chaveamento): a etiqueta COM ficava 16 px a direita, cortada pela borda da tela. Na tela de som nao fazia diferenca visual (testado).
+- Tela de botoes: "Esquiva"/"Aparar" sem pixels da cor trocada (tiles 251 e 264 do config_set); marca amarela no canto da faixa "Defesa" (tile 95 do config_set caia numa area da VRAM sobrescrita depois pelo jogo; movido para o tile 273). config_set = 274 tiles (8768 bytes); DMA do draw_keyconfig = #$2240.
+- Falas do torneio (Narrator/narrator15-36): velocidade do texto 1 (antes 2/3) para o texto terminar de aparecer antes de a tela seguinte entrar; narrator27 encurtada ("e avança de fase!").
+
+## v6.6
+- Livre: faixa do texto agora continua a imagem da personagem (torso/fundo) em vez de cinza liso (square01_set.bin, 33 tiles únicos por célula).
+- Pendentes: Toguro em fonte fina, brilho amarelo dos Modes (poucos pixels), posição do texto TIME, furigana, "Inacreditável!" repetido.
+- 6.6 (cont.): caixas de arena Colina/Dimensão: linha superior da barra (tiles 24-31 e 84-91 de square12_set) refeita igual à de Floresta/Domo (brilho amarelo contínuo). Cabeçalho "TIME Toguro": o 5º tile (0x16e/0x16f e 0x17e/0x17f) continha o início de "(" -> viravam um "1"; criados tiles limpos 0x104/0x105 e 0x295/0x296 (name_table4). Rótulo "TIME" (tiles 0x30f/0x311/0x313) subido 1 linha para ficar na mesma linha de base do nome.
+- 6.6 (cont.): "Toguro" (velho/novo/100%) nas telas de seleção agora na fonte fina (mesmos tiles do cabeçalho), sem o desenho decorativo antigo; tiles novos 0x104/105, 0x295/296 (5ª coluna limpa) e 0x297/298 (traço do "(" de velho); tick solto removido do "100%" (tile 0x2fc).
+- 6.6 (cont.): Livre refeito conforme a referência do usuário: faixa cinza-claro lisa nas laterais e a imagem da personagem (torso) só na parte central, atrás do texto.
+- 6.6 (cont.): cabeçalho 'TIME Toguro' agora distingue '(velho)', '(novo)' e '100%' (sufixos copiados da tela de seleção para name_table4, cols 10-14).
+- 6.6 (cont.): placas Ponta/Meio/Fim na tela 'Começa a próxima luta' ficavam vermelhas (a paleta OBJ 14 dessa tela, em $285C00, tem vermelho nos idx 6-8). Agora idx 3,6,7,8 recebem os mesmos azuis da tela de ordem (tournament.asm, org $D0DC06/$D0DC0C). Se X/O/linha vermelha também mudarem de cor, avisar.
+- 6.6 (cont.): Livre desenhado à mão: luva vermelha à esquerda, torso rosa listrado, cinto escuro e barriga atrás do texto, laterais cinza-claro lisas (ref. do usuário).
+- 6.6 (cont.): revertido o patch de paleta ($285C00 = paleta do VS, o VS ficou azul). Em vez disso, as placas Ponta/Meio/Fim (preset2 tiles 16-31) só usam idx 5/9/2 (azuis iguais nas duas paletas).
+- 6.6 (cont.): brilho amarelo dos Modes igualado nas 4 caixas (square06-09_set: linhas 45 e 59 da barra e borda direita da caixa Solo em idx 15). "Yūsuke Urameshi" (seleção de equipe e cabeçalho TIME) redesenhado na fonte fina (tiles 0x2a4-0x2b9). Narrator34: "Já chegamos à última luta das semifinais!" (evita "Inacreditável!" repetido); narrator32: "!!" -> "!". O gráfico OPTION/KEY-CONF é arte original em inglês do jogo, mantido.
+
+## v6.6 (cont. final)
+- square15: troca de paleta (VS vermelho; caixas Ponta/Meio/Fim azuis) — tiles 0-31 remapeados 6→14,7→12,8→15.
+- preset2 revertido para a versão 6.5 (corrige tags 1P/2P/COM).
+- "Tipo 1/Tipo 2" redesenhado em negrito (square05).
+- Cabeçalhos "Time", Yōko e Genkai Jovem refeitos em fonte fina (preset.bin + name_table4).
+- PENDENTE: na tela "A vitória ficou com a equipe…" o cabeçalho do time perdedor fica em branco; na ROM japonesa os dois lados mostram "<nome> チーム". Causa ainda não isolada.
+- CORRIGIDO: cabeçalho vazio do time perdedor na vitória por equipes: $0258/$025A vinham com byte alto $FF; load_team_name agora mascara (AND #$00FF) e copia com MVN (rotina menor, cabe no lugar original). Testado no emulador.
+- Abertura: "Apresentado o" -> "Apresentando o" (Opening/pres_tiles.bin / pres_map.bin; tiles agora 2bpp 16x16, chars novos a partir do tile 416; stream LZ decodificado/recodificado, validado no emulador).
+- Gerador da ROM de teste agora aplica square00_set e square11_set (Floresta/Domo e Opcoes com a fonte pequena igual a Colina/Dimensao).

@@ -2,7 +2,7 @@
 
 🇧🇷 [Leia em português](README_PTBR.md)
 
-Current version: **5.1**. A Brazilian Portuguese translation of the Super Famicom fighting game *Yū Yū Hakusho: Tokubetsu-hen*, based on stoneboat65816's Vietnamese project.
+Current version: **6.6**. A Brazilian Portuguese translation of the Super Famicom fighting game *Yū Yū Hakusho: Tokubetsu-hen*, based on stoneboat65816's Vietnamese project.
 This folder is self-contained: nothing outside `ptBR/` was changed, so the Vietnamese project remains intact at the repository root.
 
 > This repository does **not** contain the game ROM. You need your own copy.
@@ -30,7 +30,7 @@ The programs are not included in this repository; always download them from thei
 
 ## Option 1 — Apply the IPS patch (easiest)
 1. Get the original Japanese ROM, **headerless** (2 MB = 2,097,152 bytes). If it has a 512-byte copier header, remove it first.
-2. Download `Yuyu_PTBR_v5.1.ips` (it is in `ptBR/patch/` in this repository).
+2. Download `Yuyu_PTBR_v6.6.ips` (it is in `ptBR/patch/` in this repository).
 3. Apply the patch to a **copy** of the ROM with an IPS patcher.
 4. The patched ROM is about 3.5 MB. Open it in an emulator (Mesen, Snes9x, SuperZSNES...) or on a flashcart that supports the expanded size.
 

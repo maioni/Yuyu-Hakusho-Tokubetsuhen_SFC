@@ -6,6 +6,6 @@
 #CREATEPTR(Ptr, "HIROM", $00, 16)
 
 #JMP($00)
-<txt_spd><$02>
+<txt_spd><$01>
 E agora, a quarta luta<line>
 da primeira rodada!<end>
