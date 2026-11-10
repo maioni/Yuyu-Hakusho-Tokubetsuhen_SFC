@@ -1,0 +1,16 @@
+#VAR(Table,TABLE)
+#ADDTBL("narrator_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($00)
+<txt_spd><$04>
+Fighter <name> dominated<line>
+this survival battle!!<wait><wait><clear>
+A new legend is born here.<wait><wait><clear>
+Thank you, <name>!<line>
+Thank you to the 20 warriors!!<wait><wait><clear>
+Press START and SELECT together<line>
+to watch the ending.<end>

@@ -5,7 +5,7 @@ Status (texts only, draft, NOT compiled/tested):
 - [x] battle_text_enUS.txt (281 strings; ruby codes `<$xx><$20>` removed, must be re-inserted/width-checked)
 - [x] battle_name_enUS.txt (romaji, same as PT-BR)
 - [x] serifu_enUS.txt (intro, 97 lines)
-- [x] Narrator/ narrator00-19 + name00-19
+- [x] Narrator/ narrator00-38 + name00-19 (all text done)
 - [ ] Opening / Ending / Tournament texts
 - [ ] Graphics (title, menus, fonts) - pending decision
 - [ ] Build + emulator test
