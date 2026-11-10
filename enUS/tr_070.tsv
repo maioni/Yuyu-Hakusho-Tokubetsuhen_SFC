@@ -1,17 +1,17 @@
 70	Kurama 「Taaa---!!」<end>
 71	Kurama 「Haaa!!」<end>
 72	Dream Flower Pollen<end>
-73	『Shimaneki grass sprouts inside the body』<end>
+73	『Shimaneki grass sprouts in the body』<end>
 74	Shimaneki Grass Seed<end>
 75	Mimosa 「Kiru kiru kiru!!」<end>
 76	Hiei 「Haaa!」<end>
 77	Hiei 「Take this!」<end>
 78	Hiei 「Evil King Flame Slaying Sword!!」<end>
 79	Hiei 「Die...」<end>
-80	Hiei 「Evil King Flame Black Dragon Wave」<end>
-81	Hiei 「Evil King Flame Purgatory Scorch!!」<end>
+80	Hiei 「Evil Flame Black Dragon Wave」<end>
+81	Hiei 「Evil Flame Purgatory Scorch!!」<end>
 82	Hiei 「Just an afterimage...」<end>
-83	Hiei 「Do not underestimate the Evil Eye!」<end>
+83	Hiei 「Do not mock the Evil Eye!」<end>
 84	Hiei 「Taaa!」<end>
 85	Hiei 「Can you keep up with my speed?」<end>
 86	Hiei 「Hmph!」<end>
@@ -20,11 +20,11 @@
 89	Demon Sword<end>
 90	16-Slash Combo!!!<end>
 91	Hiei 「Flame Slaying...」<end>
-92	Hiei 「Can you see it... this demon energy!」<end>
+92	Hiei 「See this demon energy?」<end>
 93	Hiei 「Evil King」<end>
 94	Spirit Light Bullet<end>
 95	Genkai 「Haaa---!」<end>
-96	Genkai 「Spirit Light Mirror Reflection!!」<end>
+96	Genkai 「Spirit Mirror Reflection!!」<end>
 97	Rei Gan<end>
 98	Genkai 「Light!」<end>
 99	Genkai 「Rei Gan!!」<end>
@@ -51,12 +51,12 @@
 120	Tōya 「Die!!」<end>
 121	Tōya 「Cursed Ice: Frozen Body!!」<end>
 122	Tōya 「Take this!!」<end>
-123	Tōya 「Cursed Ice: Freezing Formation!!」<end>
+123	Tōya 「Cursed Ice: Freeze Formation!!」<end>
 124	Tōya 「Cursed Ice: Swift Wave!!」<end>
 125	Tōya 「Cursed Ice: Crystal Wall!!」<end>
-126	Tōya 「Demon Flute: Mist Bullet Barrage!!」<end>
+126	Tōya 「Demon Flute: Mist Barrage!!」<end>
 127	Tōya 「Cursed Ice Sword!!」<end>
-128	Tōya 「Stay calm... I will cool you down.」<end>
+128	Tōya 「Calm down... I will chill you.」<end>
 129	Tōya 「Hmph!」<end>
 130	『Icy demon energy spreads all around!』<end>
 131	『Jin controls the wind and floats up!』<end>
@@ -73,8 +73,8 @@
 142	Jin 「What a nice breeze!」<end>
 143	Jin 「Here I come--!」<end>
 144	Jin 「Haa!」<end>
-145	Shishiwakamaru 「Try and withstand this!!」<end>
-146	Shishiwakamaru 「Wall of Grudge Binding!」<end>
+145	Shishiwakamaru 「Withstand this!!」<end>
+146	Shishiwakamaru 「Grudge Binding Wall!」<end>
 147	Feather Robe of Death<end>
 148	Shishiwakamaru 「Hell Requiem!」<end>
 149	Shishiwakamaru 「Wailing Sword!」<end>
@@ -83,9 +83,9 @@
 152	Shishiwakamaru 「Taaa---!」<end>
 153	Shishiwakamaru 「Here I come!」<end>
 154	Shishiwakamaru 「Haaa---!」<end>
-155	Shishiwakamaru 「You are no match for me!」<end>
+155	Shishiwakamaru 「You are no match!」<end>
 156	Shishiwakamaru 「Hmph!」<end>
-157	『The demon energy of death envelops the area!!』<end>
+157	『Death energy fills the area!!』<end>
 158	Mine of the Ruler<end>
 159	Karasu 「Go...」<end>
 160	Karasu 「Hand Grenade」<end>
@@ -101,7 +101,7 @@
 170	Karasu 「Haa!」<end>
 171	Dance of Death<end>
 172	Karasu 「Have you treated your hair?」<end>
-173	『The Mine of the Ruler clung to the body!!』<end>
+173	『Ruler Mine clung to <name>』<end>
 174	Karasu 「Taaa--!!」<end>
 175	Karasu 「Ha!!」<end>
 176	Karasu 「Flash and Fire Bomb!」<end>
