@@ -1,4 +1,4 @@
-# Yū Yū Hakusho Tokubetsu-hen - English (enUS) - WORK IN PROGRESS
+# Yū Yū Hakusho Tokubetsu-hen - English (enUS) - v0.1 (initial, WIP)
 Fan/faithful style: romanized names (Yūsuke, Rei Gan, Jagan...), literal move names. Derived from the PT-BR project.
 
 Status (texts only, draft, NOT compiled/tested):
@@ -12,4 +12,4 @@ Status (texts only, draft, NOT compiled/tested):
 
 Notes:
 - title.asm = ptBR/title.asm without the NAMCO/PRESENTED patch (those two screens stay in original Japanese). Replace ptBR's title.asm with this one in the build folder.
-- patch/Yuyu_enUS_draft.ips = draft patch (build of 2026-11-10, first test), apply to headerless JP ROM.
+- patch/Yuyu_enUS_v0.1.ips = initial version v0.1 (texts only; Namco/Presented screens original JP; graphics still PT-BR), apply to headerless JP ROM.
