@@ -13,3 +13,8 @@ Status (texts only, draft, NOT compiled/tested):
 Notes:
 - title.asm = ptBR/title.asm without the NAMCO/PRESENTED patch (those two screens stay in original Japanese). Replace ptBR's title.asm with this one in the build folder.
 - patch/Yuyu_enUS_v0.1.ips = initial version v0.1 (texts only; Namco/Presented screens original JP; graphics still PT-BR), apply to headerless JP ROM.
+
+Update (graphics, 2026-11-10):
+- Opening: voice cast slides 1-10, translator credits (11), "NAMCO presents" (12), controller credits, "In memory of byuu", title screen (Ghost Files / SPECIAL EDITION / PRESS START), and the 20 move-list demo screens (demo00-19) are now English.
+- Ending: all staff/cast credit images (gekishu00-42) in English; "STAFF" already was.
+- NOT yet: END screen sprites (owari_set.bin, still PT "FIM"), menu plates in Narrator/ (square*, config, preset...), Tournament/ ranking images.
