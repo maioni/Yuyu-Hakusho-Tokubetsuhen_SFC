@@ -18,23 +18,23 @@
 17	『<name>raised their defense!!』<end>
 18	『<name>raised their jump power!』<end>
 19	『<name>raised their punch power!』<end>
-20	『<name>'s fighting energy is fading!』<end>
+20	『<name>loses fighting energy!』<end>
 21	Narrator 『<name>lost accuracy!』<end>
 22	『<name>feels their strength drain away!』<end>
-23	『<name>'s techniques are sealed~!!』<end>
+23	『<name>has techniques sealed~!!』<end>
 24	『<name>had techniques sealed!』<end>
-25	『<name>'s spirit attack was sealed!』<end>
-26	『<name>can't use spirit attacks~!』<end>
+25	『<name>had spirit attack sealed!』<end>
+26	『<name>cannot use spirit attacks~!』<end>
 27	『<name>raised their demon power!』<end>
 28	『<name>recovered a lot of vitality!!』<end>
-29	『Broke through the opponent's attack!』<end>
-30	『But the strike's power weakened~!!』<end>
+29	『Broke through the opponent attack!』<end>
+30	『But the strike power weakened~!!』<end>
 31	Narrator 『The two attacks cancelled out!!』<end>
 32	<name> 「What!?」<end>
 33	『<name2>had the attack nullified!!』<end>
 34	『<name>radiates spirit energy!』<end>
 35	『<name>fully regained their stance!!!』<end>
-36	『<name>absorbed the opponent's energy!』<end>
+36	『<name>absorbed the opponent energy!』<end>
 37	『<name>was barely grazed!!』<end>
 38	『<name>is filling with spirit energy!』<end>
 39	『<name>radiates demon energy!』<end>
@@ -46,7 +46,7 @@
 45	Yūsuke 「Uraaa!」<end>
 46	Yūsuke 「Rei Gan---!!」<end>
 47	Yūsuke 「Shotgun~~!!!」<end>
-48	Yūsuke 「I didn't see the afterlife for nothing!!」<end>
+48	Yūsuke 「I did not see the afterlife for nothing!!」<end>
 49	Yūsuke 「Ora ora ora ora---!!」<end>
 50	Kuwabara 「Batting Champ Sword!!」<end>
 51	Kuwabara 「Nuooo--!!」<end>
@@ -57,7 +57,7 @@
 56	Kuwabara 「Bend~~~~!!」<end>
 57	Kuwabara 「Two-Sword Style!!!」<end>
 58	Kuwabara 「Take this---!!」<end>
-59	Kuwabara 「I'm a tough one!!」<end>
+59	Kuwabara 「I am a tough one!!」<end>
 60	Kuwabara 「Sword, come!!」<end>
 61	『Dimensional space was cut open!!』<end>
 62	Kuwabara 「Dimension Sword!」<end>

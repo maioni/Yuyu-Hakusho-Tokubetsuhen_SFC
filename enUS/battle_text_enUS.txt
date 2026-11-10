@@ -131,7 +131,7 @@ Narrator 『Dodging got easier!』<end>
 
 #WRITE(Ptr, $1D56C)
 //『<$37><$20>闘<$0C><$20>気がうすれていく!!』<end>
-『<name>'s fighting energy is fading!』<end>
+『<name>loses fighting energy!』<end>
 
 //POINTER #21 @ $1D56E - STRING #21 @ $1DA22
 
@@ -149,7 +149,7 @@ Narrator 『<name>lost accuracy!』<end>
 
 #WRITE(Ptr, $1D572)
 //『<$B0><$20>技を<$41><$20>封じられている～～～～～～っ!!』<end>
-『<name>'s techniques are sealed~!!』<end>
+『<name>has techniques sealed~!!』<end>
 
 //POINTER #24 @ $1D574 - STRING #24 @ $1DA90
 
@@ -161,13 +161,13 @@ Narrator 『<name>lost accuracy!』<end>
 
 #WRITE(Ptr, $1D576)
 //『<$53><$20>霊<$12><$20>撃が<$41><$20>封じられた!!』<end>
-『<name>'s spirit attack was sealed!』<end>
+『<name>had spirit attack sealed!』<end>
 
 //POINTER #26 @ $1D578 - STRING #26 @ $1DACC
 
 #WRITE(Ptr, $1D578)
 //『<$53><$20>霊<$12><$20>撃を<$41><$20>封じられている～～～～～～っ!!』<end>
-『<name>can't use spirit attacks~!』<end>
+『<name>cannot use spirit attacks~!』<end>
 
 //POINTER #27 @ $1D57A - STRING #27 @ $1DAF6
 
@@ -185,13 +185,13 @@ Narrator 『<name>lost accuracy!』<end>
 
 #WRITE(Ptr, $1D57E)
 //『つきぬけたぁ－－』<end>
-『Broke through the opponent's attack!』<end>
+『Broke through the opponent attack!』<end>
 
 //POINTER #30 @ $1D580 - STRING #30 @ $1DB56
 
 #WRITE(Ptr, $1D580)
 //『しかし、<$03><$20>威<$98>魔<$10>は<$06><$20>弱まったぁ~!!』<end>
-『But the strike's power weakened~!!』<end>
+『But the strike power weakened~!!』<end>
 
 //POINTER #31 @ $1D582 - STRING #31 @ $1DB80
 
@@ -227,7 +227,7 @@ Narrator 『The two attacks cancelled out!!』<end>
 
 #WRITE(Ptr, $1D58C)
 //『あいての<$53><$20>霊<$0C><$20>気を<$0D><$20>吸<$23><$20>収した~っ!!』<end>
-『<name>absorbed the opponent's energy!』<end>
+『<name>absorbed the opponent energy!』<end>
 
 //POINTER #37 @ $1D58E - STRING #37 @ $1DC5A
 
@@ -299,7 +299,7 @@ Yūsuke 「Shotgun~~!!!」<end>
 
 #WRITE(Ptr, $1D5A4)
 //幽助 ｢だてに あの<$B8><$20>世は<$A8><$20>見てねえぜ!!」<end>
-Yūsuke 「I didn't see the afterlife for nothing!!」<end>
+Yūsuke 「I did not see the afterlife for nothing!!」<end>
 
 //POINTER #49 @ $1D5A6 - STRING #49 @ $1DDDE
 
@@ -365,7 +365,7 @@ Kuwabara 「Take this---!!」<end>
 
 #WRITE(Ptr, $1D5BA)
 //桑原 ｢オレは しぶてぇぜ!!」<end>
-Kuwabara 「I'm a tough one!!」<end>
+Kuwabara 「I am a tough one!!」<end>
 
 //POINTER #60 @ $1D5BC - STRING #60 @ $1DF3A
 
@@ -509,7 +509,7 @@ Hiei 「Just an afterimage...」<end>
 
 #WRITE(Ptr, $1D5EA)
 //飛影 ｢<$27><$20>邪<$0B><$20>眼の<$B7>魔<$10>をなめるなよ!!」<end>
-Hiei 「Don't underestimate the Evil Eye!」<end>
+Hiei 「Do not underestimate the Evil Eye!」<end>
 
 //POINTER #84 @ $1D5EC - STRING #84 @ $1E252
 
@@ -611,7 +611,7 @@ Genkai 「Rei Gan!!」<end>
 
 #WRITE(Ptr, $1D60C)
 //幻海 ｢<$0C><$20>気にいらないね．．．．!!」<end>
-Genkai 「I don't like it...!!」<end>
+Genkai 「I do not like it...!!」<end>
 
 //POINTER #101 @ $1D60E - STRING #101 @ $1E426
 
@@ -779,7 +779,7 @@ Tōya 「Cursed Ice Sword!!」<end>
 
 #WRITE(Ptr, $1D644)
 //凍矢 ｢あつくなるな．．．．さましてやりう」<end>
-Tōya 「Don't get heated... I'll cool you down.」<end>
+Tōya 「Stay calm... I will cool you down.」<end>
 
 //POINTER #129 @ $1D646 - STRING #129 @ $1E766
 
@@ -859,7 +859,7 @@ Jin 「Taaa---!」<end>
 
 #WRITE(Ptr, $1D65E)
 //陣 ｢オラぁ ワクワクしてきただ!」<end>
-Jin 「I'm getting all fired up!」<end>
+Jin 「I am getting all fired up!」<end>
 
 //POINTER #142 @ $1D660 - STRING #142 @ $1E900
 
@@ -895,7 +895,7 @@ Shishiwakamaru 「Wall of Grudge Binding!」<end>
 
 #WRITE(Ptr, $1D66A)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$20><$20>死<$34><$20>出の<$3B><$20>羽<$1B><$20>衣<end>
-                  Death's Feather Robe<end>
+                  Feather Robe of Death<end>
 
 //POINTER #148 @ $1D66C - STRING #148 @ $1E9B0
 
@@ -943,7 +943,7 @@ Shishiwakamaru 「Haaa---!」<end>
 
 #WRITE(Ptr, $1D67A)
 //死々若丸 ｢<$BE><$20>相<$30><$20>手にならぬわ!!」<end>
-Shishiwakamaru 「You're no match for me!」<end>
+Shishiwakamaru 「You are no match for me!」<end>
 
 //POINTER #156 @ $1D67C - STRING #156 @ $1EAD0
 
@@ -955,13 +955,13 @@ Shishiwakamaru 「Hmph!」<end>
 
 #WRITE(Ptr, $1D67E)
 //『<$20><$20>死の<$4D><$20>妖<$0C><$20>気で あたりをつつんだ!!』<end>
-『Death's demon energy envelops the area!!』<end>
+『The demon energy of death envelops the area!!』<end>
 
 //POINTER #158 @ $1D680 - STRING #158 @ $1EB14
 
 #WRITE(Ptr, $1D680)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$57><$20>支<$58><$20>配<$59><$20>者<$5A><$20>機<$5B><$20>雷<end>
-               Ruler's Mine<end>
+               Mine of the Ruler<end>
 
 //POINTER #159 @ $1D682 - STRING #159 @ $1EB34
 
@@ -1039,7 +1039,7 @@ Karasu 「Haa!」<end>
 
 #WRITE(Ptr, $1D69A)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$20><$20>死の<$4A><$20>舞い<end>
-          Karasu's Dance of Death<end>
+          Dance of Death<end>
 
 //POINTER #172 @ $1D69C - STRING #172 @ $1EC9E
 
@@ -1051,7 +1051,7 @@ Karasu 「Have you treated your hair?」<end>
 
 #WRITE(Ptr, $1D69E)
 //『<$57><$20>支<$58><$20>配<$59><$20>者<$5A><$20>機<$5B><$20>雷が とりついた!!』<end>
-『The Ruler's Mine clung to the body!!』<end>
+『The Mine of the Ruler clung to the body!!』<end>
 
 //POINTER #174 @ $1D6A0 - STRING #174 @ $1ECF0
 
@@ -1195,13 +1195,13 @@ Elder Toguro 「Kukuku... Die!」<end>
 
 #WRITE(Ptr, $1D6CE)
 //戸愚呂 ｢おれの<$26><$20>心<$A4><$20>臓がどこか わかるまい」<end>
-Toguro 「You'll never find where my heart is.」<end>
+Toguro 「You will never find where my heart is.」<end>
 
 //POINTER #198 @ $1D6D0 - STRING #198 @ $1EFBE
 
 #WRITE(Ptr, $1D6D0)
 //戸愚呂 ｢くくく．．．．<$A7><$20>擬<$2F><$20>態さ．．．．」<end>
-Toguro 「Kukuku... It's just a disguise...」<end>
+Toguro 「Kukuku... It is just a disguise...」<end>
 
 //POINTER #199 @ $1D6D2 - STRING #199 @ $1EFE4
 
@@ -1279,7 +1279,7 @@ Toguro 「Kaaaa---!」<end>
 
 #WRITE(Ptr, $1D6EA)
 //戸愚呂 ｢<$24><$20>勝<$43><$20>負だ!!」<end>
-Toguro 「Let's settle this!!」<end>
+Toguro 「Let us settle this!!」<end>
 
 //POINTER #212 @ $1D6EC - STRING #212 @ $1F176
 
@@ -1369,7 +1369,7 @@ Kamiya 「Fool!」<end>
 
 #WRITE(Ptr, $1D708)
 //神谷 ｢<$09><$20>解<$94><$20>剖してやるぜあ－－－－っ!!」<end>
-Kamiya 「I'll dissect you--!!」<end>
+Kamiya 「I will dissect you--!!」<end>
 
 //POINTER #227 @ $1D70A - STRING #227 @ $1F31E
 
@@ -1393,7 +1393,7 @@ Kamiya 「Hahahaha...」<end>
 
 #WRITE(Ptr, $1D710)
 //神谷 ｢ひとり<$4F><$20>残らず<$17><$20>消してやる．．．．」<end>
-Kamiya 「I'll erase every last one of you...」<end>
+Kamiya 「I will erase every last one of you...」<end>
 
 //POINTER #231 @ $1D712 - STRING #231 @ $1F39C
 
@@ -1429,7 +1429,7 @@ Kamiya 「My fighting spirit is burning!!」<end>
 
 #WRITE(Ptr, $1D71C)
 //神谷 ｢だてに<$A1><$20>患<$27><$20>者は<$A8><$20>診てねえぜ!!」<end>
-Kamiya 「I haven't treated patients for nothing!!」<end>
+Kamiya 「I have not treated patients for nothing!!」<end>
 
 //POINTER #237 @ $1D71E - STRING #237 @ $1F49C
 
@@ -1513,7 +1513,7 @@ Itsuki 「Shadow Hands,」<end>
 
 #WRITE(Ptr, $1D738)
 //樹 ｢<$9F><$20>影ノ<$30><$20>手よ、<$A6><$20>頼むぞ!」<end>
-Itsuki 「Shadow Hands, I'm counting on you!」<end>
+Itsuki 「Shadow Hands, I am counting on you!」<end>
 
 //POINTER #251 @ $1D73A - STRING #251 @ $1F620
 
@@ -1555,7 +1555,7 @@ Minoru 「You cannot beat me.」<end>
 
 #WRITE(Ptr, $1D746)
 //シノブ ｢もう、<$AD><$20>休みたまえ．．．．」<end>
-Shinobu 「That's enough, rest now...」<end>
+Shinobu 「That is enough, rest now...」<end>
 
 //POINTER #258 @ $1D748 - STRING #258 @ $1F712
 
@@ -1627,7 +1627,7 @@ Sensui 「Take this!」<end>
 
 #WRITE(Ptr, $1D75E)
 //カズヤ ｢<$CB><$20>調<$20><$20>子にのんじゃねェ!!」<end>
-Kazuya 「Don't get cocky!!」<end>
+Kazuya 「Do not get cocky!!」<end>
 
 //POINTER #270 @ $1D760 - STRING #270 @ $1F8A0
 
@@ -1651,7 +1651,7 @@ Yōko 「Tree Spirit Sword!」<end>
 
 #WRITE(Ptr, $1D766)
 //妖狐 ｢おまえは<$B5><$20>殺すぞ!」<end>
-Yōko 「I'll kill you!」<end>
+Yōko 「I will kill you!」<end>
 
 //POINTER #274 @ $1D768 - STRING #274 @ $1F916
 
