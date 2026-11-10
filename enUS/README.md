@@ -9,3 +9,7 @@ Status (texts only, draft, NOT compiled/tested):
 - [ ] Opening / Ending / Tournament texts
 - [ ] Graphics (title, menus, fonts) - pending decision
 - [ ] Build + emulator test
+
+Notes:
+- title.asm = ptBR/title.asm without the NAMCO/PRESENTED patch (those two screens stay in original Japanese). Replace ptBR's title.asm with this one in the build folder.
+- patch/Yuyu_enUS_draft.ips = draft patch (build of 2026-11-10, first test), apply to headerless JP ROM.
