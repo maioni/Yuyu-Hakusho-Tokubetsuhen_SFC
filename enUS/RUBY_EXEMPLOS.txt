@@ -1,0 +1,8 @@
+Exemplos do usuário para a linha de furigana em romaji (referência gráfica):
+霊光弾 = Reikōdan | 霊丸 = Reigan | 霊気 = Reiki / 満ちて = mi | 死ね = shi | 邪王炎殺 = Jaō ensatsu (usuário: "Jaouen satsu")
+ショットガン = Shotgun (katakana, sem furigana)
+邪王炎殺黒龍波 = Jaouen satsu kokuryuuha (ruby: じゃおうえんさつこくりゅうは)
+妖剣 = Youken (golpe da espada do Hiei; ruby ようけん, 1 kanji por leitura, ruby sobre cada kanji)
+邪王炎殺煉獄焦 = Jaouen satsu rengokushou (ruby: じゃおうえんさつれんごくしょう)
+
+爆肉鋼体 Bakuniku kōtai (ばくにくこうたい) -> "Corpo de Aço Explosivo" (linha 1250)

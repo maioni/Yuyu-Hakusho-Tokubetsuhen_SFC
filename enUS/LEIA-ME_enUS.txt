@@ -1,0 +1,4 @@
+ENGLISH DRAFT - texts only (graphics are still PT-BR/JP). Not tested yet.
+1. Copy atlas.exe and xkas.exe to this folder, and your headerless JP ROM as YuJ.smc.
+2. Run Yuyu_enUS.bat.
+3. Test Yuyu_enUS.smc and send screenshots of text that overflows the box.
