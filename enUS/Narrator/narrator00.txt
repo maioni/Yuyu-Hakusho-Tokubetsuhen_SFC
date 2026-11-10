@@ -1,0 +1,16 @@
+#VAR(Table,TABLE)
+#ADDTBL("narrator_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($00)
+<dummy><txt_spd><$02>
+Welcome to the<line>
+Dark Tournament!<wait><clear>
+Human, youkai, demon, or whatever<line>
+you are, it doesn't matter!<wait><clear>
+Use the control pad to choose the<line>
+game mode and press A to confirm!
+<end>

@@ -1,0 +1,96 @@
+#VAR(Table,TABLE)
+#ADDTBL("serifu_PTBR.tbl",Table)
+#ACTIVETBL(Table)
+#HDR($0)
+#VAR(Ptr, CUSTOMPOINTER)
+#CREATEPTR(Ptr, "HIROM", $00, 16)
+
+#JMP($320000)
+Press START to skip this intro,<line>
+and press A to advance the text.<pause><clear2>
+Press B, X, Y, L or R to change<line>
+the text color.<pause><line>
+Press Select to return to the<line>
+default color.<pause><clear2>
+This is the English version of<line>
+Yū Yū Hakusho Tokubetsu-hen<line>
+(Special Edition), released for<line>
+the Super Famicom.<pause><clear2>
+This version is based on stoneboat's<line>
+Vietnamese translation, who released<line>
+the project's source code for free.<pause><clear2>
+Before you play, there are a few<line>
+important things about this patch.<pause><clear2>
+First, this is a fan translation<line>
+and it is completely free. If<line>
+anyone charges for it, don't pay.<pause><clear2>
+Second, this translation has no<line>
+authorization from Nintendo or<line>
+Namco, so it may infringe their<line>
+copyrights.<pause><clear2>
+Third, it does not aim to harm<line>
+Nintendo or Namco, and nobody<line>
+profits from it, not even through<line>
+donations.<pause><clear2>
+The goal is to preserve the memory<line>
+of retro games and bring this<line>
+classic to those who could not<line>
+play it in English.<pause><clear2>
+Fourth, character names follow the<line>
+Japanese romanization (Yūsuke,<line>
+Kurama, etc.), and move names<line>
+have been translated.<pause><clear2>
+Fifth, since it uses the code of<line>
+the Vietnamese version, this patch<line>
+has some features the original<line>
+Japanese game does not have.<pause><clear2>
+The features are the following.<line>
+1. Move your character left and<line>
+right during the fight.<pause><clear2>
+2. Press the right button at the<line>
+right time to always dodge the<line>
+opponent's attacks.<pause><clear2>
+3. Press the right button at the<line>
+right time to always hit the<line>
+opponent.<pause><clear2>
+4. Press the right button at the<line>
+right time to recover vitality<line>
+(HP).<pause><clear2>
+5. Press the right button at the<line>
+right time to recover spirit<line>
+energy (MP).<pause><clear2>
+6. Press the right button at the<line>
+right time to recover the balance<line>
+bar (BP).<pause><clear2>
+These features can change the<line>
+game's difficulty a lot and, with<line>
+it, the player's experience.<pause><clear2>
+For that reason, the button timing<line>
+is not disclosed here, but you can<line>
+find it by reading the source code,<line>
+if you know how.<pause><clear2>
+You can also see tips on how to<line>
+press them on the YouTube channel<line>
+below:<line>
+https://www.youtube.com/@Stoneboat<pause><clear2>
+If you don't press these buttons at<line>
+the right time, it is just like<line>
+playing a regular translation, with<line>
+no difference in experience.<pause><clear2>
+Sixth, this patch is distributed<line>
+with its source code, so you can<line>
+edit the texts and make your own<line>
+version.<pause><clear2>
+You can also change or add features<line>
+to the game to create the version<line>
+you want.<pause><clear2>
+For that, you need to understand the<line>
+Super Famicom hardware and the<line>
+WDC65816 assembly language.<pause><clear2>
+In other words, to touch the source<line>
+code you need to know what you are<line>
+doing.<pause><clear2>
+Finally, thank you for reading this<line>
+far. Press A to return to the game.<pause><clear2>
+
+<end>
