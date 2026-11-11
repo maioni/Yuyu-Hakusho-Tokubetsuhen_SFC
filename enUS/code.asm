@@ -6117,3 +6117,27 @@ gekishu01_fix:
 org $C09FB0
 ruby_extra:
 	incbin "Font/ruby_extra.bin"
+
+//v0.9/v7.0: rotulos no painel de luta (tilemap linha 30 = y208-215): kanji + traducao em vermelho/azul/amarelo,
+//as cores das barras de vida / espirito / energia. 17 tiles extras vao para a VRAM $F9E0 logo depois do bloco de tiles
+//do painel, e a linha 30 do tilemap e sobrescrita no buffer WRAM $7E:2380-$23BF antes da soma da base $2040.
+org $8180E9
+	db $22,$40,$A0,$F0,$EA			//JSL hud_map_hook + NOP (antes: PEA $7E7E / PLB / PLB)
+org $818208
+	db $22,$00,$A0,$F0				//JSL hud_tile_hook (antes: JSL $809ECA)
+org $8FFCEE
+	dw $14BF,$7F6E,$2AB9			//paleta 1 cores 1-3: vermelho, azul, amarelo
+org $F0A000
+hud_tile_hook:
+	db $22,$CA,$9E,$80,$08,$78,$E2,$20,$A9,$80,$8D,$15,$21,$C2,$30
+	db $A9,$F0,$7C,$8D,$16,$21,$A2,$00,$00
+	db $BF,$80,$A0,$F0,$8D,$18,$21,$E8,$E8,$E0,$20,$02,$D0,$F2,$28,$6B
+org $F0A040
+hud_map_hook:
+	db $F4,$7E,$7E,$AB,$AB,$A2,$00,$00,$BF,$C0,$A2,$F0,$9D,$80,$23,$E8,$E8,$E0,$40,$00,$D0,$F2,$6B
+org $F0A080
+hud_tiles:
+	incbin "HUD/hud_tiles.bin"
+org $F0A2C0
+hud_row:
+	incbin "HUD/hud_row.bin"
