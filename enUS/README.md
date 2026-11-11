@@ -11,6 +11,7 @@ Status:
 - [x] Opening (voice cast, credits, title screen, move-list demos) and ending credits
 - [x] END screen, Tournament result texts
 - [x] Fight HUD labels under the bars (kanji + translation: Life / Spirit / Energy), in the bar colours
+- [x] Romaji (furigana) line above the move names and battle messages, as in the PT-BR version
 - [x] Menu plates, arena names, fighter select names/titles, team screens, button configuration, sound-test screen (all in the game's pixel font)
 - [x] Built and tested in an emulator
 
