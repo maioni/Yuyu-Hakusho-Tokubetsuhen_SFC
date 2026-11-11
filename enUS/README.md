@@ -12,6 +12,7 @@ Status:
 - [x] END screen, Tournament result texts
 - [x] Fight HUD labels under the bars (kanji + translation: Life / Spirit / Energy), in the bar colours
 - [x] Romaji (furigana) line above the move names and battle messages, as in the PT-BR version
+- [x] Hiei's "Evil King" moves renamed to "Evil Flame" (move list and battle); move-list highlight no longer leaves white pixels on the left
 - [x] Menu plates, arena names, fighter select names/titles, team screens, button configuration, sound-test screen (all in the game's pixel font)
 - [x] Built and tested in an emulator
 

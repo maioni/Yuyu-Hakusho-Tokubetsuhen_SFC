@@ -352,3 +352,7 @@ Romaji reposicionado (44 linhas, sem <name>): modelo calibrado com 3 prints (pec
 - CORRIGIDO: cabeçalho vazio do time perdedor na vitória por equipes: $0258/$025A vinham com byte alto $FF; load_team_name agora mascara (AND #$00FF) e copia com MVN (rotina menor, cabe no lugar original). Testado no emulador.
 - Abertura: "Apresentado o" -> "Apresentando o" (Opening/pres_tiles.bin / pres_map.bin; tiles agora 2bpp 16x16, chars novos a partir do tile 416; stream LZ decodificado/recodificado, validado no emulador).
 - Gerador da ROM de teste agora aplica square00_set e square11_set (Floresta/Domo e Opcoes com a fonte pequena igual a Colina/Dimensao).
+
+## v7.0 (ajustes finais)
+- Lista de golpes da abertura: o texto dos golpes começava no pixel 38/39, vazando para a coluna de tiles que não recebe a cor vermelha do golpe selecionado (pixels brancos à esquerda). Todas as linhas (demo00-19) agora começam no pixel 40.
+- Romaji (furigana) nas 32 falas/golpes que ainda não tinham (peças tiradas do original japonês, posicionadas pela largura dos caracteres).
