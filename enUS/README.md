@@ -1,10 +1,10 @@
-# Yū Yū Hakusho Tokubetsu-hen - English (enUS) - v0.8
+# Yū Yū Hakusho Tokubetsu-hen - English (enUS) - v0.9
 
 ![Preview](preview.png)
 
 Fan/faithful style: romanized names (Yūsuke, Rei Gan, Jagan...), literal move names. Derived from the PT-BR project (itself built on stoneboat65816's Vietnamese project).
 
-Patch: `patch/Yuyu_enUS_v0.8.ips` — apply to a headerless 2 MB Japanese ROM (2,097,152 bytes). The patched ROM is 3,677,184 bytes. Older patches (v0.1, v0.2) are kept in the same folder.
+Patch: `patch/Yuyu_enUS_v0.9.ips` — apply to a headerless 2 MB Japanese ROM (2,097,152 bytes). The patched ROM is 3,677,184 bytes. Older patches (v0.1, v0.2) are kept in the same folder.
 
 Status:
 - [x] Battle text, names, intro and narrator texts
