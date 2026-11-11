@@ -161,7 +161,7 @@ Narrador 『<name><$4C><$20>perde<$9A><$20>u pr<$9B><$20>ecisão!』<end>
 
 #WRITE(Ptr, $1D576)
 //『<$53><$20>霊<$12><$20>撃が<$41><$20>封じられた!!』<end>
-『<name><$00><$20>ataque<$40><$20> espiritual selado!』<end>
+『<$00><$20>O ataque<$40><$20> espiritual foi selado!』<end>
 
 //POINTER #26 @ $1D578 - STRING #26 @ $1DACC
 
@@ -1493,31 +1493,31 @@ Hagiri 「Haaaaaaaa!」<end>
 
 #WRITE(Ptr, $1D732)
 //樹 ｢<$9C><$20>裏<$9E><$20>男よ、まかせた．．．．」<end>
-Itsuki 「<$9C><$20>Ura-otoko, <$9E><$20>deixo com você...」<end>
+Itsuki 「Ura-otoko, é com você...」<end>
 
 //POINTER #248 @ $1D734 - STRING #248 @ $1F5C8
 
 #WRITE(Ptr, $1D734)
 //樹 ｢<$9C><$20>裏<$9E><$20>男よ、のみこめ．．．．」<end>
-Itsuki 「<$9C><$20>Ura-oto<$9E><$20>ko, engula...」<end>
+Itsuki 「Ura-otoko, engula...」<end>
 
 //POINTER #249 @ $1D736 - STRING #249 @ $1F5EA
 
 #WRITE(Ptr, $1D736)
 //樹 ｢<$9F><$20>影ノ<$30><$20>手よ<end>
-Itsuki 「<$2E><$20>Mãos <$2F><$20>Sombrias,」<end>
+Itsuki 「<$2E><$20>Mãos S<$2F><$20>ombrias,」<end>
 
 //POINTER #250 @ $1D738 - STRING #250 @ $1F5FE
 
 #WRITE(Ptr, $1D738)
 //樹 ｢<$9F><$20>影ノ<$30><$20>手よ、<$A6><$20>頼むぞ!」<end>
-Itsuki 「<$2E><$20>Mãos <$2F><$20>Sombrias, conto com você」<end>
+Itsuki 「<$2E><$20>Mãos S<$2F><$20>ombrias, conto com você」<end>
 
 //POINTER #251 @ $1D73A - STRING #251 @ $1F620
 
 #WRITE(Ptr, $1D73A)
 //樹 ｢<$9F><$20>影ノ<$30><$20>手よ、<$41><$20>封じり!」<end>
-Itsuki 「<$2E><$20>Mãos <$2F><$20>Sombrias, selem-no!」<end>
+Itsuki 「<$2E><$20>Mãos S<$2F><$20>ombrias, selem-no!」<end>
 
 //POINTER #252 @ $1D73C - STRING #252 @ $1F642
 
@@ -1529,19 +1529,19 @@ Itsuki 「<$2E><$20>Vá... M<$2F><$20>ão Sombria...」<end>
 
 #WRITE(Ptr, $1D73E)
 //樹 ｢ゆけ．．．．<$9F><$20>影ノ<$30><$20>手たちよ．．．．」<end>
-Itsuki 「<$2E><$20>Vão... <$2F><$20>Mãos Sombrias...」<end>
+Itsuki 「<$2E><$20>Vão... M<$2F><$20>ãos Sombrias...」<end>
 
 //POINTER #254 @ $1D740 - STRING #254 @ $1F68A
 
 #WRITE(Ptr, $1D740)
 //『<$9C><$20>裏<$9E><$20>男が<$0D><$20>吸<$23><$20>収した!』<end>
-『<$9C><$20>Ura-ot<$9E><$20>oko abso<$0D><$20>rveu a <$23><$20>energia!』<end>
+『Ura-otoko abso<$0D><$20>rveu a <$23><$20>energia!』<end>
 
 //POINTER #255 @ $1D742 - STRING #255 @ $1F6A8
 
 #WRITE(Ptr, $1D742)
 //『<$9C><$20>裏<$9E><$20>男にのみこまれた!』<end>
-『<$9C><$20>Foi engolido <$9E><$20>por Ura-otoko!』<end>
+『Itsuki foi engolido por Ura-otoko!』<end>
 
 //POINTER #256 @ $1D744 - STRING #256 @ $1F6C6
 

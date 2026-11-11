@@ -185,7 +185,7 @@ Narrator 『<name><$4C><$20>lost a<$9A><$20>ccur<$9B><$20>acy!』<end>
 
 #WRITE(Ptr, $1D57E)
 //『つきぬけたぁ－－』<end>
-『Broke through the opponent attack!』<end>
+『Broke through!!』<end>
 
 //POINTER #30 @ $1D580 - STRING #30 @ $1DB56
 
@@ -1495,13 +1495,13 @@ Hagiri 「Haaaaaaaa!!」<end>
 
 #WRITE(Ptr, $1D732)
 //樹 ｢<$9C><$20>裏<$9E><$20>男よ、まかせた．．．．」<end>
-Itsuki 「<$9C><$20>Ura-otoko,<$9E><$20> it is yours...」<end>
+Itsuki 「Ura-otoko, I leave it to you...」<end>
 
 //POINTER #248 @ $1D734 - STRING #248 @ $1F5C8
 
 #WRITE(Ptr, $1D734)
 //樹 ｢<$9C><$20>裏<$9E><$20>男よ、のみこめ．．．．」<end>
-Itsuki 「<$9C><$20>Ura-otoko,<$9E><$20> swallow them...」<end>
+Itsuki 「Ura-otoko, swallow them...」<end>
 
 //POINTER #249 @ $1D736 - STRING #249 @ $1F5EA
 
@@ -1537,13 +1537,13 @@ Itsuki 「<$2E><$20>Go... Shado<$2F><$20>w Hands...」<end>
 
 #WRITE(Ptr, $1D740)
 //『<$9C><$20>裏<$9E><$20>男が<$0D><$20>吸<$23><$20>収した!』<end>
-『<$9C><$20>Ura-ot<$9E><$20>oko absor<$0D><$20>bed the<$23><$20> energy!』<end>
+『Ura-otoko absor<$0D><$20>bed the<$23><$20> energy!』<end>
 
 //POINTER #255 @ $1D742 - STRING #255 @ $1F6A8
 
 #WRITE(Ptr, $1D742)
 //『<$9C><$20>裏<$9E><$20>男にのみこまれた!』<end>
-『<$9C><$20>Swallowed by<$9E><$20> Ura-otoko!』<end>
+『Swallowed by Ura-otoko!』<end>
 
 //POINTER #256 @ $1D744 - STRING #256 @ $1F6C6
 
