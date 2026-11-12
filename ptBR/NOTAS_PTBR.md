@@ -354,5 +354,6 @@ Romaji reposicionado (44 linhas, sem <name>): modelo calibrado com 3 prints (pec
 - Gerador da ROM de teste agora aplica square00_set e square11_set (Floresta/Domo e Opcoes com a fonte pequena igual a Colina/Dimensao).
 
 ## v7.0 (ajustes finais)
+- Rótulos do HUD de luta (kanji + sigla, nas cores das barras): 体力 HP (Pontos de Vida), 気 BP (Pontos de Equilíbrio), 霊 MP (Pontos de Energia Espiritual). Os orbs são os mesmos três: vermelho 愛 recupera 体力, azul-esverdeado 気 recupera 体勢 (equilíbrio) e amarelo 霊 recupera 霊気 (energia espiritual).
 - Lista de golpes da abertura: o texto dos golpes começava no pixel 38/39, vazando para a coluna de tiles que não recebe a cor vermelha do golpe selecionado (pixels brancos à esquerda). Todas as linhas (demo00-19) agora começam no pixel 40.
 - Romaji (furigana) nas 32 falas/golpes que ainda não tinham (peças tiradas do original japonês, posicionadas pela largura dos caracteres).
