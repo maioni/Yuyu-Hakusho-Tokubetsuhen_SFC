@@ -44,6 +44,12 @@ Fifth, since it uses the code of<line>
 the Vietnamese version, this patch<line>
 has some features the original<line>
 Japanese game does not have.<pause><clear2>
+The bars and orbs of the fight<line>
+HUD are the following.<line>
+HP (red orb): Life Points.<pause><clear2>
+BP (blue orb): Balance Points.<pause><clear2>
+MP (yellow orb): Spiritual<line>
+Energy Points.<pause><clear2>
 The features are the following.<line>
 1. Move your character left and<line>
 right during the fight.<pause><clear2>

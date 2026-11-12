@@ -45,6 +45,13 @@ Quinto, por usar o código da versão<line>
 vietnamita, esta tradução tem alguns<line>
 recursos que o jogo original em<line>
 japonês não possui.<pause><clear2>
+As barras e os orbs do HUD da<line>
+luta são os seguintes.<line>
+HP (orb vermelho): Pontos de Vida.<pause><clear2>
+BP (orb azul): Pontos de<line>
+Equilíbrio.<pause><clear2>
+MP (orb amarelo): Pontos de<line>
+Energia Espiritual.<pause><clear2>
 Os recursos são os seguintes.<line>
 1. Mover o personagem para a<line>
 esquerda e para a direita durante<line>
