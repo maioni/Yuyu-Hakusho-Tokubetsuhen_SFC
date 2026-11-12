@@ -221,7 +221,7 @@ Narrador 『<$AB><$20>Os dois <$17><$20>golpes se<$AC><$20> anularam!!』<end>
 
 #WRITE(Ptr, $1D58A)
 //『<$2F><$20>体<$2C><$20>勢を<$A1><$20>完<$C5><$20>全にたてなおした－－ッ!!!』<end>
-『<name>recuperou <$C0><$20>toda <$98><$20>a post<$C1><$20>ura<$B8><$20>!!』<end>
+『<name>recuperou <$C0><$20>toda <$98><$20>a post<$C1><$20>ura!!<$B8><$20>』<end>
 
 //POINTER #36 @ $1D58C - STRING #36 @ $1DC2E
 
@@ -995,7 +995,7 @@ Karasu <$AA><$20>「Bomba <$AB><$20>Perseguidora!」<end>
 
 #WRITE(Ptr, $1D68C)
 //<$88><$20>地<$89><$20>下<$8A><$20>爆<$8B><$20>弾 ｢つかまえた．．．．」<end>
-<$A6><$20>Bo<$A7><$20>mba <$A8><$20>Sub<$A9><$20>terrânea 「Peguei você...」<end>
+<$A6><$20>Bomb<$A7><$20>a Su<$A8><$20>bt<$A9><$20>errânea 「Peguei você...」<end>
 
 //POINTER #165 @ $1D68E - STRING #165 @ $1EBDE
 
@@ -1007,7 +1007,7 @@ Karasu 「Koooo!!」<end>
 
 #WRITE(Ptr, $1D690)
 //<$88><$20>地<$89><$20>下<$8A><$20>爆<$8B><$20>弾 ｢キキキキ．．．．」<end>
-<$A6><$20>Bo<$A7><$20>mba <$A8><$20>Sub<$A9><$20>terrânea 「Kikikiki...」<end>
+<$A6><$20>Bomb<$A7><$20>a Su<$A8><$20>bt<$A9><$20>errânea 「Kikikiki...」<end>
 
 //POINTER #167 @ $1D692 - STRING #167 @ $1EC1A
 

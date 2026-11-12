@@ -47,7 +47,7 @@ Narrator 『Whoa! <name>staggered!!』<end>
 
 #WRITE(Ptr, $1D550)
 //『<$24><$20>衝<$12><$20>撃<$3B><$20>波がかすめた!!』<end>
-『<name>was grazed by the <$91><$20>sho<$40><$20>ckwave<$03><$20>!』<end>
+『<name>was grazed by the <$91><$20>shoc<$40><$20>kwave!<$03><$20>』<end>
 
 //POINTER #7 @ $1D552 - STRING #7 @ $1D842
 
@@ -143,7 +143,7 @@ Narrator 『<name><$4C><$20>lost a<$9A><$20>ccur<$9B><$20>acy!』<end>
 
 #WRITE(Ptr, $1D570)
 //『<$C5><$20>全<$26><$20>身から<$B7>力<$10>がぬけていく!!』<end>
-『<name>feels <$98><$20>str<$99><$20>ength <$9A><$20>drai<$9B><$20>n away!』<end>
+『<name>feels <$98><$20>stre<$99><$20>ngth d<$9A><$20>rain<$9B><$20> away!』<end>
 
 //POINTER #23 @ $1D572 - STRING #23 @ $1DA6A
 
@@ -239,7 +239,7 @@ Narrator 『<$AB><$20>Both att<$17><$20>acks can<$AC><$20>celled out!!』<end>
 
 #WRITE(Ptr, $1D590)
 //『<$53><$20>霊<$0C><$20>気が <$A8><$20>満ちていく!!』<end>
-『<name>is full of <$00><$20>spir<$94><$20>it e<$7D><$20>nergy!』<end>
+『<name>is full of <$00><$20>spiri<$94><$20>t e<$7D><$20>nergy!』<end>
 
 //POINTER #39 @ $1D592 - STRING #39 @ $1DC94
 
@@ -395,7 +395,7 @@ Kuwabara 「<$12><$20>Dimen<$13><$20>sion <$1D><$20>Sword!」<end>
 
 #WRITE(Ptr, $1D5C4)
 //蔵馬 ｢<$8F><$20>薇<$90><$20>薔<$91><$20>棘<$92><$20>鞭<$93><$20>刃!!」<end>
-Kurama 「<$19><$20>Rose <$1A><$20>Whip!!」<end>
+Kurama 「<$19><$20>Rose W<$1A><$20>hip!!」<end>
 
 //POINTER #65 @ $1D5C6 - STRING #65 @ $1DFDC
 
@@ -677,19 +677,19 @@ Rinku 「Here goes!」<end>
 
 #WRITE(Ptr, $1D622)
 //鈴駒 ｢<$6D><$20>盾<$6E><$20>妖<$6F><$20>妖ォ~!!」<end>
-Rinku 「<$55><$20>Shie<$56><$20>ld Yo-<$57><$20>Yo~!!」<end>
+Rinku 「<$55><$20>Shiel<$56><$20>d Yo-Y<$57><$20>o~!!」<end>
 
 //POINTER #112 @ $1D624 - STRING #112 @ $1E55E
 
 #WRITE(Ptr, $1D624)
 //鈴駒 ｢<$74><$20>大<$75><$20>車<$76><$20>輪!!!」<end>
-Rinku 「<$5B><$20>Grea<$5C><$20>t Whee<$5D><$20>l!!!」<end>
+Rinku 「<$5B><$20>Great<$5C><$20> Wheel<$5D><$20>!!!」<end>
 
 //POINTER #113 @ $1D626 - STRING #113 @ $1E57C
 
 #WRITE(Ptr, $1D626)
 //鈴駒 ｢<$77><$20>魔<$78><$20>妖<$79><$20>妖ォ~!!」<end>
-Rinku 「<$52><$20>Demo<$53><$20>n Yo-<$54><$20>Yo~!!」<end>
+Rinku 「<$52><$20>Demon<$53><$20> Yo-Y<$54><$20>o~!!」<end>
 
 //POINTER #114 @ $1D628 - STRING #114 @ $1E59C
 
@@ -701,7 +701,7 @@ Rinku 「Take that!!」<end>
 
 #WRITE(Ptr, $1D62A)
 //鈴駒 ｢<$65><$20>双<$66><$20>妖<$67><$20>妖ォ~!!!」<end>
-Rinku 「<$58><$20>Twin<$59><$20> Yo-Y<$5A><$20>o~!!!」<end>
+Rinku 「<$58><$20>Twin <$59><$20>Yo-Yo<$5A><$20>~!!!」<end>
 
 //POINTER #116 @ $1D62C - STRING #116 @ $1E5D8
 
@@ -791,7 +791,7 @@ Tōya 「Hmph!」<end>
 
 #WRITE(Ptr, $1D648)
 //『<$2B><$20>氷の<$4D><$20>妖<$0C><$20>気が あたりにひりがる!!』<end>
-『Icy <$9C><$20>dem<$93><$20>on en<$94><$20>ergy spreads all around!』<end>
+『Icy <$9C><$20>demo<$93><$20>n en<$94><$20>ergy spreads all around!』<end>
 
 //POINTER #131 @ $1D64A - STRING #131 @ $1E7A6
 
@@ -979,7 +979,7 @@ Karasu 「<$A4><$20>Hand G<$A5><$20>renade」<end>
 
 #WRITE(Ptr, $1D686)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$83><$20>閃<$84><$20>光<$85><$20>弾<end>
-Karasu 「<$6C><$20>Flash<$6D><$20> Bomb!」<end>
+Karasu 「<$6C><$20>Flash <$6D><$20>Bomb!」<end>
 
 //POINTER #162 @ $1D688 - STRING #162 @ $1EB80
 
@@ -991,7 +991,7 @@ Karasu 「<$A6><$20>Und<$A7><$20>ergr<$A8><$20>ound<$A9><$20> Bomb!」<end>
 
 #WRITE(Ptr, $1D68A)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$7A><$20>追<$7B><$20>跡<$7C><$20>爆<$7D><$20>弾<end>
-Karasu 「<$AA><$20>Chase<$AB><$20>r Bomb!」<end>
+Karasu 「<$AA><$20>Chaser<$AB><$20> Bomb!」<end>
 
 //POINTER #164 @ $1D68C - STRING #164 @ $1EBB8
 
@@ -1015,7 +1015,7 @@ Karasu 「Koooo!!」<end>
 
 #WRITE(Ptr, $1D692)
 //<$7A><$20>追<$7B><$20>跡<$7C><$20>爆<$7D><$20>弾 ｢ギギギギッ!!」<end>
-<$AA><$20>Chase<$AB><$20>r Bomb 「Gigigigi!!」<end>
+<$AA><$20>Chaser<$AB><$20> Bomb 「Gigigigi!!」<end>
 
 //POINTER #168 @ $1D694 - STRING #168 @ $1EC40
 
@@ -1069,7 +1069,7 @@ Karasu 「Ha!!」<end>
 
 #WRITE(Ptr, $1D6A4)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$CE><$20>閃<$CF><$20>光<$D0><$20>火<$D1><$20>炎<$D2><$20>弾<end>
-Karasu 「<$6E><$20>Flash<$6F><$20> and F<$70><$20>ire B<$71><$20>omb!」<end>
+Karasu 「<$6E><$20>Flash <$6F><$20>and Fi<$70><$20>re Bo<$71><$20>mb!」<end>
 
 //POINTER #177 @ $1D6A6 - STRING #177 @ $1ED40
 
@@ -1099,19 +1099,19 @@ Bui 「Hmm!!」<end>
 
 #WRITE(Ptr, $1D6AE)
 //武威 ｢<$4A><$20>魔<$37><$20>闘<$2D><$20>戦<$46><$20>斧!!!」<end>
-Bui 「<$60><$20>Demon<$64><$20> Batt<$65><$20>le Axe!!!」<end>
+Bui 「<$60><$20>Demon <$64><$20>Battl<$65><$20>e Axe!!!」<end>
 
 //POINTER #182 @ $1D6B0 - STRING #182 @ $1EDD2
 
 #WRITE(Ptr, $1D6B0)
 //武威 ｢<$4A><$20>魔<$37><$20>闘<$52><$20>裂<$2D><$20>閃<$24><$20>掌!!!」<end>
-Bui 「<$60><$20>Demon<$66><$20> Slici<$67><$20>ng Pa<$68><$20>lm!!!」<end>
+Bui 「<$60><$20>Demon <$66><$20>Slicin<$67><$20>g Pal<$68><$20>m!!!」<end>
 
 //POINTER #183 @ $1D6B2 - STRING #183 @ $1EDF8
 
 #WRITE(Ptr, $1D6B2)
 //武威 ｢<$4A><$20>魔<$37><$20>闘<$24><$20>翔<$1F><$20>斬<$46><$20>斧!!!」<end>
-Bui 「<$60><$20>Demon<$61><$20> Flyin<$62><$20>g Batt<$63><$20>le Axe!!!」<end>
+Bui 「<$60><$20>Demon <$61><$20>Flying<$62><$20> Batt<$63><$20>le Axe!!!」<end>
 
 //POINTER #184 @ $1D6B4 - STRING #184 @ $1EE1E
 
@@ -1369,7 +1369,7 @@ Kamiya 「Fool!」<end>
 
 #WRITE(Ptr, $1D708)
 //神谷 ｢<$09><$20>解<$94><$20>剖してやるぜあ－－－－っ!!」<end>
-Kamiya 「I will <$A1><$20>dis<$B1><$20>sect you--!!」<end>
+Kamiya 「I will <$A1><$20>diss<$B1><$20>ect you--!!」<end>
 
 //POINTER #227 @ $1D70A - STRING #227 @ $1F31E
 
@@ -1393,7 +1393,7 @@ Kamiya 「Hahahaha...」<end>
 
 #WRITE(Ptr, $1D710)
 //神谷 ｢ひとり<$4F><$20>残らず<$17><$20>消してやる．．．．」<end>
-Kamiya 「I will <$B2><$20>erase<$B3><$20> you all...」<end>
+Kamiya 「I will <$B2><$20>erase <$B3><$20>you all...」<end>
 
 //POINTER #231 @ $1D712 - STRING #231 @ $1F39C
 
@@ -1441,7 +1441,7 @@ Kamiya 「Uoo...!!」<end>
 
 #WRITE(Ptr, $1D720)
 //刃霧 ｢<$20><$20>死<$C9><$20>紋<$28><$20>十<$97><$20>字<$3D><$20>班!!!」<end>
-Hagiri 「<$39><$20>Dea<$41><$20>th M<$42><$20>ark<$12><$20> Cr<$44><$20>oss!!!」<end>
+Hagiri 「<$39><$20>Deat<$41><$20>h Ma<$42><$20>rk <$12><$20>Cro<$44><$20>ss!!!」<end>
 
 //POINTER #239 @ $1D722 - STRING #239 @ $1F4DC
 
@@ -1585,25 +1585,25 @@ Kazuya 「Take this!!」<end>
 
 #WRITE(Ptr, $1D750)
 //仙水 ｢<$52><$20>裂<$C2><$20>破<$41><$20>風<$2A><$20>陣<$11><$20>拳!」<end>
-Sensui 「<$32><$20>Slici<$33><$20>ng <$14><$20>Whirlw<$18><$20>ind<$08><$20> Fist!」<end>
+Sensui 「<$32><$20>Slicin<$33><$20>g <$14><$20>Whirlw<$18><$20>ind<$08><$20> Fist!」<end>
 
 //POINTER #263 @ $1D752 - STRING #263 @ $1F7C2
 
 #WRITE(Ptr, $1D752)
 //仙水 ｢<$52><$20>裂<$23><$20>蹴<$05><$20>黄<$1F><$20>斬<$AE><$20>脚!」<end>
-Sensui 「<$30><$20>Yellow<$31><$20> S<$34><$20>licing<$35><$20> Kick!<$36><$20>」<end>
+Sensui 「<$30><$20>Yellow <$31><$20>Sl<$34><$20>icing <$35><$20>Kick!」<$36><$20><end>
 
 //POINTER #264 @ $1D754 - STRING #264 @ $1F7E4
 
 #WRITE(Ptr, $1D754)
 //仙水 ｢<$52><$20>裂<$23><$20>蹴<$15><$20>紅<$0D><$20>球<$3B><$20>波!」<end>
-Sensui 「<$30><$20>Slici<$31><$20>ng Kic<$37><$20>k: C<$38><$20>rimso<$03><$20>n Wave!」<end>
+Sensui 「<$30><$20>Slicin<$31><$20>g Kic<$37><$20>k: C<$38><$20>rimso<$03><$20>n Wave!」<end>
 
 //POINTER #265 @ $1D756 - STRING #265 @ $1F806
 
 #WRITE(Ptr, $1D756)
 //仙水 ｢<$52><$20>裂<$23><$20>蹴<$20><$20>紫<$04><$20>炎<$32><$20>弾!」<end>
-Sensui 「<$30><$20>Slici<$31><$20>ng K<$39><$20>ick: P<$3A><$20>urple<$0D><$20> Flame!」<end>
+Sensui 「<$30><$20>Slicin<$31><$20>g K<$39><$20>ick: P<$3A><$20>urple<$0D><$20> Flame!」<end>
 
 //POINTER #266 @ $1D758 - STRING #266 @ $1F828
 
