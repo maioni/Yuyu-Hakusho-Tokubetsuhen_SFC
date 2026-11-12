@@ -287,7 +287,7 @@ Yūsuke 「Uraaa!」<end>
 
 #WRITE(Ptr, $1D5A0)
 //幽助 ｢<$01><$20>霊<$00><$20>丸－－－!!!」<end>
-Yūsuke 「<$00><$20>Rei<$01><$20> Gan---!!」<end>
+Yūsuke 「<$00><$20>Rei <$01><$20>Gan---!!」<end>
 
 //POINTER #47 @ $1D5A2 - STRING #47 @ $1DD8C
 
@@ -593,7 +593,7 @@ Genkai 「<$00><$20>Spiri<$0C><$20>t Mi<$2C><$20>rror <$2D><$20>Refle<$0B><$20>c
 
 #WRITE(Ptr, $1D606)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10> <$53><$20>霊<$D7><$10><$0B><$20>丸<end>
-                      <$00><$20>Rei G<$01><$20>an<end>
+                      <$00><$20>Rei <$01><$20>Gan<end>
 
 //POINTER #98 @ $1D608 - STRING #98 @ $1E3DA
 
@@ -605,7 +605,7 @@ Genkai 「<$0C><$20>Light!」<end>
 
 #WRITE(Ptr, $1D60A)
 //幻海 ｢<$53><$20>霊<$0B><$20>丸!!」<end>
-Genkai 「<$00><$20>Rei<$01><$20> Gan!!」<end>
+Genkai 「<$00><$20>Rei <$01><$20>Gan!!」<end>
 
 //POINTER #100 @ $1D60C - STRING #100 @ $1E402
 
