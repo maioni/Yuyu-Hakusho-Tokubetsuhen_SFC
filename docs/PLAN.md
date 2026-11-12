@@ -1,6 +1,6 @@
 # PLAN / HISTORY — Yū Yū Hakusho Tokubetsu-hen translations
 
-Working log. Update it at the end of every work session.
+Working log. Update it at the end of every work session. Full chronology: see `docs/HISTORY.md`.
 
 ## Done (newest last)
 - v0.9 EN / v7.0 PT: title credit line (maioni / sniperdmaa, based on stoneboat), battle-text fixes from the user's screenshots.
