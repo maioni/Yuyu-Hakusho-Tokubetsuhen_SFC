@@ -985,7 +985,7 @@ Karasu 「<$6C><$20>Flash <$6D><$20>Bomb!」<end>
 
 #WRITE(Ptr, $1D688)
 //<$D7><$10><$D7><$10><$D7><$10><$D7><$10><$D7><$10><$88><$20>地<$89><$20>下<$8A><$20>爆<$8B><$20>弾<end>
-Karasu 「<$A6><$20>Und<$A7><$20>ergr<$A8><$20>ound<$A9><$20> Bomb!」<end>
+Karasu 「<$A6><$20>Und<$A7><$20>ergr<$A8><$20>oun<$A9><$20>d Bomb!」<end>
 
 //POINTER #163 @ $1D68A - STRING #163 @ $1EB9C
 
@@ -997,7 +997,7 @@ Karasu 「<$AA><$20>Chaser<$AB><$20> Bomb!」<end>
 
 #WRITE(Ptr, $1D68C)
 //<$88><$20>地<$89><$20>下<$8A><$20>爆<$8B><$20>弾 ｢つかまえた．．．．」<end>
-<$A6><$20>Unde<$A7><$20>rgro<$A8><$20>und <$A9><$20>Bomb 「Got you...」<end>
+<$A6><$20>Unde<$A7><$20>rgro<$A8><$20>un<$A9><$20>d Bomb 「Got you...」<end>
 
 //POINTER #165 @ $1D68E - STRING #165 @ $1EBDE
 
@@ -1009,7 +1009,7 @@ Karasu 「Koooo!!」<end>
 
 #WRITE(Ptr, $1D690)
 //<$88><$20>地<$89><$20>下<$8A><$20>爆<$8B><$20>弾 ｢キキキキ．．．．」<end>
-<$A6><$20>Unde<$A7><$20>rgro<$A8><$20>und <$A9><$20>Bomb 「Kikikiki...」<end>
+<$A6><$20>Unde<$A7><$20>rgro<$A8><$20>un<$A9><$20>d Bomb 「Kikikiki...」<end>
 
 //POINTER #167 @ $1D692 - STRING #167 @ $1EC1A
 
