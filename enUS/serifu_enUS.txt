@@ -58,10 +58,10 @@ right time to recover vitality<line>
 (HP).<pause><clear2>
 5. Press the right button at the<line>
 right time to recover spirit<line>
-energy (MP).<pause><clear2>
+energy (SP).<pause><clear2>
 6. Press the right button at the<line>
-right time to recover the balance<line>
-bar (BP).<pause><clear2>
+right time to recover fighting<line>
+spirit (BP).<pause><clear2>
 These features can change the<line>
 game's difficulty a lot and, with<line>
 it, the player's experience.<pause><clear2>
