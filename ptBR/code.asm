@@ -2391,7 +2391,7 @@ dma_preset:
 	STA $4302
 	LDA #$1801
 	STA $4300
-	LDA #$2600
+	LDA #$2900
 	STA $4305
 	LDA #$6600
 	STA $2116
@@ -2440,10 +2440,10 @@ dma_preset2:
 	JML $89B1C3
 	
 dma_onsei_settei:
-	//v6.1: 'No.' em col 13 e digitos em col 16 (posicoes do original)
-	LDX #$02FA
-	LDY #$0002
-	LDA #$2CC0
+	//v8.0/v1.0: 'No.' em col 11 e digitos em col 15 (fonte original JP 16x16; nome continua na col 20)
+	LDX #$02F6
+	LDY #$0004
+	LDA #$2F48
 -
 	STA $7E2000,x
 	STA $7E2100,x
@@ -2527,7 +2527,8 @@ voice_table:
 
 
 write_voice:
-	LDY #$0300
+	//v8.0/v1.0: digitos 16x16 (4 tiles) com a fonte original japonesa; tiles no fim do preset.bin (VRAM $F200, tile $320)
+	LDY #$02FE
 	CMP #$005F
 	BCC +
 	LDA #$0000
@@ -2541,7 +2542,11 @@ write_voice:
 	STA $7E2100,x
 	INC
 	STA $7E2140,x
-	INY #2
+	INC
+	STA $7E2102,x
+	INC
+	STA $7E2142,x
+	INY #4
 	LDA $4216
 	ASL
 	TAX
@@ -2550,10 +2555,14 @@ write_voice:
 	STA $7E2100,x
 	INC
 	STA $7E2140,x
+	INC
+	STA $7E2102,x
+	INC
+	STA $7E2142,x
 	RTS
 	
 write_bgm:
-	LDY #$0300
+	LDY #$02FE
 	CMP #$000A
 	BCC +
 	LDA #$0000
@@ -2567,7 +2576,11 @@ write_bgm:
 	STA $7E2000,x
 	INC
 	STA $7E2040,x
-	INY #2
+	INC
+	STA $7E2002,x
+	INC
+	STA $7E2042,x
+	INY #4
 	LDA $4216
 	ASL
 	TAX
@@ -2575,7 +2588,11 @@ write_bgm:
 	TYX
 	STA $7E2000,x
 	INC
-	STA $7E2040,x	
+	STA $7E2040,x
+	INC
+	STA $7E2002,x
+	INC
+	STA $7E2042,x
 	RTS
 
 hex2dec:	
@@ -2589,8 +2606,8 @@ hex2dec:
 
 
 number:
-	dw $20C4, $20C6, $20C8, $20CA, $20CC, $20CE
-	dw $20D0, $20D2, $20D4, $20D6, $20D8
+	dw $2F20, $2F24, $2F28, $2F2C, $2F30, $2F34
+	dw $2F38, $2F3C, $2F40, $2F44, $2F48
 
 load_name1:
 	PHB
