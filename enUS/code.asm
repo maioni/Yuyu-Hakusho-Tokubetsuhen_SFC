@@ -2440,8 +2440,8 @@ dma_preset2:
 	JML $89B1C3
 	
 dma_onsei_settei:
-	//v8.0/v1.0: 'No.' em col 11 e digitos em col 15 (fonte original JP 16x16; nome continua na col 20)
-	LDX #$02F6
+	//v8.0/v1.0: 'No.' em col 12 (original: 13) e digitos em col 16, fonte 16x16 do original JP; nome na col 20 (cabe ate 12 tiles)
+	LDX #$02F8
 	LDY #$0004
 	LDA #$2F48
 -
@@ -2528,7 +2528,7 @@ voice_table:
 
 write_voice:
 	//v8.0/v1.0: digitos 16x16 (4 tiles) com a fonte original japonesa; tiles no fim do preset.bin (VRAM $F200, tile $320)
-	LDY #$02FE
+	LDY #$0300
 	CMP #$005F
 	BCC +
 	LDA #$0000
@@ -2562,7 +2562,7 @@ write_voice:
 	RTS
 	
 write_bgm:
-	LDY #$02FE
+	LDY #$0300
 	CMP #$000A
 	BCC +
 	LDA #$0000
