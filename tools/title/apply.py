@@ -5,8 +5,8 @@ sys.path.insert(0,'/tmp/cr'); from font import render
 R='/home/claude/stoneboat65816/yuyu-hakusho-tokubetsuhen_sfc/'
 sys.path.insert(0,'/tmp/enw')
 import titlelib as T
-TXT={'enUS':'V0.9 EN-US 2026 MAIONI / SNIPERDMAA - STONEBOAT 2017-2025',
-     'ptBR':'V7.0 PT-BR 2026 MAIONI / SNIPERDMAA - STONEBOAT 2017-2025'}
+TXT={'enUS':'V1.0 EN-US 2026 MAIONI / SNIPERDMAA - STONEBOAT 2017-2025',
+     'ptBR':'V8.0 PT-BR 2026 MAIONI / SNIPERDMAA - STONEBOAT 2017-2025'}
 OUT=sys.argv[1] if len(sys.argv)>1 else '/tmp/cr/out/'
 import os
 for L in TXT:

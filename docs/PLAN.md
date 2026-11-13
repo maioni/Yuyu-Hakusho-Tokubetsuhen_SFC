@@ -72,3 +72,5 @@ Dates are commit dates; the PT-BR work before 2026-11-05 happened outside git (t
 - After any ROM change: regenerate both IPS, verify IPS-on-JP equals the build, copy changed files to the PC folder, commit and push.
 - Commit trailers: `Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>` and `Claude-Session: ...`.
 - Verify visually (emulator screenshot) before telling the user something is fixed; say plainly what was not verified.
+
+- v8.0 (PT-BR) / v1.0 (EN) built 2026-11-13: sound-screen JP digits, key-config header lines, "Combate Livre" plate (PT), title credit line V8.0/V1.0, EN narrator bins regenerated in repo. Open: shaded JP A/B/X/Y icons, Rank plate frame, Type 1/2 plates.
