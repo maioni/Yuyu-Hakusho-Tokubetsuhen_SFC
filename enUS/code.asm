@@ -2490,6 +2490,21 @@ dma_onsei_settei:
 	BNE -	
 	PLA
 	STA $0180
+	//v8.0/v1.0: 'No.'/digitos usam o cinza-esverdeado original ($4EB4) no indice 3 da paleta 3 (nomes/titulos so usam os indices 1 e 2);
+	//buffer e CGRAM ($0F) escritos, a CGRAM depois do VBlank
+	LDA #$4EB4
+	STA $081E
+	SEP #$20
+-
+	LDA $4212
+	BPL -
+	LDA #$0F
+	STA $2121
+	LDA #$B4
+	STA $2122
+	LDA #$4E
+	STA $2122
+	REP #$20
 	JML $89F5FF
 	
 	
