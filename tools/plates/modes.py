@@ -26,6 +26,7 @@ PLATES={'solo': ('19_modo_duelo_1v1_sem_texto.png',0,'07',(18,82),(24,127),{'enU
         'team': ('20_modo_equipes_sem_texto.png',1,'09',(146,82),(152,127),{'enUS':'TEAM FIGHT','ptBR':'EQUIPE'}),
         'tour': ('21_modo_torneio_sem_texto.png',2,'08',(18,82),(24,127),{'enUS':'TOURNAMENT','ptBR':'TORNEIO'}),
         'champ':('22_modo_todos_contra_todos_sem_texto.png',3,'06',(146,82),(152,127),{'enUS':'CHAMPIONSHIP','ptBR':'CAMPEONATO'})}
+SOFT=0;DARK=0
 PW,PH,SW,SH=92,60,80,11
 YOFF=2      # measured: tile row Y of the T map shows at screen y = plate y + 80 (not +82)
 def strip(fn,pk,jp=None,spos=None):
@@ -35,6 +36,8 @@ def strip(fn,pk,jp=None,spos=None):
     cx0,cy0,cx1,cy1=min(xs),min(ys),max(xs),max(ys)
     sx=(cx1-cx0)/float(PW-1);sy=(cy1-cy0)/float(PH-1)
     im=im.filter(ImageFilter.MedianFilter(3))
+    if SOFT:im=im.filter(ImageFilter.GaussianBlur(SOFT))
+    if DARK:im=Image.blend(im,Image.new('RGB',im.size,(33,41,49)),DARK)   # shade the art so the label reads clearly     # soft version of the art behind the label (no hard shapes under the letters)
     ox,oy=6,45      # strip rect origin inside the plate (screen 24,127 / plate 18,82)
     box=(cx0+ox*sx,cy0+oy*sy,cx0+(ox+SW)*sx,cy0+(oy+SH)*sy)
     sm=im.resize((SW,SH),Image.BOX,box=box)
@@ -73,7 +76,8 @@ def write(s,G,ox,oy,sx,sy):
     for t,c in cells.items():pt(s,t,c)
 JP=Image.open(os.path.join(HERE,'ref','jp_modes.png')).convert('RGB')
 SY={'solo':127,'team':127,'tour':199,'champ':199}
-FLAT={'solo':11,'team':9,'tour':11,'champ':10}
+FLAT=None   # {'solo':11,...} would give flat bands
+SOFT=float(os.environ.get('SOFT','0'));DARK=float(os.environ.get('DARK','0'))
 def main(lang):
     for n,(fn,pk,sq,(ox,oy),(sx,sy),texts) in PLATES.items():
         f=os.path.join(ROOT,lang,'Narrator','square%s_set.bin'%sq);s=bytearray(open(f,'rb').read())
