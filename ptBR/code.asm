@@ -1933,7 +1933,7 @@ load_frame05:
 draw_keyconfig:
 	LDA #(config_set)
 	STA {toku_adr}
-	LDA #$2240
+	LDA #$2340
 	STA {toku_size}
 	LDA #$0000
 	STA {toku_vram}
