@@ -22,12 +22,13 @@ SPAL=[[0x7E9F,0x18A4,0x7FFF,0x6739,0x4E73,0x52FC,0x3E58,0x29B4,0x1D0B,0x3A3E,0x2
       [0x7EDF,0x18A4,0x7FFF,0x6739,0x4E73,0x52FC,0x3E58,0x29B4,0x6B93,0x56AD,0x356F,0x30A9,0x61C6,0x2F19,0x2A54,0x0000],
       [0x0000,0x18A4,0x7FFF,0x6739,0x4E73,0x52FC,0x3E58,0x29B4,0x1D0B,0x5527,0x48A4,0x0ABF,0x1DFB,0x3719,0x2A54,0x0000]]
 # name: (clean square, plate pal, sq file, plate bbox x0,y0 on screen, strip rect (x0,y0,w,h), texts)
-PLATES={'solo': ('19_modo_duelo_1v1_sem_texto.png',0,'07',(18,82),(24,127),{'enUS':'SOLO FIGHT','ptBR':'COMBATE SOLO'}),
-        'team': ('20_modo_equipes_sem_texto.png',1,'09',(146,82),(152,127),{'enUS':'TEAM FIGHT','ptBR':'EQUIPE'}),
-        'tour': ('21_modo_torneio_sem_texto.png',2,'08',(18,82),(24,127),{'enUS':'TOURNAMENT','ptBR':'TORNEIO'}),
-        'champ':('22_modo_todos_contra_todos_sem_texto.png',3,'06',(146,82),(152,127),{'enUS':'CHAMPIONSHIP','ptBR':'CAMPEONATO'})}
-SOFT=0;DARK=0
-PW,PH,SW,SH=92,60,80,11
+PLATES={'solo': ('19_modo_duelo_1v1_sem_texto.png',0,'07',(18,82),(24,125),{'enUS':'SOLO FIGHT','ptBR':'COMBATE SOLO'}),
+        'team': ('20_modo_equipes_sem_texto.png',1,'09',(146,82),(152,125),{'enUS':'TEAM FIGHT','ptBR':'EQUIPE'}),
+        'tour': ('21_modo_torneio_sem_texto.png',2,'08',(18,82),(24,125),{'enUS':'TOURNAMENT','ptBR':'TORNEIO'}),
+        'champ':('22_modo_todos_contra_todos_sem_texto.png',3,'06',(146,82),(152,125),{'enUS':'CHAMPIONSHIP','ptBR':'CAMPEONATO'})}
+OUTL=70;SOFT=0;DARK=0
+PW,PH,SW,SH=92,60,80,15       # strip window: 2 rows of top bar + 11 interior rows + 2 rows of bottom bar
+IN0,IN1=2,12                   # interior rows inside the window
 YOFF=2      # measured: tile row Y of the T map shows at screen y = plate y + 80 (not +82)
 def strip(fn,pk,jp=None,spos=None):
     im=Image.open(os.path.join(HERE,'ref',fn)).convert('RGB')
@@ -38,7 +39,7 @@ def strip(fn,pk,jp=None,spos=None):
     im=im.filter(ImageFilter.MedianFilter(3))
     if SOFT:im=im.filter(ImageFilter.GaussianBlur(SOFT))
     if DARK:im=Image.blend(im,Image.new('RGB',im.size,(33,41,49)),DARK)   # shade the art so the label reads clearly     # soft version of the art behind the label (no hard shapes under the letters)
-    ox,oy=6,45      # strip rect origin inside the plate (screen 24,127 / plate 18,82)
+    ox,oy=6,43      # strip rect origin inside the plate (screen 24,127 / plate 18,82)
     box=(cx0+ox*sx,cy0+oy*sy,cx0+(ox+SW)*sx,cy0+(oy+SH)*sy)
     sm=im.resize((SW,SH),Image.BOX,box=box)
     pal=[c15(v) for v in SPAL[pk]];G=[[0]*SW for _ in range(SH)]
@@ -55,17 +56,36 @@ def strip(fn,pk,jp=None,spos=None):
                 if c in TXT or c not in ex:continue
                 G[y][x]=ex[c]
     return G
-def label(G,text):
+def label(G,text,pk):
     P,w=bf.pixels(text)
-    x0=(SW-w)//2;y0=SH-(max(y for _,y in P)+1)    # base of the letters on the bottom row of the strip, like the original
+    x0=(SW-w)//2;y0=IN1+1-(max(y for _,y in P)+1)    # base of the letters on the bottom row of the strip, like the original
     S={(x0+x,y0+y) for x,y in P}
     for (x,y) in S:
         for dy in(-1,0,1):
             for dx in(-1,0,1):
                 X,Y=x+dx,y+dy
-                if (X,Y) not in S and 0<=X<SW and 0<=Y<SH:G[Y][X]=1
+                if (X,Y) not in S and 0<=X<SW and 0<=Y<SH:
+                    r,g,b=c15(SPAL[pk][G[Y][X]]) if G[Y][X] else (0,0,0)
+                    if (0.3*r+0.59*g+0.11*b)>OUTL:G[Y][X]=1      # outline only where the art behind is light, so the artwork stays visible
     for (x,y) in S:
         if 0<=x<SW and 0<=y<SH:G[y][x]=2
+def fullplate(fn,pk):
+    """whole 92x60 plate from the clean reference: exact (nearest) sampling of the 2x image, snapped to the plate's palette"""
+    im=Image.open(os.path.join(HERE,'ref',fn)).convert('RGB');px=im.load();w,h=im.size
+    xs=[x for y in range(h) for x in range(w) if min(px[x,y])>200];ys=[y for y in range(h) for x in range(w) if min(px[x,y])>200]
+    cx0,cy0=min(xs),min(ys)
+    pal=[c15(v) for v in SPAL[pk]];F=[]
+    for y in range(PH):
+        F.append([min(range(1,16),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],px[cx0+2*x+1,cy0+2*y+1]))) for x in range(PW)])
+    return F
+def write_full(s,F):
+    cells={}
+    for y in range(PH):
+        for x in range(PW):
+            Y=y+YOFF;t=T[Y//8][x//8]
+            if t not in cells:cells[t]=gt(s,t)
+            cells[t][Y%8][x%8]=F[y][x]
+    for t,c in cells.items():pt(s,t,c)
 def write(s,G,ox,oy,sx,sy):
     cells={}
     for y in range(SH):
@@ -76,13 +96,21 @@ def write(s,G,ox,oy,sx,sy):
     for t,c in cells.items():pt(s,t,c)
 JP=Image.open(os.path.join(HERE,'ref','jp_modes.png')).convert('RGB')
 SY={'solo':127,'team':127,'tour':199,'champ':199}
+FULL=True      # rebuild the whole plate from the clean reference
 FLAT=None   # {'solo':11,...} would give flat bands
 SOFT=float(os.environ.get('SOFT','0'));DARK=float(os.environ.get('DARK','0'))
 def main(lang):
     for n,(fn,pk,sq,(ox,oy),(sx,sy),texts) in PLATES.items():
         f=os.path.join(ROOT,lang,'Narrator','square%s_set.bin'%sq);s=bytearray(open(f,'rb').read())
+        if FULL:
+            F=fullplate(fn,pk)
+            Gs=[row[6:86] for row in F[43:58]]
+            if not os.environ.get('NOTEXT'):label(Gs,texts[lang],pk)
+            for yy in range(15):F[43+yy][6:86]=Gs[yy]
+            write_full(s,F);open(f,'wb').write(s);print(lang,n,texts[lang],'(full plate)');continue
         G=strip(fn,pk)
         if FLAT:G=[[FLAT[n]]*SW for _ in range(SH)]      # flat band (palette index of the plate's own colour), like the menu plates
-        label(G,texts[lang]);write(s,G,ox,oy,sx,sy)
+        if not os.environ.get('NOTEXT'):label(G,texts[lang],pk)
+        write(s,G,ox,oy,sx,sy)
         open(f,'wb').write(s);print(lang,n,texts[lang])
 if __name__=='__main__':main(sys.argv[1])
