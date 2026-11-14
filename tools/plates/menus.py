@@ -67,8 +67,9 @@ def pal_bank(scr,x0,y0,w,h):
         m=sum(1 for c in cols if not any(max(abs(a-d) for a,d in zip(c,q))<=4 for q in pc))
         if best is None or m<best[0]:best=(m,k)
     return PAL[scr][best[1]]
+HL=json.load(open(os.path.join(REF,'menu_hl15.json')))   # per plate: mask of the original's palette-index-15 pixels (highlight ring, recoloured by the game when selected)
 def nearest(pal,c):
-    return min(range(1,16),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
+    return min(range(1,15),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
 def build(name,lang):
     scr,(px0,py0),(pw,ph),sq,rf,(sx,sy,sw,sh),(xs,air,gap),texts=PLATES[name]
     pal=[c15(v) for v in pal_bank(scr,px0,py0,pw,ph)]
@@ -95,6 +96,9 @@ def build(name,lang):
                 jc=jp[px0+x,py0+sy+y]
                 if istxt(jc):
                     c=rp[x,sy+y];G[(x,y)]=min(bg,key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
+    for Y in range(ph):                  # restore the original's idx-15 ring exactly
+        for x in range(pw):
+            if HL[name][Y][x]=='1':G[(x,Y-sy)]=15
     global GAPV
     chain=[(xs,air,gap),(0.62,1,1),(0.56,1,1),(0.5,1,1),(0.42,1,1),(0.5,0,1),(0.42,0,1),(0.42,0,0)]
     for (xs,air,gap) in chain:          # first font setting that fits the strip

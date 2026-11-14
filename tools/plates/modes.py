@@ -46,7 +46,7 @@ def strip(fn,pk,jp=None,spos=None):
     for y in range(SH):
         for x in range(SW):
             c=sm.getpixel((x,y))
-            G[y][x]=min(range(1,16),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
+            G[y][x]=min(range(1,15),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
     if jp is not None:      # keep the original game's own pixels wherever the Japanese lettering does not cover them
         pj=jp.load();TXT={(255,255,255),(32,40,49),(156,157,156),(205,206,205),(197,149,123)}
         ex={c:i for i,c in enumerate(pal) if i}
@@ -76,16 +76,28 @@ def fullplate(fn,pk):
     cx0,cy0=min(xs),min(ys)
     pal=[c15(v) for v in SPAL[pk]];F=[]
     for y in range(PH):
-        F.append([min(range(1,16),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],px[cx0+2*x+1,cy0+2*y+1]))) for x in range(PW)])
+        F.append([min(range(1,15),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],px[cx0+2*x+1,cy0+2*y+1]))) for x in range(PW)])
     return F
-def write_full(s,F):
-    cells={}
+XOFF=2      # the clean reference's white frame is at plate x=2 (the game's 2 px highlight ring is outside it)
+import json
+HL=json.load(open(os.path.join(HERE,'ref','mode_hl15.json')))    # per plate: 64x96 mask of the original's palette-index-15 pixels
+def write_full(s,F,pk):
+    """F (92x60, from the clean ref) goes to tile space at (XOFF,YOFF); then the original's idx-15 pixels (the yellow
+    highlight ring + the strip frame, recoloured by the game when the plate is selected) are restored exactly"""
+    TS=[[0]*96 for _ in range(64)]
+    for ty,row in enumerate(T):
+        for tx,t in enumerate(row):
+            g=gt(s,t)
+            for y in range(8):
+                for x in range(8):TS[ty*8+y][tx*8+x]=g[y][x]
     for y in range(PH):
-        for x in range(PW):
-            Y=y+YOFF;t=T[Y//8][x//8]
-            if t not in cells:cells[t]=gt(s,t)
-            cells[t][Y%8][x%8]=F[y][x]
-    for t,c in cells.items():pt(s,t,c)
+        for x in range(PW):TS[y+YOFF][x+XOFF]=F[y][x]
+    for y in range(64):
+        for x in range(96):
+            if HL[pk][y][x]=='1':TS[y][x]=15
+    for ty,row in enumerate(T):
+        for tx,t in enumerate(row):
+            pt(s,t,[[TS[ty*8+y][tx*8+x] for x in range(8)] for y in range(8)])
 def write(s,G,ox,oy,sx,sy):
     cells={}
     for y in range(SH):
@@ -107,7 +119,7 @@ def main(lang):
             Gs=[row[6:86] for row in F[43:58]]
             if not os.environ.get('NOTEXT'):label(Gs,texts[lang],pk)
             for yy in range(15):F[43+yy][6:86]=Gs[yy]
-            write_full(s,F);open(f,'wb').write(s);print(lang,n,texts[lang],'(full plate)');continue
+            write_full(s,F,n);open(f,'wb').write(s);print(lang,n,texts[lang],'(full plate)');continue
         G=strip(fn,pk)
         if FLAT:G=[[FLAT[n]]*SW for _ in range(SH)]      # flat band (palette index of the plate's own colour), like the menu plates
         if not os.environ.get('NOTEXT'):label(G,texts[lang],pk)
