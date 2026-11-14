@@ -2,7 +2,7 @@
 """Rebuild <lang>/Narrator/rank_set.bin (computer-level plates S/A/B) from the original JP tiles
 (tools/plates/rank_set_jp.bin = VRAM $6000..$67FF of the JP game) and replace the kanji tab with a
 narrow tab of the same style, so the letters' legs are not covered (the old wide band cut the 'A').
-usage: rank.py <enUS|ptBR> [text]   (default text: Rank for enUS, Nivel for ptBR)"""
+usage: rank.py <enUS|ptBR> [text]   (default text: Class for enUS, Nivel for ptBR)"""
 import sys,os
 HERE=os.path.dirname(os.path.abspath(__file__));ROOT=os.path.dirname(os.path.dirname(HERE))
 def gt(s,n):
@@ -32,6 +32,8 @@ def uncomp(s,c0,r0,C):
             pt(s,(r0+ty)*16+c0+tx,[[C[ty*8+y][tx*8+x] for x in range(8)] for y in range(8)])
 # 3-wide pixel font, caps 5 rows, lowercase 4 rows (rows 1..4), accent in row 0
 F={
+'C':[".OO","O..","O..","O..",".OO"],
+'s':[None,".OO","OO.",".OO","OO."],
 'R':["OO.","O.O","OO.","O.O","O.O"],
 'N':["O.O","OOO","OOO","O.O","O.O"],
 'a':[None,".OO","O.O","O.O",".OO"],
@@ -81,4 +83,4 @@ def main(lang,txt):
         uncomp(out,c0,r0,C)
     open(f,'wb').write(out);print(lang,txt,'ok')
 if __name__=='__main__':
-    lang=sys.argv[1];main(lang,sys.argv[2] if len(sys.argv)>2 else ('Rank' if lang=='enUS' else 'Nível'))
+    lang=sys.argv[1];main(lang,sys.argv[2] if len(sys.argv)>2 else ('Class' if lang=='enUS' else 'Nível'))
