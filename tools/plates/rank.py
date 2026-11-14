@@ -51,26 +51,21 @@ def text_cols(txt):
         g=F[ch];w=max(len(r) for r in g if r);out.append((x,g));x+=w+1
     return out,x-1
 def tab(C,txt):
+    """No box: white text with a 1 px dark-blue outline (colour 1) straight on the plate, rows 6..12."""
     cols,W=text_cols(txt)
-    wi=max(16,W+1)                      # interior width
-    xl=int(15.5-wi/2.0+0.5)-1           # left border column; interior xl+1..xl+wi (centred on x=15.5)
-    xl=max(xl,4)
-    xr=xl+wi
-    # tab sits fully inside the grey square: rows 6..12 (highlight row 6, text rows 7..11, bottom border row 12)
-    for x in range(xl+1,xr+1): C[6][x]=0xd
-    for y in range(7,12):
-        C[y][xl]=0xe
-        for x in range(xl+1,xr+1): C[y][x]=0xe
-    C[6][xl]=0xd
-    for x in range(xl,xr+2): C[12][x]=0xe
-    C[12][xr+1]=0xd
-    x0=xl+1+(wi-W)//2;y0=7
+    x0=int(15.5-W/2.0+0.5);y0=7
+    P=set()
     for x,g in cols:
         for r,row in enumerate(g):
             if not row: continue
             for c,ch in enumerate(row):
-                if ch=='O': C[y0+r][x0+x+c]=2
-    return xl,xr
+                if ch=='O': P.add((x0+x+c,y0+r))
+    for (x,y) in P:
+        for dy in(-1,0,1):
+            for dx in(-1,0,1):
+                if (x+dx,y+dy) not in P: C[y+dy][x+dx]=1
+    for (x,y) in P: C[y][x]=2
+    return x0,x0+W
 def main(lang,txt):
     jp=bytearray(open(os.path.join(HERE,'rank_set_jp.bin'),'rb').read())
     f=os.path.join(ROOT,lang,'Narrator','rank_set.bin')
