@@ -56,15 +56,13 @@ def tab(C,txt):
     xl=int(15.5-wi/2.0+0.5)-1           # left border column; interior xl+1..xl+wi (centred on x=15.5)
     xl=max(xl,4)
     xr=xl+wi
-    for y in range(5,16):
-        for x in range(xl,xr+2):
-            C[y][x]=0
-    for x in range(xl+1,xr+1): C[5][x]=0xd
-    for y in range(6,14):
+    # tab sits fully inside the grey square: rows 6..12 (highlight row 6, text rows 7..11, bottom border row 12)
+    for x in range(xl+1,xr+1): C[6][x]=0xd
+    for y in range(7,12):
         C[y][xl]=0xe
         for x in range(xl+1,xr+1): C[y][x]=0xe
     C[6][xl]=0xd
-    for x in range(xl,xr+2): C[14][x]=0xe; C[15][x]=1
+    for x in range(xl,xr+2): C[12][x]=0xe
     C[12][xr+1]=0xd
     x0=xl+1+(wi-W)//2;y0=7
     for x,g in cols:
@@ -79,6 +77,8 @@ def main(lang,txt):
     out=bytearray(open(f,'rb').read())
     for c0,r0 in ((4,0),(12,0),(4,2)):
         C=comp(jp,c0,r0)
+        for y in range(5,16):                       # remove the old kanji tab (x 9..22): fill from the column left of it
+            for x in range(9,23): C[y][x]=C[y][8]
         tab(C,txt)
         uncomp(out,c0,r0,C)
     open(f,'wb').write(out);print(lang,txt,'ok')
