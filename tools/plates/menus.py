@@ -36,6 +36,7 @@ PLATES={
 TXTIDX={'free':(1,2,3),'opt':(1,2,3,4)}   # palette indices the Japanese lettering uses (free: index 4 is the plate grey)
 ACC={'~':[(0,1),(1,0),(2,0),(3,1)],'´':[(0,1),(1,0)],'`':[(0,0),(1,1)],'^':[(0,1),(1,0),(2,1)]}
 BASE={'Ã':('A','~'),'Õ':('O','~'),'É':('E','´'),'Ê':('E','^'),'Á':('A','´'),'Â':('A','^'),'Í':('I','´'),'Ó':('O','´'),'Ô':('O','^'),'Ú':('U','´'),'À':('A','`'),'Ç':('C','ç')}
+FULL=True       # rebuild the whole plate from the clean reference (like modes.py)
 GAPV=1
 def layout(text,extra=0):
     """pixels of the text, x from 0, y from the top of the capitals (accents negative / cedilla below); returns (set, width, baseline)"""
@@ -59,10 +60,11 @@ def layout(text,extra=0):
         prev=ch
     return out,x-GAPV,base
 def pal_bank(scr,x0,y0,w,h):
-    """sprite palette bank whose colours cover the plate's pixels on the JP screenshot best"""
-    im=JPI[scr].crop((x0,y0,x0+w,y0+h));cols=set(im.getdata());best=None
+    """sprite palette bank whose colours explain the plate's pixels on the JP screenshot best (tolerant colour match)"""
+    im=JPI[scr].crop((x0,y0,x0+w,y0+h));cols=list(im.getdata());best=None
     for k,b in enumerate(PAL[scr]):
-        s={c15(v) for v in b[1:]};m=len(cols-s)
+        pc=[c15(v) for v in b[1:]]
+        m=sum(1 for c in cols if not any(max(abs(a-d) for a,d in zip(c,q))<=4 for q in pc))
         if best is None or m<best[0]:best=(m,k)
     return PAL[scr][best[1]]
 def nearest(pal,c):
@@ -74,19 +76,25 @@ def build(name,lang):
     ref=Image.open(os.path.join(REF,rf)).convert('RGB').filter(ImageFilter.MedianFilter(3)).resize((pw,ph),Image.BOX)
     rp=ref.load()
     G={}
-    for y in range(sh):                # interior: the original game's pixels (palette indices)
+    if FULL:                            # whole plate from the clean reference: exact sampling of the 2x image, snapped to the palette
+        rimg=Image.open(os.path.join(REF,rf)).convert('RGB');rq=rimg.load()
+        for Y in range(ph):
+            for x in range(pw):
+                G[(x,Y-sy)]=nearest(pal,rq[2*x+1,2*Y+1])
+    for y in range(0 if FULL else sh):                # interior: the original game's pixels (palette indices)
         for x in range(sx,sx+sw):G[(x,y)]=nearest(pal,jp[px0+x,py0+sy+y])
     # replace the pixels under the Japanese lettering (white / dark outline colours) with the clean reference
-    TXI=TXTIDX.get(name,(1,2,3,4));TXT=[pal[i] for i in TXI]
-    def istxt(c):return any(max(abs(a-b) for a,b in zip(c,t))<=3 for t in TXT)
-    from collections import Counter
-    cnt=Counter(jp[px0+x,py0+sy+y] for y in range(sh) for x in range(sx,sx+sw) if not istxt(jp[px0+x,py0+sy+y]))
-    bg=sorted({nearest(pal,c) for c,n in cnt.items() if n>=3})      # indices of the strip's real background colours
-    for y in range(sh):
-        for x in range(sx,sx+sw):
-            jc=jp[px0+x,py0+sy+y]
-            if istxt(jc):
-                c=rp[x,sy+y];G[(x,y)]=min(bg,key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
+    if not FULL:
+        TXI=TXTIDX.get(name,(1,2,3,4));TXT=[pal[i] for i in TXI]
+        def istxt(c):return any(max(abs(a-b) for a,b in zip(c,t))<=3 for t in TXT)
+        from collections import Counter
+        cnt=Counter(jp[px0+x,py0+sy+y] for y in range(sh) for x in range(sx,sx+sw) if not istxt(jp[px0+x,py0+sy+y]))
+        bg=sorted({nearest(pal,c) for c,n in cnt.items() if n>=3})      # indices of the strip's real background colours
+        for y in range(sh):
+            for x in range(sx,sx+sw):
+                jc=jp[px0+x,py0+sy+y]
+                if istxt(jc):
+                    c=rp[x,sy+y];G[(x,y)]=min(bg,key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
     global GAPV
     chain=[(xs,air,gap),(0.62,1,1),(0.56,1,1),(0.5,1,1),(0.42,1,1),(0.5,0,1),(0.42,0,1),(0.42,0,0)]
     for (xs,air,gap) in chain:          # first font setting that fits the strip
@@ -111,11 +119,15 @@ def write(lang):
         sq,G,_=build(name,lang)
         f=os.path.join(ROOT,lang,'Narrator','square%s_set.bin'%sq);s=bytearray(open(f,'rb').read())
         key=name;pw,ph=PLATES[name][2];sy=PLATES[name][5][1]
-        cells={}
-        for (x,y),v in G.items():
+        cells={};owner={}
+        for ty,row in enumerate(TM[key]):          # mirrored (flipped) cells reuse a tile: only the first cell may write it
+            for tx,m in enumerate(row):
+                if m is not None and m[1] not in owner:owner[m[1]]=(tx,ty)
+        for (x,y),v in sorted(G.items()):
             Y=sy+y
+            if not(0<=Y<len(TM[key])*8 and 0<=x<len(TM[key][0])*8):continue
             m=TM[key][Y//8][x//8]
-            if m is None:continue
+            if m is None or owner.get(m[1])!=(x//8,Y//8):continue
             t=m[1]
             if t not in cells:cells[t]=gt(s,t)
             cells[t][Y%8][x%8]=v
