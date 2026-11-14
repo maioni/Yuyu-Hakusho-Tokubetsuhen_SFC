@@ -83,4 +83,4 @@ def main(lang,txt):
         uncomp(out,c0,r0,C)
     open(f,'wb').write(out);print(lang,txt,'ok')
 if __name__=='__main__':
-    lang=sys.argv[1];main(lang,sys.argv[2] if len(sys.argv)>2 else ('Class' if lang=='enUS' else 'Nível'))
+    lang=sys.argv[1];main(lang,sys.argv[2] if len(sys.argv)>2 else ('Class' if lang=='enUS' else 'Classe'))
