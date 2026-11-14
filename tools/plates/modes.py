@@ -12,7 +12,7 @@ sys.path.insert(0,HERE);sys.path.insert(0,os.path.join(ROOT,'tools','font'))
 from rank import gt,pt
 from PIL import Image,ImageFilter
 import bigfont2 as bf
-bf.YS=0.8;bf.XSCAP=0.62;bf.BRUSH2=False;bf.CAPAIR=1
+bf.YS=0.97;bf.XSCAP=0.62;bf.BRUSH2=False;bf.CAPAIR=1
 # tile id for each 8x8 cell of the 92x60 plate (12 cols x 8 rows)
 T=[list(range(r*16,r*16+12)) for r in range(4)]+[[12,13,14,15,44,45,46,47,64,65,66,67],[28,29,30,31,60,61,62,63,80,81,82,83],list(range(68,80)),list(range(84,96))]
 def c15(v):
@@ -27,7 +27,8 @@ PLATES={'solo': ('05_modo_duelo_1v1.png',0,'07',(18,82),(24,127),{'enUS':'SOLO F
         'tour': ('06_modo_torneio.png',2,'08',(18,82),(24,127),{'enUS':'TOURNAMENT','ptBR':'TORNEIO'}),
         'champ':('08_modo_todos_contra_todos.png',3,'06',(146,82),(152,127),{'enUS':'CHAMPIONSHIP','ptBR':'CAMPEONATO'})}
 PW,PH,SW,SH=92,60,80,11
-def strip(fn,pk):
+YOFF=2      # measured: tile row Y of the T map shows at screen y = plate y + 80 (not +82)
+def strip(fn,pk,jp=None,spos=None):
     im=Image.open(os.path.join(HERE,'ref',fn)).convert('RGB')
     px=im.load();w,h=im.size
     xs=[x for y in range(h) for x in range(w) if min(px[x,y])>200];ys=[y for y in range(h) for x in range(w) if min(px[x,y])>200]
@@ -42,10 +43,18 @@ def strip(fn,pk):
         for x in range(SW):
             c=sm.getpixel((x,y))
             G[y][x]=min(range(1,16),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
+    if jp is not None:      # keep the original game's own pixels wherever the Japanese lettering does not cover them
+        pj=jp.load();TXT={(255,255,255),(32,40,49),(156,157,156),(205,206,205),(197,149,123)}
+        ex={c:i for i,c in enumerate(pal) if i}
+        for y in range(SH):
+            for x in range(SW):
+                c=pj[spos[0]+x,spos[1]+y]
+                if c in TXT or c not in ex:continue
+                G[y][x]=ex[c]
     return G
 def label(G,text):
     P,w=bf.pixels(text)
-    x0=(SW-w)//2;y0=0 if max(y for _,y in P)>=10 else 1
+    x0=(SW-w)//2;y0=SH-(max(y for _,y in P)+1)    # base of the letters on the bottom row of the strip, like the original
     S={(x0+x,y0+y) for x,y in P}
     for (x,y) in S:
         for dy in(-1,0,1):
@@ -58,13 +67,15 @@ def write(s,G,ox,oy,sx,sy):
     cells={}
     for y in range(SH):
         for x in range(SW):
-            X=sx+x-ox;Y=sy+y-oy;t=T[Y//8][X//8]
+            X=sx+x-ox;Y=sy+y-oy+YOFF;t=T[Y//8][X//8]
             if t not in cells:cells[t]=gt(s,t)
             cells[t][Y%8][X%8]=G[y][x]
     for t,c in cells.items():pt(s,t,c)
+JP=Image.open(os.path.join(HERE,'ref','jp_modes.png')).convert('RGB')
+SY={'solo':127,'team':127,'tour':199,'champ':199}
 def main(lang):
     for n,(fn,pk,sq,(ox,oy),(sx,sy),texts) in PLATES.items():
         f=os.path.join(ROOT,lang,'Narrator','square%s_set.bin'%sq);s=bytearray(open(f,'rb').read())
-        G=strip(fn,pk);label(G,texts[lang]);write(s,G,ox,oy,sx,sy)
+        G=strip(fn,pk,JP,(sx,SY[n]));label(G,texts[lang]);write(s,G,ox,oy,sx,sy)
         open(f,'wb').write(s);print(lang,n,texts[lang])
 if __name__=='__main__':main(sys.argv[1])
