@@ -2,7 +2,7 @@
 """Rebuild <lang>/Narrator/rank_set.bin (computer-level plates S/A/B) from the original JP tiles
 (tools/plates/rank_set_jp.bin = VRAM $6000..$67FF of the JP game) and replace the kanji tab with a
 narrow tab of the same style, so the letters' legs are not covered (the old wide band cut the 'A').
-usage: rank.py <enUS|ptBR> [text]   (default text: Class for enUS, Nivel for ptBR)"""
+usage: rank.py <enUS|ptBR> [text]   (default text: Class for enUS, Classe for ptBR)"""
 import sys,os
 HERE=os.path.dirname(os.path.abspath(__file__));ROOT=os.path.dirname(os.path.dirname(HERE))
 def gt(s,n):
