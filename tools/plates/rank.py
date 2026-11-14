@@ -51,7 +51,7 @@ def text_cols(txt):
         g=F[ch];w=max(len(r) for r in g if r);out.append((x,g));x+=w+1
     return out,x-1
 def tab(C,txt):
-    """No box: white text with a 1 px dark-blue outline (colour 1) straight on the plate, rows 6..12."""
+    """No box: white text with a 1 px dark-blue outline (colour 0xe, the letters' own outline blue) straight on the plate, rows 6..12."""
     cols,W=text_cols(txt)
     x0=int(15.5-W/2.0+0.5);y0=7
     P=set()
@@ -63,7 +63,7 @@ def tab(C,txt):
     for (x,y) in P:
         for dy in(-1,0,1):
             for dx in(-1,0,1):
-                if (x+dx,y+dy) not in P: C[y+dy][x+dx]=1
+                if (x+dx,y+dy) not in P: C[y+dy][x+dx]=0xe
     for (x,y) in P: C[y][x]=2
     return x0,x0+W
 def main(lang,txt):
