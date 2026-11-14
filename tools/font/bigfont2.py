@@ -75,6 +75,7 @@ g('.',[(0,9),(0,10)]);g(',',[(1,9),(1,10),(0,12)]);g('-',[(0,6),(4,6)]);g(':',[(
 g('!',[(0,0),(0,7)],[(0,10)]);g('?',[(0,2),(1,1),(2,0),(4,0),(5,1),(6,2),(6,3),(5,4),(3,5),(3,7)],[(3,10)])
 g('/',[(5,0),(0,10)]);g('(',[(3,0),(1,2),(1,8),(3,10)]);g(')',[(0,0),(2,2),(2,8),(0,10)]);g("'",[(0,0),(0,2)])
 g('&',[(5,10),(1,5),(1,2),(2,1),(3,1),(4,2),(4,3),(1,7),(1,9),(2,10),(4,10),(6,8)])
+YS=1.1
 ACC={'´':[(2,2),(4,0)],'`':[(1,0),(3,2)],'^':[(0,2),(2,0),(4,2)],'~':[(0,2),(1,1),(2,1),(3,2),(4,2),(5,1)]}
 BASE={'á':('a','´'),'à':('a','`'),'â':('a','^'),'ã':('a','~'),'é':('e','´'),'ê':('e','^'),
  'í':('i','´'),'ó':('o','´'),'ô':('o','^'),'õ':('o','~'),'ú':('u','´')}
@@ -93,14 +94,16 @@ def raster(ch,thin=None):
         lines=[list(l) for l in S['c']]+[[(2,11),(3,12)]]
     else: lines=S[ch]
     P=set()
+    XS=1.0 if thin else 7/6.0                    # capitals 9 px wide, 12 rows tall (measured on the original)
+    lines=[[(int(x*XS+0.5),int(y*YS+0.5)) for x,y in l] for l in lines]
     for l in lines:
         pts=l if len(l)>1 else l*2
         for (x0,y0),(x1,y1) in zip(pts,pts[1:]):
             n=max(abs(x1-x0),abs(y1-y0),1)
             for k in range(n+1):
                 x=round(x0+(x1-x0)*k/n);y=round(y0+(y1-y0)*k/n)
-                for dx in((0,) if thin else (0,1)):
-                    for dy in((0,) if thin else (0,1)):P.add((x+dx,y+dy))
+                for dx in((0,) if thin else (0,1)):    # brush: caps 2 wide x 1 tall (thick verticals, 1 px horizontals), lowercase 1x1
+                    P.add((x+dx,y))
     if not P:return P,0
     mx=min(x for x,_ in P);P={(x-mx,y) for x,y in P}
     return P,max(x for x,_ in P)+1
