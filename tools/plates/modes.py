@@ -22,10 +22,10 @@ SPAL=[[0x7E9F,0x18A4,0x7FFF,0x6739,0x4E73,0x52FC,0x3E58,0x29B4,0x1D0B,0x3A3E,0x2
       [0x7EDF,0x18A4,0x7FFF,0x6739,0x4E73,0x52FC,0x3E58,0x29B4,0x6B93,0x56AD,0x356F,0x30A9,0x61C6,0x2F19,0x2A54,0x0000],
       [0x0000,0x18A4,0x7FFF,0x6739,0x4E73,0x52FC,0x3E58,0x29B4,0x1D0B,0x5527,0x48A4,0x0ABF,0x1DFB,0x3719,0x2A54,0x0000]]
 # name: (clean square, plate pal, sq file, plate bbox x0,y0 on screen, strip rect (x0,y0,w,h), texts)
-PLATES={'solo': ('05_modo_duelo_1v1.png',0,'07',(18,82),(24,127),{'enUS':'SOLO FIGHT','ptBR':'COMBATE SOLO'}),
-        'team': ('07_modo_equipes.png',1,'09',(146,82),(152,127),{'enUS':'TEAM FIGHT','ptBR':'EQUIPE'}),
-        'tour': ('06_modo_torneio.png',2,'08',(18,82),(24,127),{'enUS':'TOURNAMENT','ptBR':'TORNEIO'}),
-        'champ':('08_modo_todos_contra_todos.png',3,'06',(146,82),(152,127),{'enUS':'CHAMPIONSHIP','ptBR':'CAMPEONATO'})}
+PLATES={'solo': ('19_modo_duelo_1v1_sem_texto.png',0,'07',(18,82),(24,127),{'enUS':'SOLO FIGHT','ptBR':'COMBATE SOLO'}),
+        'team': ('20_modo_equipes_sem_texto.png',1,'09',(146,82),(152,127),{'enUS':'TEAM FIGHT','ptBR':'EQUIPE'}),
+        'tour': ('21_modo_torneio_sem_texto.png',2,'08',(18,82),(24,127),{'enUS':'TOURNAMENT','ptBR':'TORNEIO'}),
+        'champ':('22_modo_todos_contra_todos_sem_texto.png',3,'06',(146,82),(152,127),{'enUS':'CHAMPIONSHIP','ptBR':'CAMPEONATO'})}
 PW,PH,SW,SH=92,60,80,11
 YOFF=2      # measured: tile row Y of the T map shows at screen y = plate y + 80 (not +82)
 def strip(fn,pk,jp=None,spos=None):
@@ -73,9 +73,12 @@ def write(s,G,ox,oy,sx,sy):
     for t,c in cells.items():pt(s,t,c)
 JP=Image.open(os.path.join(HERE,'ref','jp_modes.png')).convert('RGB')
 SY={'solo':127,'team':127,'tour':199,'champ':199}
+FLAT={'solo':11,'team':9,'tour':11,'champ':10}
 def main(lang):
     for n,(fn,pk,sq,(ox,oy),(sx,sy),texts) in PLATES.items():
         f=os.path.join(ROOT,lang,'Narrator','square%s_set.bin'%sq);s=bytearray(open(f,'rb').read())
-        G=strip(fn,pk,JP,(sx,SY[n]));label(G,texts[lang]);write(s,G,ox,oy,sx,sy)
+        G=strip(fn,pk)
+        if FLAT:G=[[FLAT[n]]*SW for _ in range(SH)]      # flat band (palette index of the plate's own colour), like the menu plates
+        label(G,texts[lang]);write(s,G,ox,oy,sx,sy)
         open(f,'wb').write(s);print(lang,n,texts[lang])
 if __name__=='__main__':main(sys.argv[1])

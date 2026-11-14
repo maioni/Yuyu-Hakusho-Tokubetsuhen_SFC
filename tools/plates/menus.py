@@ -17,7 +17,7 @@ bf.YS=0.97;bf.BRUSH2=False
 REF=os.path.join(HERE,'ref')
 TM=json.load(open(os.path.join(REF,'menu_tilemaps.json')))
 PAL=json.load(open(os.path.join(REF,'menu_pal.json')))
-JPI={'main':Image.open(os.path.join(REF,'jp_main.png')).convert('RGB'),'set':Image.open(os.path.join(REF,'jp_set.png')).convert('RGB')}
+JPI={'main':Image.open(os.path.join(REF,'jp_main.png')).convert('RGB'),'set':Image.open(os.path.join(REF,'jp_set.png')).convert('RGB'),'stage':Image.open(os.path.join(REF,'jp_stage.png')).convert('RGB')}
 def c15(v):
     r,g,b=v&31,(v>>5)&31,(v>>10)&31;return ((r<<3)|(r>>2),(g<<3)|(g>>2),(b<<3)|(b>>2))
 # name: (screen, plate origin, size, sheet, clean ref, strip rect x0,y0,w,h, font (xscap,capair,gap), {lang:text})
@@ -27,6 +27,11 @@ PLATES={
  'diff':('set',(24,96),(64,64),'02','16_config_dificuldade_sem_texto.png',(8,47,48,11),(0.42,0,0),{'enUS':'DIFFICULTY','ptBR':'DIFICULDADE'}),
  'snd': ('set',(96,96),(64,64),'03','17_config_som_sem_texto.png',(8,47,48,11),(0.7,1,1),{'enUS':'SOUND','ptBR':'SOM'}),
  'btn': ('set',(168,96),(64,64),'04','18_config_controles_sem_texto.png',(8,47,48,11),(0.56,1,1),{'enUS':'BUTTONS','ptBR':'BOTÕES'}),
+
+ 'forest':('stage',(32,80),(64,64),'11','23_estagio_floresta_sem_texto.png',(8,47,48,11),(0.62,1,1),{'enUS':'FOREST','ptBR':'FLORESTA'}),
+ 'dome':  ('stage',(160,80),(64,64),'11','24_estagio_domo_trevas_sem_texto.png',(8,47,48,11),(0.7,1,1),{'enUS':'DOME','ptBR':'DOMO'}),
+ 'hill':  ('stage',(32,152),(64,64),'12','25_estagio_colina_decapitacao_sem_texto.png',(8,47,48,11),(0.7,1,1),{'enUS':'HILL','ptBR':'COLINA'}),
+ 'dim':   ('stage',(160,152),(64,64),'12','26_estagio_fenda_dimensional_sem_texto.png',(8,47,48,11),(0.5,1,1),{'enUS':'DIMENSION','ptBR':'DIMENSÃO'}),
 }
 TXTIDX={'free':(1,2,3),'opt':(1,2,3,4)}   # palette indices the Japanese lettering uses (free: index 4 is the plate grey)
 ACC={'~':[(0,1),(1,0),(2,0),(3,1)],'´':[(0,1),(1,0)],'`':[(0,0),(1,1)],'^':[(0,1),(1,0),(2,1)]}
@@ -82,10 +87,13 @@ def build(name,lang):
             jc=jp[px0+x,py0+sy+y]
             if istxt(jc):
                 c=rp[x,sy+y];G[(x,y)]=min(bg,key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
-    global GAPV;GAPV=gap
-    bf.XSCAP=xs;bf.CAPAIR=air
+    global GAPV
+    chain=[(xs,air,gap),(0.62,1,1),(0.56,1,1),(0.5,1,1),(0.42,1,1),(0.5,0,1),(0.42,0,1),(0.42,0,0)]
+    for (xs,air,gap) in chain:          # first font setting that fits the strip
+        GAPV=gap;bf.XSCAP=xs;bf.CAPAIR=air
+        if layout(texts[lang])[1]<=sw-4:break
     P,w,base=layout(texts[lang]);
-    ex=max(0,min(sw-2-w,len(texts[lang])-1))
+    ex=max(0,min(sw-4-w,len(texts[lang])-1))
     if ex:P,w,base=layout(texts[lang],ex)
     if w>sw:print('WARNING %s %s text %d > strip %d'%(name,lang,w,sw))
     ox=sx+(sw-w)//2;oy=sh-1-base
