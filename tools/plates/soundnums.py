@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Restore the original shaded (anti-aliased) 'No.' + digits 0-9 (16x16, 2bpp, JP tiles $C9..$F8) in
 <lang>/Narrator/preset.bin at VRAM tile $320 (offset 0x2600). The earlier port had merged colours 1/2 into white.
-usage: numbers.py <enUS|ptBR>"""
+usage: soundnums.py <enUS|ptBR>"""
 import sys,os
 ROOT=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE=os.path.dirname(os.path.abspath(__file__))
