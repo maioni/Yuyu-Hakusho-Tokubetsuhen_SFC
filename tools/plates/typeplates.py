@@ -30,7 +30,22 @@ def main(lang):
         rows={1:'a',2:'a',3:'9',4:'9',5:'9',6:'8',7:'8',8:'8',9:'8',10:'9',11:'9',12:'9',13:'a',14:'a'}
         for y,k in rows.items():
             for x in range(1,22): N[y][x]=band[k]
-        for y in range(1,15):
+        if lang=='ptBR':                      # 'Tipo' in the same thin outlined font as EN 'Type': T and p copied, i and o drawn
+            E=comp(bytearray(open(os.path.join(ROOT,'enUS','Narrator','square05_set.bin'),'rb').read()),oc)
+            W=set()
+            for (sx0,sx1,dx) in ((3,7,0),(14,17,-3)):         # T -> x3..7 ; p -> x11..14
+                for y in range(1,15):
+                    for x in range(sx0,sx1+1):
+                        if E[y][x]==2: W.add((x+dx,y))
+            for (x,y) in ((9,4),(9,6),(9,7),(9,8)): W.add((x,y))                    # i (dot + stem)
+            for (x,y) in ((17,4),(18,4),(16,5),(19,5),(16,6),(19,6),(16,7),(19,7),(17,8),(18,8)): W.add((x,y))   # o
+            for (x,y) in W:
+                for dy in(-1,0,1):
+                    for dx in(-1,0,1):
+                        if (x+dx,y+dy) not in W and 1<=y+dy<15 and 1<=x+dx<22: N[y+dy][x+dx]=1
+            for (x,y) in W: N[y][x]=2
+        else:
+          for y in range(1,15):
             for x in range(1,22):
                 if O[y][x] in (1,2): N[y][x]=O[y][x]
         uncomp(out,oc,N)
