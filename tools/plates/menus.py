@@ -36,6 +36,7 @@ PLATES={
 TXTIDX={'free':(1,2,3),'opt':(1,2,3,4)}   # palette indices the Japanese lettering uses (free: index 4 is the plate grey)
 ACC={'~':[(0,1),(1,0),(2,0),(3,1)],'´':[(0,1),(1,0)],'`':[(0,0),(1,1)],'^':[(0,1),(1,0),(2,1)]}
 BASE={'Ã':('A','~'),'Õ':('O','~'),'É':('E','´'),'Ê':('E','^'),'Á':('A','´'),'Â':('A','^'),'Í':('I','´'),'Ó':('O','´'),'Ô':('O','^'),'Ú':('U','´'),'À':('A','`'),'Ç':('C','ç')}
+ORIG=True       # exact original pixels outside the label band
 FULL=True       # rebuild the whole plate from the clean reference (like modes.py)
 GAPV=1
 def layout(text,extra=0):
@@ -67,6 +68,14 @@ def pal_bank(scr,x0,y0,w,h):
         m=sum(1 for c in cols if not any(max(abs(a-d) for a,d in zip(c,q))<=4 for q in pc))
         if best is None or m<best[0]:best=(m,k)
     return PAL[scr][best[1]]
+import subprocess
+_OLD={}
+def old_sheet(sq):
+    """the original game's sheet (EN v1.0 = JP art outside the label strips): kept in git history"""
+    if sq not in _OLD:
+        f=os.path.join(REF,'orig_square%s_set.bin'%sq)
+        _OLD[sq]=open(f,'rb').read()
+    return _OLD[sq]
 HL=json.load(open(os.path.join(REF,'menu_hl15.json')))   # per plate: mask of the original's palette-index-15 pixels (highlight ring, recoloured by the game when selected)
 def nearest(pal,c):
     return min(range(1,15),key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
@@ -96,6 +105,14 @@ def build(name,lang):
                 jc=jp[px0+x,py0+sy+y]
                 if istxt(jc):
                     c=rp[x,sy+y];G[(x,y)]=min(bg,key=lambda i:sum((a-b)**2 for a,b in zip(pal[i],c)))
+    if ORIG:                             # outside the label band (bars included): the original game's own pixels (exact art)
+        osh=old_sheet(sq)
+        for Y in range(ph):
+            if sy-2<=Y<=sy+sh+1:continue
+            for x in range(pw):
+                m=TM[name][Y//8][x//8]
+                if m is None:continue
+                G[(x,Y-sy)]=gt(osh,m[1])[Y%8][x%8]
     for Y in range(ph):                  # restore the original's idx-15 ring exactly
         for x in range(pw):
             if HL[name][Y][x]=='1':G[(x,Y-sy)]=15
@@ -117,6 +134,9 @@ def build(name,lang):
                 if (X,Y) not in S and sx<=X<sx+sw and -2<=Y<=sh:G[(X,Y)]=1
     for (x,y) in S:
         if sx<=x<sx+sw and -2<=y<=sh:G[(x,y)]=2
+    for (x,y),v in list(G.items()):      # the outline never takes the highlight frame (idx 15) away; letters/accents still win
+        Y=y+sy
+        if v==1 and 0<=Y<ph and 0<=x<pw and HL[name][Y][x]=='1':G[(x,y)]=15
     return sq,G,(px0,py0)
 def write(lang):
     for name in PLATES:
