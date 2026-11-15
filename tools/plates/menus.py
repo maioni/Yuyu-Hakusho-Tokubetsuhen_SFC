@@ -134,9 +134,9 @@ def build(name,lang):
                 if (X,Y) not in S and sx<=X<sx+sw and -2<=Y<=sh:G[(X,Y)]=1
     for (x,y) in S:
         if sx<=x<sx+sw and -2<=y<=sh:G[(x,y)]=2
-    for (x,y),v in list(G.items()):      # the outline never takes the highlight frame (idx 15) away; letters/accents still win
+    for (x,y),v in list(G.items()):      # neither outline nor letters/accents take the highlight frame (idx 15) away (exact original recolouring)
         Y=y+sy
-        if v==1 and 0<=Y<ph and 0<=x<pw and HL[name][Y][x]=='1':G[(x,y)]=15
+        if v in(1,2) and 0<=Y<ph and 0<=x<pw and HL[name][Y][x]=='1':G[(x,y)]=15
     return sq,G,(px0,py0)
 def write(lang):
     for name in PLATES:
